@@ -99,10 +99,19 @@
 // #endregion hand-icon-effect
 
 @mixin bg-animation {
-  background: linear-gradient(to right, #0e1013 50%, #3355ff 50%);
+  background: linear-gradient(
+    to right,
+    #0e1013 0%,
+    // Schwarz von Anfang
+    #0e1013 50%,
+    // Schwarz bis zur Mitte
+    #3355ff 50%,
+    // Blau startet erst ab der Mitte
+    #3355ff 100% // Blau bis ganz rechts
+  );
   background-size: 200% 100%;
   background-position: left bottom;
-  transition: width 0.4s ease, background-position 0.4s ease;
+  transition: width 0.1s ease, background-position 0.6s ease;
 }
 
 // #region button-witdh-effect
@@ -151,9 +160,7 @@
   .text-default,
   .text-hover {
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    left: 3rem;
     transition: opacity 0.4s ease;
     white-space: nowrap;
   }

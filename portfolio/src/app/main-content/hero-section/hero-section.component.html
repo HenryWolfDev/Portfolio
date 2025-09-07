@@ -22,8 +22,16 @@
         />
       </button>
     </div>
-    <p>Frontend</p>
-    <p>Developer</p>
+    <p class="frontend aniLetter">
+      @for(letter of frontendLetters; track $index){
+      <span class="letter">{{ letter }}</span
+      >}
+    </p>
+    <p class="DEVELOPER aniLetter">
+      @for(letter of developerLetters; track $index){
+      <span class="letter">{{ letter }}</span
+      >}
+    </p>
     <div><button class="get-in-touch-btn">Get in Touch</button></div>
   </div>
 </section>

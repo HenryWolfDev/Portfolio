@@ -17,7 +17,6 @@ section {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background-color: rgb(65, 82, 97);
 
     .image-box {
       position: absolute;
@@ -39,14 +38,24 @@ section {
       }
     }
 
-    p {
+    .aniLetter {
       font-weight: 700;
       font-size: 12.8rem;
       text-align: start;
+      transition: all 0.8s ease;
     }
-    p:nth-child(4) {
+    .DEVELOPER {
+      margin-left: auto;
+    }
+
+    .frontend .letter:hover {
       text-transform: uppercase;
-      text-align: end;
+      color: #f7c518;
+    }
+
+    .DEVELOPER .letter:hover {
+      text-transform: lowercase;
+      color: #f7c518;
     }
 
     div:last-of-type {
