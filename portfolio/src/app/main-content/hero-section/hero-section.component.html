@@ -9,11 +9,17 @@
     </div>
     <div>
       <button
-        (mouseenter)="onHover()"
-        (mouseleave)="onLeave()"
         class="hello-world-btn"
+        (mouseenter)="isHovered = true"
+        (mouseleave)="isHovered = false"
+        [ngClass]="{ hovered: isHovered }"
       >
-        {{ buttonText }}
+        <span class="text-default">Hello world</span>
+        <span class="text-hover">I’m Henry Wolf</span>
+        <img
+          class="hand-img"
+          src="/assets/Design material/04_Icons/waving_hand.png"
+        />
       </button>
     </div>
     <p>Frontend</p>

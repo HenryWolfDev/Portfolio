@@ -54,13 +54,12 @@ section {
     }
 
     .hello-world-btn {
+      position: relative;
       @include button-layout();
-      transition: width 0.3s ease, background-color 0.3s ease;
-
-      &:hover {
-        width: 19.8rem;
-        background-color: #3355ff;
-      }
+      @include bg-animation();
+      @include text-fading();
+      @include hand-icon(".hand-img");
+      @include button-width-effect();
     }
 
     .get-in-touch-btn {
