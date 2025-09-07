@@ -1,0 +1,71 @@
+@use "../../../../public/styles/all-styles.scss" as *;
+
+section {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/assets/Design material/01_Background/Design Size Relation@3x/01_Hero_1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .title-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: rgb(65, 82, 97);
+
+    .image-box {
+      position: absolute;
+      top: -5rem;
+      right: 10%;
+      width: 20rem;
+      height: 24rem;
+      transform: rotate(10deg);
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      p {
+        position: absolute;
+        bottom: 1rem;
+        left: 30%;
+        color: black;
+        font-size: 2.4rem;
+      }
+    }
+
+    p {
+      font-weight: 700;
+      font-size: 12.8rem;
+      text-align: start;
+    }
+    p:nth-child(4) {
+      text-transform: uppercase;
+      text-align: end;
+    }
+
+    div:last-of-type {
+      margin-left: auto;
+    }
+
+    .hello-world-btn {
+      @include button-layout();
+      transition: width 0.3s ease, background-color 0.3s ease;
+
+      &:hover {
+        width: 19.8rem;
+        background-color: #3355ff;
+      }
+    }
+
+    .get-in-touch-btn {
+      @include button-layout();
+      cursor: pointer;
+    }
+  }
+}
