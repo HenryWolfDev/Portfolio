@@ -11,6 +11,6 @@ import { Component } from '@angular/core';
 export class HeroSectionComponent {
   isHovered = false;
 
-  frontendLetters = 'frontend'.split('');
+  frontendLetters = 'Frontend'.split('');
   developerLetters = 'DEVELOPER'.split('');
 }

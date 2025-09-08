@@ -3,11 +3,11 @@
   #{$selector} {
     position: absolute;
     top: -40px;
-    right: 15px;
+    right: 0;
     transform: rotate(-100deg);
     pointer-events: none;
     opacity: 0;
-    transition: opacity 0.4s ease;
+    transition: opacity 0.5s ease;
   }
 
   @keyframes wave-in {
@@ -24,19 +24,19 @@
       transform: rotate(-70deg);
     }
     40% {
-      transform: rotate(-60deg);
-    }
-    50% {
       transform: rotate(-50deg);
     }
+    50% {
+      transform: rotate(-20deg);
+    }
     60% {
-      transform: rotate(-40deg);
+      transform: rotate(0deg);
     }
     70% {
-      transform: rotate(-30deg);
+      transform: rotate(-10deg);
     }
     80% {
-      transform: rotate(-20deg);
+      transform: rotate(-15deg);
     }
     90% {
       transform: rotate(-10deg);
@@ -49,33 +49,6 @@
     0% {
       transform: rotate(0deg);
     }
-    10% {
-      transform: rotate(-10deg);
-    }
-    20% {
-      transform: rotate(-20deg);
-    }
-    30% {
-      transform: rotate(-30deg);
-    }
-    40% {
-      transform: rotate(-40deg);
-    }
-    50% {
-      transform: rotate(-50deg);
-    }
-    60% {
-      transform: rotate(-60deg);
-    }
-    70% {
-      transform: rotate(-70deg);
-    }
-    80% {
-      transform: rotate(-80deg);
-    }
-    90% {
-      transform: rotate(-90deg);
-    }
     100% {
       transform: rotate(-100deg);
     }
@@ -86,32 +59,25 @@
     #{$selector} {
       opacity: 1;
       top: -40px;
-      left: calc(100% - 0.8rem - 4rem);
-      animation: wave-in 0.2s ease forwards;
+      left: calc(100% - 0.8rem - 3rem);
+      animation: wave-in 0.6s ease forwards;
     }
   }
   &:not(:hover) {
     #{$selector} {
-      animation: wave-out 0.2s ease forwards;
+      animation: wave-out 0.6s ease forwards;
     }
   }
 }
 // #endregion hand-icon-effect
 
 @mixin bg-animation {
-  background: linear-gradient(
-    to right,
-    #0e1013 0%,
-    // Schwarz von Anfang
-    #0e1013 50%,
-    // Schwarz bis zur Mitte
-    #3355ff 50%,
-    // Blau startet erst ab der Mitte
-    #3355ff 100% // Blau bis ganz rechts
-  );
-  background-size: 200% 100%;
-  background-position: left bottom;
-  transition: width 0.1s ease, background-position 0.6s ease;
+  background-color: #0e1013;
+  transition: background-color 0.6s ease;
+
+  &:hover {
+    background-color: #3355ff;
+  }
 }
 
 // #region button-witdh-effect
@@ -123,8 +89,14 @@
     60% {
       width: 21.8rem;
     }
+    60% {
+      width: 21.6rem;
+    }
     80% {
-      width: 21.3rem;
+      width: 21.5rem;
+    }
+    90% {
+      width: 21.6rem;
     }
     100% {
       width: 21.8rem;
@@ -140,6 +112,9 @@
     }
     80% {
       width: 14rem;
+    }
+    90% {
+      width: 14.2rem;
     }
     100% {
       width: 14.5rem;

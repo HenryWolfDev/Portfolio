@@ -24,7 +24,7 @@ section {
       right: 10%;
       width: 20rem;
       height: 24rem;
-      transform: rotate(10deg);
+      transform: rotate(7.5deg);
       img {
         width: 100%;
         height: 100%;
@@ -35,10 +35,11 @@ section {
         left: 30%;
         color: black;
         font-size: 2.4rem;
+        font-weight: 700;
       }
     }
 
-    .aniLetter {
+    .title-word {
       font-weight: 700;
       font-size: 12.8rem;
       text-align: start;
@@ -46,6 +47,10 @@ section {
     }
     .DEVELOPER {
       margin-left: auto;
+    }
+
+    .frontend .letter:first-child:hover {
+      text-transform: lowercase;
     }
 
     .frontend .letter:hover {
@@ -56,6 +61,7 @@ section {
     .DEVELOPER .letter:hover {
       text-transform: lowercase;
       color: #f7c518;
+      transition: all 0.8s ease;
     }
 
     div:last-of-type {
