@@ -7,9 +7,9 @@
     <div>
       <button
         class="hello-world-btn"
-        (mouseenter)="isHovered = true"
-        (mouseleave)="isHovered = false"
-        [ngClass]="{ hovered: isHovered }"
+        (mouseenter)="helloWorldHovered = true"
+        (mouseleave)="helloWorldHovered = false"
+        [ngClass]="{ hovered: helloWorldHovered }"
       >
         <span class="text-default">Hello world</span>
         <span class="text-hover">I’m Henry Wolf</span>
@@ -25,10 +25,15 @@
       >}
     </p>
     <p class="DEVELOPER title-word">
-      @for(letter of developerLetters; track $index){
+      @for(letter of developerLettersBig; track $index){
       <span class="letter">{{ letter }}</span
       >}
     </p>
     <div><button class="get-in-touch-btn">Get in Touch</button></div>
+  </div>
+  <div class="social-icon-box">
+    <img class="social-icon" src="/assets/icons/in.png" alt="" />
+    <img class="social-icon" src="/assets/icons/git-hub.png" alt="" />
+    <img class="social-icon" src="/assets/icons/mail.png" alt="" />
   </div>
 </section>

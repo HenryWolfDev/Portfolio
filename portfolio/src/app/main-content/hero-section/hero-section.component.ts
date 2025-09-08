@@ -9,8 +9,13 @@ import { Component } from '@angular/core';
   styleUrl: './hero-section.component.scss',
 })
 export class HeroSectionComponent {
-  isHovered = false;
+  helloWorldHovered = false;
+  frontendHovered = false;
+  developerHovered = false;
 
   frontendLetters = 'Frontend'.split('');
-  developerLetters = 'DEVELOPER'.split('');
+  developerLetters = 'developer'.split('');
+
+  frontendLettersBig = 'FRONTEND'.split('');
+  developerLettersBig = 'DEVELOPER'.split('');
 }

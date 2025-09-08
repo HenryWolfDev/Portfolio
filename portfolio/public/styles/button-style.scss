@@ -1,4 +1,4 @@
-@mixin button-layout {
+@mixin button-layout($bg-color, $color, $b-color) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,8 +7,21 @@
   font-size: 1.8rem;
   padding: 1.2rem 2.4rem;
   border-radius: 10rem;
-  border: 0.1rem solid #f8f9fa;
-  background-color: #0e1013;
-  color: #f8f9fa;
+  border: 0.1rem solid $b-color;
+  background-color: $bg-color;
+  color: $color;
   white-space: nowrap;
+}
+
+@mixin press-button($bg-color, $bs-color, $color, $b-color) {
+  @include button-layout($bg-color, $color, $b-color);
+  cursor: pointer;
+  transition: transform 100ms;
+  box-shadow: 4px 4px 0px $bs-color;
+
+  &:hover {
+    box-shadow: none;
+    background-color: #f87a55;
+    transform: translate(0.4rem, 0.4rem);
+  }
 }
