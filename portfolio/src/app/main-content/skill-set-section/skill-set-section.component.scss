@@ -1,0 +1,66 @@
+section {
+  background-image: url("/assets/Design material/01_Background/Design Size Relation@3x/03_Skills_1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  // background-position: bottom center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15rem;
+
+  .content {
+    width: 120rem;
+    height: 45.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    .introduction-box {
+      width: 120rem;
+      height: 14.4rem;
+      display: flex;
+      gap: 8rem;
+
+      .text-left-box {
+        display: flex;
+        flex-direction: column;
+
+        .my-stack {
+          font-size: 2rem;
+          text-align: end;
+        }
+
+        .skill-set {
+          font-size: 6.4rem;
+          font-weight: 700;
+        }
+      }
+
+      .skill-ripped-paper {
+        width: 65.6rem;
+        height: 14.4rem;
+      }
+    }
+
+    .skill-icons-box {
+      display: flex;
+      justify-content: center;
+      .skill-icons {
+        display: grid;
+        grid-template-columns: repeat((5, 100px));
+        gap: 2rem;
+
+        .skill-icon {
+          filter: grayscale(100%);
+          transition: transform 0.1s ease;
+        }
+
+        .skill-icon:hover {
+          filter: grayscale(0%);
+          transform: scale(0.8);
+        }
+      }
+    }
+  }
+}
