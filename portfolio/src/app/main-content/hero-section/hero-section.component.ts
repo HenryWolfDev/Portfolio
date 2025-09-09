@@ -10,12 +10,7 @@ import { Component } from '@angular/core';
 })
 export class HeroSectionComponent {
   helloWorldHovered = false;
-  frontendHovered = false;
-  developerHovered = false;
 
   frontendLetters = 'Frontend'.split('');
-  developerLetters = 'developer'.split('');
-
-  frontendLettersBig = 'FRONTEND'.split('');
   developerLettersBig = 'DEVELOPER'.split('');
 }
