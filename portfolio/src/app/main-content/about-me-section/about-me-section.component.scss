@@ -1,0 +1,113 @@
+@use "../../../../public/styles/all-styles.scss" as *;
+
+section {
+  background-color: #f8f9f8;
+  color: #0e1013;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  padding: 5rem;
+
+  .paper-box {
+    width: 56rem;
+    height: 40rem;
+    color: #f8f9f8;
+    font-size: 2.4rem;
+    .ripped-paper {
+      width: 50.6rem;
+      height: 14.5rem;
+    }
+
+    .yellow-paper-box {
+      .ripped-paper-y {
+        transform: rotate(-5deg);
+        z-index: 3;
+        top: 30px;
+      }
+      .location-box {
+        position: absolute;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        top: 65px;
+        left: 25%;
+        transform: rotate(-6deg);
+      }
+    }
+
+    .blue-paper-box {
+      .ripped-paper-b {
+        transform: rotate(-2deg);
+        z-index: 2;
+        top: -20px;
+      }
+      .relocation-box {
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        top: 30px;
+        left: 25%;
+        transform: rotate(-2deg);
+      }
+    }
+
+    .organe-paper-box {
+      .ripped-paper-o {
+        z-index: 1;
+        bottom: 60px;
+      }
+      .remote-box {
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        top: -10px;
+        left: 25%;
+        transform: rotate(3deg);
+      }
+    }
+  }
+
+  .about-me-box {
+    width: 56rem;
+    height: 43.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .hello-text {
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    .about-me {
+      font-size: 6.4rem;
+      font-weight: bold;
+    }
+    .draw-line {
+      width: 30rem;
+      height: 2rem;
+    }
+
+    .introduction-box {
+      font-size: 2rem;
+    }
+
+    .lets-talk-btn {
+      margin-left: auto;
+      font-size: 2rem;
+      font-weight: 500;
+      @include press-button(
+        $bg-color: #f8f9f8,
+        $bs-color: #0e1013,
+        $color: #0e1013,
+        $b-color: #0e1013
+      );
+    }
+    .lets-talk-btn:hover {
+      color: #f8f9f8;
+    }
+  }
+}

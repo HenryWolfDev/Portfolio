@@ -2,6 +2,7 @@
 
 /* Bricolage Grotesque */
 @import "@fontsource/bricolage-grotesque/400.css";
+@import "@fontsource/bricolage-grotesque/500.css";
 @import "@fontsource/bricolage-grotesque/700.css";
 
 /* Kalam */
@@ -9,6 +10,7 @@
 @import "@fontsource/kalam/700.css";
 
 * {
+  position: relative;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;

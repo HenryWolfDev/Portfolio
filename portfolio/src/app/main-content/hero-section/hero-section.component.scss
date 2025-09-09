@@ -8,6 +8,7 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #f8f9f8;
 
   .title-box {
     position: absolute;
@@ -71,6 +72,7 @@ section {
 
     .hello-world-btn {
       position: relative;
+      font-size: 1.8rem;
       @include button-layout(
         $bg-color: #0e1013,
         $color: #f8f9fa,
@@ -83,6 +85,7 @@ section {
     }
 
     .get-in-touch-btn {
+      font-size: 1.8rem;
       @include press-button(
         $bg-color: #0e1013,
         $bs-color: #f8f9fa,
