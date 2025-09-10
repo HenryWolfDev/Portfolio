@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 2rem;
+
+  ul {
+    display: flex;
+    gap: 20rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 120%;
+
+    a {
+      color: #f8f9fa;
+    }
+  }
+
+  .language-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.6rem;
+  }
+}
