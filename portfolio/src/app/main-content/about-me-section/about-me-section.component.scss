@@ -92,6 +92,8 @@ section {
     .draw-line {
       width: 30rem;
       height: 2rem;
+
+      @include draw-animation(drawLine, $cutDirection: right);
     }
 
     .introduction-box {

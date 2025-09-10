@@ -1,0 +1,89 @@
+@mixin draw-animation($name, $cutDirection) {
+  animation: #{$name} 8s linear infinite;
+
+  @if $cutDirection == right {
+    @keyframes #{$name} {
+      0% {
+        clip-path: inset(0 100% 0 0);
+      }
+      5% {
+        clip-path: inset(0 100% 0 0);
+      }
+      10% {
+        clip-path: inset(0 0 0 0);
+      }
+      85% {
+        clip-path: inset(0 0 0 0);
+      }
+      95% {
+        clip-path: inset(0 100% 0 0);
+      }
+      100% {
+        clip-path: inset(0 100% 0 0);
+      }
+    }
+  } @else if $cutDirection == left {
+    @keyframes #{$name} {
+      0% {
+        clip-path: inset(0 0 0 100%);
+      }
+      5% {
+        clip-path: inset(0 0 0 100%);
+      }
+      10% {
+        clip-path: inset(0 0 0 0);
+      }
+      85% {
+        clip-path: inset(0 0 0 0);
+      }
+      90% {
+        clip-path: inset(0 0 0 100%);
+      }
+      100% {
+        clip-path: inset(0 0 0 100%);
+      }
+    }
+  } @else if $cutDirection == top {
+    @keyframes #{$name} {
+      0% {
+        clip-path: inset(100% 0 0 0);
+      }
+      5% {
+        clip-path: inset(100% 0 0 0);
+      }
+      10% {
+        clip-path: inset(0 0 0 0);
+      }
+      85% {
+        clip-path: inset(0 0 0 0);
+      }
+      90% {
+        clip-path: inset(100% 0 0 0);
+      }
+      100% {
+        clip-path: inset(100% 0 0 0);
+      }
+    }
+  } @else if $cutDirection == bottom {
+    @keyframes #{$name} {
+      0% {
+        clip-path: inset(0 0 100% 0);
+      }
+      5% {
+        clip-path: inset(0 0 100% 0);
+      }
+      10% {
+        clip-path: inset(0 0 0 0);
+      }
+      85% {
+        clip-path: inset(0 0 0 0);
+      }
+      90% {
+        clip-path: inset(0 0 100% 0);
+      }
+      100% {
+        clip-path: inset(0 0 100% 0);
+      }
+    }
+  }
+}
