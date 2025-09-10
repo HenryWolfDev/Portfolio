@@ -10,15 +10,16 @@
           alt=""
         />
       </div>
-      <div>
-        <img
-          class="skill-ripped-paper"
-          src="/assets/Design material/02_Ripped Paper/1.Skills description.png"
-          alt=""
-        />
+      <div class="skill-ripped-paper">
+        <p>
+          A short introduction of your skills. Highlight your experience of
+          using different front-end technologies and emphasise your openness to
+          learning and adapting to new technologies.
+        </p>
       </div>
     </div>
 
+    <!-- #region skill-icon-box -->
     <div class="skill-icons-box">
       <div class="skill-icons">
         <div class="skill-icon-box">
@@ -110,6 +111,50 @@
           />
           <span>Material Design</span>
         </div>
+      </div>
+    </div>
+    <!-- #endregion skill-icon-box -->
+    <div
+      class="peel-off-box"
+      (click)="togglePeelBox()"
+      [class.hide]="hideFirtLayer"
+    >
+      <img
+        class="peel-off"
+        src="/assets/Design material/03_Stickers/01_Skills - Peel off/Default.png"
+        alt=""
+      />
+
+      <img
+        class="arrow-icon"
+        src="/assets/Design material/03_Stickers/Arrow.png"
+        alt=""
+      />
+      <span>Pull to peel</span>
+    </div>
+    <div
+      class="peel-off-box-overlay"
+      (click)="togglePeelBox()"
+      [class.show]="peelOffVisible"
+    >
+      <img
+        class="peel-off"
+        src="/assets/Design material/03_Stickers/01_Skills - Peel off/Final.png"
+        alt=""
+      />
+      <span>Also, I'm interested in diving into: </span>
+
+      <div class="diving-icons-box">
+        <img
+          class="diving-icon"
+          src="/assets/icons/skill-icons/react-icon.png"
+          alt=""
+        />
+        <img
+          class="diving-icon"
+          src="/assets/icons/skill-icons/vue-icon.png"
+          alt=""
+        />
       </div>
     </div>
   </div>

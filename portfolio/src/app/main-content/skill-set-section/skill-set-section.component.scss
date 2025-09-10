@@ -5,13 +5,14 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-position: bottom center;
+  // background-position: bottom center;
 
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 15rem;
 
+  // #region content
   .content {
     width: 120rem;
     height: 45.8rem;
@@ -24,6 +25,7 @@ section {
       display: flex;
       gap: 8rem;
 
+      // #region skill-text-box
       .text-left-box {
         display: flex;
         flex-direction: column;
@@ -49,13 +51,30 @@ section {
           @include draw-animation(draw-skill-line, bottom);
         }
       }
+      // #endregion skill-text-box
 
       .skill-ripped-paper {
         width: 65.6rem;
         height: 14.4rem;
+        background-image: url("/assets/Design material/02_Ripped Paper/1D. Alternative 1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 5;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 4rem;
+
+        p {
+          color: #0e1013;
+          font-size: 1.8rem;
+          text-align: start;
+        }
       }
     }
 
+    // #region skill-icons
     .skill-icons-box {
       display: flex;
       justify-content: center;
@@ -81,5 +100,83 @@ section {
         }
       }
     }
+    // #endregion skill-icons
+
+    // #region peel-off-box
+    .peel-off-box {
+      position: absolute;
+      right: 0px;
+      bottom: 10%;
+
+      cursor: pointer;
+      .peel-off {
+        width: 20rem;
+        height: 20rem;
+        transform: rotate(10deg);
+      }
+
+      .arrow-icon {
+        position: absolute;
+        width: 5.1rem;
+        height: 4rem;
+        right: 65px;
+        top: 25px;
+      }
+
+      span {
+        position: absolute;
+        left: 10px;
+        bottom: 40px;
+        font-size: 4rem;
+        font-family: "Kalam", sans-serif;
+        transform: rotate(10deg);
+        line-height: 4rem;
+        text-align: center;
+      }
+    }
+
+    .peel-off-box.hide {
+      opacity: 0;
+    }
+
+    .peel-off-box-overlay {
+      position: absolute;
+      right: 0px;
+      bottom: 10%;
+      opacity: 0;
+      transition: opacity 0.25s ease;
+
+      cursor: pointer;
+      .peel-off {
+        width: 20rem;
+        height: 20rem;
+        transform: rotate(10deg);
+      }
+
+      span {
+        position: absolute;
+        left: 10px;
+        top: 40px;
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-align: center;
+        transform: rotate(10deg);
+      }
+
+      .diving-icons-box {
+        position: absolute;
+        left: 40px;
+        bottom: 40px;
+        transform: rotate(10deg);
+        display: flex;
+        gap: 1rem;
+      }
+    }
+
+    .peel-off-box-overlay.show {
+      opacity: 1;
+    }
+    // #endregion peel-off-box
   }
+  // #endregion content
 }
