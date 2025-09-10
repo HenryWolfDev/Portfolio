@@ -49,7 +49,7 @@ section {
       .skill-icons {
         display: grid;
         grid-template-columns: repeat((5, 100px));
-        gap: 2rem;
+        gap: 4rem;
 
         .skill-icon {
           filter: grayscale(100%);
