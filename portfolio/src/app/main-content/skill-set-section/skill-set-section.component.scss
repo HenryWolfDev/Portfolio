@@ -1,3 +1,5 @@
+@use "../../../../public/styles/all-styles.scss" as *;
+
 section {
   background-image: url("/assets/Design material/01_Background/Design Size Relation@3x/03_Skills_1.png");
   background-size: cover;
@@ -51,6 +53,12 @@ section {
         grid-template-columns: repeat((5, 100px));
         gap: 4rem;
 
+        .skill-icon-box {
+          @include display-flex-col-c-c();
+          gap: 1rem;
+          font-size: 1.8rem;
+          text-align: center;
+        }
         .skill-icon {
           filter: grayscale(100%);
           transition: transform 0.1s ease;
