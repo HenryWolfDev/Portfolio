@@ -1,3 +1,11 @@
+:host {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: block;
+  background-color: rgba(14, 16, 19, 0.5);
+}
+
 header {
   display: flex;
   justify-content: space-around;
@@ -6,7 +14,7 @@ header {
 
   ul {
     display: flex;
-    gap: 20rem;
+    gap: 25rem;
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 120%;

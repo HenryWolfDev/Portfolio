@@ -13,6 +13,6 @@ import { HeaderComponent } from '../shared-components/header/header.component';
     SkillSetSectionComponent,
   ],
   templateUrl: './main-content.component.html',
-  styleUrl: './main-content.component.scss',
+  styleUrls: ['./main-content.component.scss'],
 })
 export class MainContentComponent {}
