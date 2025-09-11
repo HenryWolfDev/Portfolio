@@ -1,5 +1,13 @@
-@mixin draw-animation($name, $cutDirection) {
-  animation: #{$name} 8s linear infinite;
+// 1:1 wie dein Mixin, nur:
+// - kein infinite (einmal + forwards)
+// - Schalter $stay-visible: steuert, ob 100% sichtbar (true) oder wieder abgeschnitten (false)
+@mixin draw-animation-once(
+  $name,
+  $cutDirection,
+  $seconds,
+  $stay-visible: false
+) {
+  animation: #{$name} $seconds linear 1 forwards;
 
   @if $cutDirection == right {
     @keyframes #{$name} {
@@ -19,7 +27,11 @@
         clip-path: inset(0 0 0 0);
       }
       100% {
-        clip-path: inset(0 100% 0 0);
+        @if $stay-visible {
+          clip-path: inset(0 0 0 0);
+        } @else {
+          clip-path: inset(0 100% 0 0);
+        }
       }
     }
   } @else if $cutDirection == left {
@@ -40,7 +52,11 @@
         clip-path: inset(0 0 0 0);
       }
       100% {
-        clip-path: inset(0 0 0 100%);
+        @if $stay-visible {
+          clip-path: inset(0 0 0 0);
+        } @else {
+          clip-path: inset(0 0 0 100%);
+        }
       }
     }
   } @else if $cutDirection == top {
@@ -61,7 +77,11 @@
         clip-path: inset(0 0 0 0);
       }
       100% {
-        clip-path: inset(100% 0 0 0);
+        @if $stay-visible {
+          clip-path: inset(0 0 0 0);
+        } @else {
+          clip-path: inset(100% 0 0 0);
+        }
       }
     }
   } @else if $cutDirection == bottom {
@@ -82,7 +102,11 @@
         clip-path: inset(0 0 0 0);
       }
       100% {
-        clip-path: inset(0 0 100% 0);
+        @if $stay-visible {
+          clip-path: inset(0 0 0 0);
+        } @else {
+          clip-path: inset(0 0 100% 0);
+        }
       }
     }
   }

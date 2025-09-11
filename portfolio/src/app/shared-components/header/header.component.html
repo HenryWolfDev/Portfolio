@@ -5,8 +5,20 @@
     </div>
     <div>
       <ul>
-        <li>
+        <li
+          class="about-me-link"
+          (mouseenter)="onMouseEnter()"
+          (mouseleave)="onMouseLeave()"
+        >
           <a href="#about-me-section">About me</a>
+          <img
+            class="about-me-draw-line"
+            src="/assets/Design material/00_Hand-drawn lines/00_Header/Color option 1/1.png"
+            alt=""
+            [class.draw-forward]="isHovering()"
+            [class.draw-reverse]="!isHovering() && hasHovered()"
+            (animationend)="onAnimationEnd($event)"
+          />
         </li>
         <li>
           <a href="#skill-set-section">Skills</a>
@@ -19,7 +31,7 @@
         </li>
       </ul>
     </div>
-    <div class="language-box">
+    <div class="language-switch-box">
       <span>EN</span>
       <img src="/assets/icons/switch-icon.png" alt="" />
       <span>DE</span>

@@ -1,7 +1,9 @@
+@use "../../../../public/styles/all-styles.scss" as *;
+
 :host {
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 100;
   display: block;
   background-color: rgba(14, 16, 19, 0.5);
 }
@@ -22,9 +24,32 @@ header {
     a {
       color: #f8f9fa;
     }
+
+    .about-me-link {
+      .about-me-draw-line {
+        z-index: -1;
+        position: absolute;
+        width: 10.5rem;
+        height: 4.2rem;
+        left: -10px;
+        bottom: -10px;
+
+        opacity: 0;
+      }
+
+      .draw-forward {
+        opacity: 1;
+        @include draw-animation-once(draw-line, top, 2.5s, true);
+      }
+
+      .draw-reverse {
+        opacity: 1;
+        @include draw-animation-reverse-once(draw-line-reverse, bottom, 0.25s);
+      }
+    }
   }
 
-  .language-box {
+  .language-switch-box {
     display: flex;
     align-items: center;
     gap: 0.5rem;

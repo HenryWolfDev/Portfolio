@@ -48,7 +48,7 @@ section {
           bottom: 90px;
           transform: scaleX(-1);
           z-index: 1;
-          @include draw-animation(draw-skill-line, bottom);
+          @include draw-animation(draw-skill-line, bottom, $seconds: 8s);
         }
       }
       // #endregion skill-text-box

@@ -1,5 +1,6 @@
-@forward "button-style";
-@forward "hello-world-btn-style";
-@forward "press-button";
-@forward "displayFlex-styles";
-@forward "draw-animation";
+@forward "global-styles/button-style.scss";
+@forward "global-styles/displayFlex-styles";
+@forward "global-styles/draw-animation";
+@forward "header-styles/draw-animation-once";
+@forward "header-styles/draw-animation-reverse-once";
+@forward "hero-styles/hello-world-btn-style.scss";

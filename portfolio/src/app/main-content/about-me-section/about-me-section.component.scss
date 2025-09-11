@@ -93,7 +93,7 @@ section {
       width: 30rem;
       height: 2rem;
 
-      @include draw-animation(drawLine, $cutDirection: right);
+      @include draw-animation(drawLine, $cutDirection: right, $seconds: 8s);
     }
 
     .introduction-box {
