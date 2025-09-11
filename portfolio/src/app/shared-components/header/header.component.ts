@@ -17,26 +17,34 @@ export class HeaderComponent {
   //   this.translate.use(language);
   // }
 
-  isHovering = signal(false);
-  hasHovered = signal(false);
+  // checking id before starting methods for the HTML Element
+  // #region
+  private hoverID: string | null = null;
+  private hovered: string | null = null;
 
-  onMouseEnter() {
-    this.hasHovered.set(true);
-    this.isHovering.set(true);
+  isHovering(id: string) {
+    return this.hoverID === id;
   }
 
-  onMouseLeave() {
-    this.isHovering.set(false);
+  hasHovered(id: string) {
+    return this.hovered === id;
   }
 
-  onAnimationEnd(e: AnimationEvent) {
+  mouseEntered(id: string) {
+    this.hoverID = id;
+    this.hovered = id;
+  }
+
+  mouseLeaved(id: string) {
+    if (this.hoverID === id) this.hoverID = null;
+  }
+
+  // looking for animation end here
+  onAnimationEnd(e: AnimationEvent, id: string) {
     const name = e.animationName;
-    // Nur wenn die Rückwärtsanimation fertig ist => Reset
-    if (
-      name === 'draw-line-reverse' ||
-      (e.target as HTMLElement).classList.contains('draw-reverse')
-    ) {
-      this.hasHovered.set(false); // entfernt draw-reverse via Binding
+    if (!this.isHovering(id) && name === 'draw-line-reverse') {
+      this.hovered = null;
     }
   }
+  // #endregion
 }

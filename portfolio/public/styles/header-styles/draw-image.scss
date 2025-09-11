@@ -1,0 +1,9 @@
+@mixin draw-image($width, $height, $left, $bottom) {
+  position: absolute;
+  width: $width;
+  height: $height;
+  left: $left;
+  bottom: $bottom;
+  opacity: 0;
+  pointer-events: none;
+}

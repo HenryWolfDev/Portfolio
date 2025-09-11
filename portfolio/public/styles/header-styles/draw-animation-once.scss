@@ -1,6 +1,3 @@
-// 1:1 wie dein Mixin, nur:
-// - kein infinite (einmal + forwards)
-// - Schalter $stay-visible: steuert, ob 100% sichtbar (true) oder wieder abgeschnitten (false)
 @mixin draw-animation-once(
   $name,
   $cutDirection,
