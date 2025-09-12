@@ -14,6 +14,28 @@ header {
   align-items: center;
   padding: 2rem 2rem;
 
+  .logo-box {
+    .logo_1 {
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .logo_2 {
+      position: absolute;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    &:hover {
+      .logo_1 {
+        opacity: 0;
+      }
+      .logo_2 {
+        opacity: 1;
+      }
+    }
+  }
+
   ul {
     display: flex;
     gap: 25rem;
@@ -33,7 +55,7 @@ header {
 
       .draw-forward {
         opacity: 1;
-        @include draw-animation-once(draw-line, top, 2.5s, true);
+        @include draw-animation-once(draw-line, bottom, 2.5s, true);
       }
 
       .draw-reverse {

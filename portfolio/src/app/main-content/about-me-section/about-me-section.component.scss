@@ -84,13 +84,14 @@ section {
       font-size: 2rem;
       text-transform: uppercase;
       font-weight: 500;
+      margin-bottom: 1rem;
     }
     .about-me {
       font-size: 6.4rem;
       font-weight: bold;
     }
     .draw-line {
-      width: 30rem;
+      width: 32rem;
       height: 2rem;
 
       @include draw-animation(drawLine, $cutDirection: right, $seconds: 8s);
@@ -98,6 +99,10 @@ section {
 
     .introduction-box {
       font-size: 2rem;
+
+      p {
+        margin-bottom: 1rem;
+      }
     }
 
     .lets-talk-btn {

@@ -1,3 +1,25 @@
 {
-  "ABOUT_ME": "About me"
+  "HEADER": {
+    "ABOUT_ME": "About me",
+    "SKILLS": "Skills",
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact"
+  },
+  "HELLO_WORLD_BTN": "I'm Henry Wolf",
+
+  "ABOUT_ME_SECTION": {
+    "BASED_TEXT": "Based in Binz / Rügen",
+    "RELOCATE_TEXT": "Open to relocate",
+    "REMOTE_TEXT": "Open to work remote",
+    "WHOS_TEXT": "Who’s is Henry?",
+    "ABOUT_TEXT": "About Me",
+    "ABOUT_ME_TEXT": "Hey there, I'm Henry. Write some information about yourself that is IT related. Why are you passionate about coding? What is your source of inspiration for improving your programming skills?  Do you learn from each challenge as you search for the most efficient or elegant solution?",
+    "CORPORATE_TEXT": "Let’s collaborate and build something remarkable together!"
+  },
+  "SKILL_SET_SECTION": {
+    "MY_STACK_TEXT": "My stack",
+    "SKILL_INTRODUCTION_TEXT": "A short introduction of your skills. Highlight your experience of using different front-end technologies and emphasise your openness to learning and adapting to new technologies",
+    "PEEL_TEXT": "Pull to peel",
+    "DIVING_TEXT": "Also, I'm interested in diving into:"
+  }
 }

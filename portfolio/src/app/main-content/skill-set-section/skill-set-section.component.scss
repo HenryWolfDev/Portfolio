@@ -31,9 +31,10 @@ section {
         flex-direction: column;
         gap: 1rem;
 
-        .my-stack {
+        .MY_STACK_TEXT {
           font-size: 2rem;
           text-align: end;
+          text-transform: uppercase;
         }
 
         .skill-set {

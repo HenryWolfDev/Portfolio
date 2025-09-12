@@ -1,3 +1,26 @@
 {
-  "ABOUT_ME": "Über mich"
+  "HEADER": {
+    "ABOUT_ME": "Über mich",
+    "SKILLS": "Skills",
+    "PROJECTS": "Projekte",
+    "CONTACT": "Kontakt"
+  },
+
+  "HELLO_WORLD_BTN": "Ich bin Henry Wolf",
+
+  "ABOUT_ME_SECTION": {
+    "BASED_TEXT": "Wohnort Binz / Rügen",
+    "RELOCATE_TEXT": "Bereit Umzuziehen",
+    "REMOTE_TEXT": "Homeoffice-fähig",
+    "WHOS_TEXT": "Wer ist Henry?",
+    "ABOUT_TEXT": "Über mich",
+    "ABOUT_ME_TEXT": "Hey, ich bin Henry.Schreibe ein paar Informationen über dich, die mit IT zu tun haben.Warum bist du leidenschaftlich am Programmieren interessiert?Was ist deine Inspirationsquelle, um deine Programmierfähigkeiten zu verbessern?Lernst du aus jeder Herausforderung, während du nach der effizientesten oder elegantesten Lösung suchst?",
+    "CORPORATE_TEXT": "Lass uns zusammenarbeiten und etwas Bemerkenswertes schaffen!"
+  },
+  "SKILL_SET_SECTION": {
+    "MY_STACK_TEXT": "Mein stack",
+    "SKILL_INTRODUCTION_TEXT": "Eine kurze Vorstellung deiner Fähigkeiten.Hebe deine Erfahrung im Umgang mit verschiedenen Frontend-Technologien hervor und betone deine Offenheit, neue Technologien zu erlernen und dich daran anzupassen.",
+    "PEEL_TEXT": "Öffne mich",
+    "DIVING_TEXT": "Außerdem möchte ich mich vertiefen in:"
+  }
 }
