@@ -18,8 +18,6 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 ---
 
----
-
 ## 🛠️ Tech Stack
 
 - **Framework:** Angular

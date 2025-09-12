@@ -1,12 +1,17 @@
-<section id="projects-section" class="projects">
+<section id="projects-section" class="PROJECTS_SECTION">
   <div class="grid container">
     <div class="projects-info-box">
       <p class="my-craft">MY CRAFT</p>
-      <h2 class="projects">Projects</h2>
+      <h2 class="projects">
+        {{ "PROJECTS_SECTION.PROJECTS_TITLE" | translate }}
+      </h2>
+      <img
+        class="projects-draw-line"
+        src="/assets/Design material/00_Hand-drawn lines/03_Portfolio/Color option 1.png"
+        alt=""
+      />
       <p class="p-text">
-        Encourage people to take a look and interact with your projects.
-        Highlight your approach to creating responsive, user-friendly projects
-        with efficient code.
+        {{ "PROJECTS_SECTION.PROJECT_TEXT" | translate }}
       </p>
     </div>
     <app-project-card

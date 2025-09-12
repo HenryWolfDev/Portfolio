@@ -21,5 +21,9 @@
     "SKILL_INTRODUCTION_TEXT": "A short introduction of your skills. Highlight your experience of using different front-end technologies and emphasise your openness to learning and adapting to new technologies",
     "PEEL_TEXT": "Pull to peel",
     "DIVING_TEXT": "Also, I'm interested in diving into:"
+  },
+  "PROJECTS_SECTION": {
+    "PROJECTS_TITLE": "Projects",
+    "PROJECT_TEXT": "Encourage people to take a look and interact with your projects. Highlight your approach to creating responsive, user-friendly projects with efficient code."
   }
 }

@@ -8,7 +8,7 @@ import {
 
 @Component({
   selector: 'app-header',
-  imports: [TranslatePipe, TranslateDirective, CommonModule],
+  imports: [TranslatePipe, CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
