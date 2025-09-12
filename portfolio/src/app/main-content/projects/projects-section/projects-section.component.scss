@@ -4,11 +4,13 @@
 }
 
 .projects-info-box {
+  width: 56rem;
+  height: 51.4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  gap: 2rem;
+  gap: 1rem;
 
   .my-craft {
     font-size: 2rem;
@@ -20,13 +22,15 @@
   }
 
   .p-text {
+    margin-top: 5rem;
     font-size: 1.8rem;
   }
 }
 
 .grid {
   display: grid;
-  gap: 1.25rem;
+  justify-items: center;
+  align-items: center;
   grid-template-columns: 1fr;
 }
 @media (min-width: 900px) {

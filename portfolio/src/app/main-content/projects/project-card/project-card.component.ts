@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 export interface Project {
   slug: string;
   title: string;
-  teaser: string;
+  teaser_text: string;
   image: string;
   featured?: boolean;
 }
@@ -14,14 +14,14 @@ export interface Project {
   standalone: true,
   imports: [RouterModule],
   template: `
-    <a class="card" [routerLink]="['/projects', project.slug]">
-      <div class="media">
+    <div class="card" [routerLink]="['/projects', project.slug]">
+      <div class="image-box">
         <img [src]="project.image" [alt]="project.title" loading="lazy" />
-        <span *ngIf="project.featured" class="badge">Featured</span>
+        <button class="project-details">Project details</button>
       </div>
-      <h3>{{ project.title }}</h3>
-      <p class="teaser">{{ project.teaser }}</p>
-    </a>
+      <h3 class="card_title">{{ project.title }}</h3>
+      <p class="teaser_text">{{ project.teaser_text }}</p>
+    </div>
   `,
   styleUrl: './project-card.component.scss',
 })
