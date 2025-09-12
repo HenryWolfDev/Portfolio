@@ -7,15 +7,16 @@ import {
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [TranslatePipe, TranslateDirective],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  // private translate = inject(TranslateService);
-  // useLanguage(language: string): void {
-  //   this.translate.use(language);
-  // }
+  private translate = inject(TranslateService);
+
+  useLanguage(language: string): void {
+    this.translate.use(language);
+  }
 
   // checking id before starting methods for the HTML Element
   // #region

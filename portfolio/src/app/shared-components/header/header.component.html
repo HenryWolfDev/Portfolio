@@ -10,7 +10,7 @@
           (mouseenter)="mouseEntered('about')"
           (mouseleave)="mouseLeaved('about')"
         >
-          <a href="#about-me-section">About me</a>
+          <a href="#about-me-section">{{ "ABOUT_ME" | translate }}</a>
           <img
             class="about-me-draw-line"
             src="/assets/Design material/00_Hand-drawn lines/00_Header/Color option 1/1.png"
@@ -72,9 +72,9 @@
       </ul>
     </div>
     <div class="language-switch-box">
-      <span>EN</span>
+      <button (click)="useLanguage('en')">EN</button>
       <img src="/assets/icons/switch-icon.png" alt="" />
-      <span>DE</span>
+      <button (click)="useLanguage('de')">DE</button>
     </div>
   </header>
 </div>
