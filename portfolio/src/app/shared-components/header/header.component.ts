@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component, signal, inject } from '@angular/core';
 import {
   TranslatePipe,
@@ -7,15 +8,18 @@ import {
 
 @Component({
   selector: 'app-header',
-  imports: [TranslatePipe, TranslateDirective],
+  imports: [TranslatePipe, TranslateDirective, CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
   private translate = inject(TranslateService);
 
+  // checking language switch
+  currentLang = this.translate.currentLang || 'en';
   useLanguage(language: string): void {
     this.translate.use(language);
+    this.currentLang = language;
   }
 
   // checking id before starting methods for the HTML Element

@@ -5,6 +5,7 @@
       <img class="logo_2" src="/assets/icons/logo_1_hover.png" alt="" />
     </div>
     <div>
+      <!-- #region Header-links -->
       <ul>
         <li
           class="about-me-link"
@@ -71,11 +72,52 @@
           />
         </li>
       </ul>
+      <!-- #endregion Header-links -->
     </div>
+    <!-- #region language-switch -->
     <div class="language-switch-box">
-      <span (click)="useLanguage('en')">EN</span>
-      <img src="/assets/icons/switch-icon.png" alt="" />
-      <span (click)="useLanguage('de')">DE</span>
+      <span
+        (click)="useLanguage('en')"
+        [class.active]="currentLang === 'en'"
+        [class.inactive]="currentLang !== 'en'"
+        >EN
+
+        <img
+          class="toggle-line"
+          src="/assets/Design material/00_Hand-drawn lines/00_Header/Color option 1/Toggle.png"
+          alt=""
+        />
+      </span>
+
+      <div
+        class="switch-icon-box"
+        [class.lang-en]="currentLang === 'en'"
+        [class.lang-de]="currentLang === 'de'"
+      >
+        <img
+          class="switch-bar"
+          src="/assets/icons/switch_bar.png"
+          alt="switch left"
+        />
+        <img
+          class="switch-point"
+          src="/assets/icons/switch_point.png"
+          alt="switch right"
+        />
+      </div>
+
+      <span
+        (click)="useLanguage('de')"
+        [class.active]="currentLang === 'de'"
+        [class.inactive]="currentLang !== 'de'"
+        >DE
+
+        <img
+          class="toggle-line"
+          src="/assets/Design material/00_Hand-drawn lines/00_Header/Color option 1/Toggle.png"
+          alt=""
+        />
+      </span>
     </div>
   </header>
 </div>

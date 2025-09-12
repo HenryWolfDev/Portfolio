@@ -47,7 +47,7 @@ header {
       color: #f8f9fa;
     }
 
-    // #region each link style
+    // #region Header-links-style
     .about-me-link {
       .about-me-draw-line {
         @include draw-image(10.5rem, 4.2rem, -7px, -10px);
@@ -122,13 +122,69 @@ header {
       }
     }
 
-    // #endregion each link style
+    // #endregion Header-links-style
   }
 
+  // language-switch-style
   .language-switch-box {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1.5rem;
     font-size: 1.6rem;
+
+    span {
+      cursor: pointer;
+      transition: color 0.3s ease;
+
+      .toggle-line {
+        position: absolute;
+        width: 3.2rem;
+        height: 3.2rem;
+        left: 50%;
+        bottom: -7px;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+      }
+
+      &.inactive:hover .toggle-line {
+        opacity: 1;
+        @include draw-animation-once(draw-swicht-line, left, 2.5s, true);
+      }
+
+      &.active {
+        color: red;
+        pointer-events: none;
+      }
+    }
+    .switch-icon-box {
+      position: relative;
+      width: 3.2rem;
+      height: 0.8rem;
+      display: inline-block;
+
+      .switch-bar {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      .switch-point {
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        z-index: 1;
+        transition: left 0.35s ease-in-out;
+        pointer-events: none;
+      }
+
+      &.lang-de .switch-point {
+        left: calc(100% - 1.5rem);
+      }
+
+      &.lang-en .switch-point {
+        left: 0;
+      }
+    }
   }
 }
