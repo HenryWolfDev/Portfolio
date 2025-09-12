@@ -1,1 +1,17 @@
-<p>projects-section works!</p>
+<section class="projects">
+  <div class="grid container">
+    <div class="projects-info-box">
+      <p class="my-craft">MY CRAFT</p>
+      <h2 class="projects">Projects</h2>
+      <p class="p-text">
+        Encourage people to take a look and interact with your projects.
+        Highlight your approach to creating responsive, user-friendly projects
+        with efficient code.
+      </p>
+    </div>
+    <app-project-card
+      *ngFor="let p of projects"
+      [project]="p"
+    ></app-project-card>
+  </div>
+</section>

@@ -1,0 +1,36 @@
+.projects {
+  background-color: #f8f9fa;
+  color: #0e1013;
+}
+
+.projects-info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+
+  .my-craft {
+    font-size: 2rem;
+  }
+
+  .projects {
+    font-size: 6.4rem;
+    font-weight: 700;
+  }
+
+  .p-text {
+    font-size: 1.8rem;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
