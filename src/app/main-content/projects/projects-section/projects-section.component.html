@@ -1,22 +1,24 @@
 <section id="projects-section" class="PROJECTS_SECTION">
-  <div class="grid container">
-    <div class="projects-info-box">
-      <p class="my-craft">MY CRAFT</p>
-      <h2 class="projects">
-        {{ "PROJECTS_SECTION.PROJECTS_TITLE" | translate }}
-      </h2>
-      <img
-        class="projects-draw-line"
-        src="/assets/Design material/00_Hand-drawn lines/03_Portfolio/Color option 1.png"
-        alt=""
-      />
-      <p class="p-text">
-        {{ "PROJECTS_SECTION.PROJECT_TEXT" | translate }}
-      </p>
+  <div class="container">
+    <div class="grid">
+      <div class="projects-info-box">
+        <p class="my-craft">MY CRAFT</p>
+        <h2 class="projects">
+          {{ "PROJECTS_SECTION.PROJECTS_TITLE" | translate }}
+        </h2>
+        <img
+          class="projects-draw-line"
+          src="/assets/Design material/00_Hand-drawn lines/03_Portfolio/Color option 1.png"
+          alt=""
+        />
+        <p class="p-text">
+          {{ "PROJECTS_SECTION.PROJECT_TEXT" | translate }}
+        </p>
+      </div>
+      <app-project-card
+        *ngFor="let p of projects"
+        [project]="p"
+      ></app-project-card>
     </div>
-    <app-project-card
-      *ngFor="let p of projects"
-      [project]="p"
-    ></app-project-card>
   </div>
 </section>
