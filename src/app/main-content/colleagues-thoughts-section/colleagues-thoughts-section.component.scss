@@ -2,14 +2,18 @@
 section {
   background-color: #f8f9fa;
   color: #0e1013;
-  padding: 5rem;
 
   .section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5% 0;
     .head-box {
       position: relative;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
+      padding-right: 10%;
 
       p {
         font-size: 2rem;
@@ -27,7 +31,7 @@ section {
         position: absolute;
         width: 10rem;
         height: 3.6rem;
-        right: 170px;
+        right: 370px;
         top: 0;
         @include draw-animation(draw-thoughts-line, left, $seconds: 8s);
       }
