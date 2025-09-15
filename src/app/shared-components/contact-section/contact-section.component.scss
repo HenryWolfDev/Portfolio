@@ -1,0 +1,99 @@
+@use "../../../../public/styles/all-styles.scss" as *;
+
+section {
+  background-image: url("/assets/Design material/01_Background/Design Size Relation@3x/06_Contact_1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #f8f9fa;
+
+  .contact-content {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15rem;
+
+    .contact-info-box {
+      display: flex;
+      flex-direction: column;
+      gap: 5%;
+      .info-head {
+        span {
+          font-size: 2rem;
+          text-transform: uppercase;
+        }
+        h2 {
+          font-size: 6.4rem;
+          font-weight: 700;
+        }
+      }
+      .text-box {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 56rem;
+        p {
+          font-size: 1.8rem;
+        }
+      }
+
+      .draw-image-box {
+        display: flex;
+        justify-content: end;
+        .draw-line-contact {
+          width: 28rem;
+          height: 4.4rem;
+          @include draw-animation(draw-contact-line, right, $seconds: 8s);
+        }
+      }
+    }
+  }
+  .contact-formular-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem 0;
+    .formular-data-box {
+      width: 100%;
+      max-width: 48rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      .data-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+
+        height: 6.1rem;
+        padding: 1rem 0;
+        border-bottom: 0.1rem solid #f7c518;
+        cursor: pointer;
+        .question-text {
+          font-size: 2.4rem;
+        }
+
+        .answer-text {
+          font-size: 1.8rem;
+        }
+      }
+    }
+    .read-policy-box {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .select-formular-box {
+      display: flex;
+      justify-content: end;
+      .send-btn {
+        font-size: 1.8rem;
+        @include press-button(
+          $bg-color: #0e1013,
+          $bs-color: #f8f9fa,
+          $color: #f8f9fa,
+          $b-color: #f8f9fa
+        );
+      }
+    }
+  }
+}
