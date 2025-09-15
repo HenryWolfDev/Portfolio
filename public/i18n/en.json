@@ -25,5 +25,20 @@
   "PROJECTS_SECTION": {
     "PROJECTS_TITLE": "Projects",
     "PROJECT_TEXT": "Encourage people to take a look and interact with your projects. Highlight your approach to creating responsive, user-friendly projects with efficient code."
+  },
+
+  "projects": {
+    "join": {
+      "title": "Join",
+      "teaser": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+    },
+    "elPolloLoco": {
+      "title": "El Pollo Loco",
+      "teaser": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen."
+    },
+    "dabubble": {
+      "title": "DABubble",
+      "teaser": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
+    }
   }
 }

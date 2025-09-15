@@ -27,5 +27,19 @@
   "PROJECTS_SECTION": {
     "PROJECTS_TITLE": "Projekte",
     "PROJECT_TEXT": "Ermutige Menschen, einen Blick auf deine Projekte zu werfen und mit ihnen zu interagieren.Hebe dabei deinen Ansatz hervor, responsive und benutzerfreundliche Projekte mit effizientem Code zu entwickeln."
+  },
+  "projects": {
+    "join": {
+      "title": "Join",
+      "teaser": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Nutzer und Kategorien zu."
+    },
+    "elPolloLoco": {
+      "title": "El Pollo Loco",
+      "teaser": "Jump-and-Run-Spiel mit objektorientiertem Ansatz. Hilf Pepe Münzen und Tabasco-Salsa zu sammeln, um gegen das verrückte Huhn zu kämpfen."
+    },
+    "dabubble": {
+      "title": "DABubble",
+      "teaser": "Diese App ist ein Slack-Klon. Sie revolutioniert Team-Kommunikation und Zusammenarbeit mit intuitivem Interface, Echtzeit-Messaging und starker Kanalorganisation."
+    }
   }
 }
