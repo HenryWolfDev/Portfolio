@@ -1,13 +1,21 @@
 <section>
   <div class="container">
-    <div class="head-box">
-      <img
-        class="draw-line-thoughts"
-        src="/assets/Design material/00_Hand-drawn lines/04_Testimonials/Color option 1.png"
-        alt=""
-      />
-      <p>In their Words:</p>
-      <h2>Colleagues Thoughts</h2>
+    <div class="section-content">
+      <div class="head-box">
+        <img
+          class="draw-line-thoughts"
+          src="/assets/Design material/00_Hand-drawn lines/04_Testimonials/Color option 1.png"
+          alt=""
+        />
+        <p>In their Words:</p>
+        <h2>Colleagues Thoughts</h2>
+      </div>
+      <div class="cards-box">
+        <app-colleague-card
+          *ngFor="let c of colleagues"
+          [colleagueCard]="c"
+        ></app-colleague-card>
+      </div>
     </div>
   </div>
 </section>

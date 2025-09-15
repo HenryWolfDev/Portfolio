@@ -1,0 +1,70 @@
+.colleague-card {
+  position: relative;
+  width: 51.2rem;
+  height: 32rem;
+  background-image: url("/assets/Design material/01_Background/Design Size Relation@3x/colleague-card.png");
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .text-box {
+    padding: 4rem;
+    p {
+      font-size: 1.8rem;
+    }
+  }
+
+  .bottom-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+    z-index: 10;
+    .name-box {
+      display: flex;
+      flex-direction: column;
+
+      .name {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      .title {
+        font-size: 1.6rem;
+      }
+    }
+    .link-box {
+      display: flex;
+      align-items: flex-end;
+      gap: 0.5rem;
+
+      cursor: pointer;
+      span {
+        font-size: 1.8rem;
+      }
+    }
+    .link-box:hover {
+      color: #f8f9fa;
+    }
+  }
+}
+.hover-image {
+  position: absolute;
+  width: 51.2rem;
+  height: 32rem;
+  z-index: -100;
+}
+.colleague-card:hover {
+  .text-box {
+    z-index: 10;
+  }
+  .hover-image {
+    z-index: 1;
+    opacity: 0.5;
+  }
+  .name-box {
+    z-index: 10;
+    color: #f8f9fa;
+  }
+}

@@ -40,5 +40,10 @@
       "title": "DABubble",
       "teaser": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
     }
+  },
+  "colleagues": {
+    "henry": {
+      "text": "Karl really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment"
+    }
   }
 }

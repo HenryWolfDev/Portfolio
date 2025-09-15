@@ -4,31 +4,73 @@ section {
   color: #0e1013;
   padding: 5rem;
 
-  .head-box {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+  .section-content {
+    .head-box {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
 
-    p {
-      font-size: 2rem;
-      text-align: end;
-      text-transform: uppercase;
+      p {
+        font-size: 2rem;
+        text-align: end;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        font-size: 6.4rem;
+        font-weight: 700;
+        text-align: end;
+      }
+
+      .draw-line-thoughts {
+        position: absolute;
+        width: 10rem;
+        height: 3.6rem;
+        right: 170px;
+        top: 0;
+        @include draw-animation(draw-thoughts-line, left, $seconds: 8s);
+      }
+    }
+    .cards-box {
+      position: relative;
+      min-height: 540px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    h2 {
-      font-size: 6.4rem;
-      font-weight: 700;
-      text-align: end;
-    }
-
-    .draw-line-thoughts {
+    .cards-box > app-colleague-card {
       position: absolute;
-      width: 10rem;
-      height: 3.6rem;
-      right: 170px;
-      top: 0;
-      @include draw-animation(draw-thoughts-line, left, $seconds: 8s);
+
+      transition: z-index 0s, transform 0.2s;
+    }
+
+    .cards-box > app-colleague-card {
+      position: absolute;
+    }
+
+    .cards-box > app-colleague-card:nth-child(1) {
+      z-index: 10;
+      bottom: 20%;
+      left: 15%;
+      transform: rotate(-5deg);
+    }
+    .cards-box > app-colleague-card:nth-child(2) {
+      z-index: 5;
+      bottom: 15%;
+    }
+    .cards-box > app-colleague-card:nth-child(3) {
+      z-index: 1;
+      bottom: 22%;
+      right: 20%;
+      transform: rotate(5deg);
+    }
+
+    /* Hover / Keyboard-Fokus bekommt "Top" */
+    .cards-box > app-colleague-card:hover,
+    .cards-box > app-colleague-card:focus-within {
+      z-index: 999;
     }
   }
 }
