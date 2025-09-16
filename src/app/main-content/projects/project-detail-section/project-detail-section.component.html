@@ -21,24 +21,18 @@
             </div>
             <div>
               <div class="description-box box">
-                <h3>Description</h3>
-                <p>
-                  Task manager inspired by the Kanban System. Create and
-                  organize tasks using drag and drop functions, assign users and
-                  categories.
-                </p>
+                <h3>{{ "projects.TITLE_DESCRIPTON" | translate }}</h3>
+                <p>{{ project.teaser_text | translate }}</p>
               </div>
               <div class="details-box box">
-                <h3>Implementations Details</h3>
-                <p>
-                  Short text that describes your role or the workflow for this
-                  specific project. Let a recruiter know more about your
-                  knowledge and ability to work independently or collaboratively
-                  in a structured way.
-                </p>
+                <h3>{{ "projects.TITLE_DETAILS" | translate }}</h3>
+                <p>{{ project.details | translate }}</p>
               </div>
               <div class="duration-bo box">
-                <span> <strong>Duration: </strong>5 weeks</span>
+                <span>
+                  <strong>{{ "projects.DURATION" | translate }}</strong
+                  >5 {{ "projects.WEEKS" | translate }}</span
+                >
               </div>
 
               <!-- #region shows-tech-icons -->
@@ -86,7 +80,13 @@
               [alt]="project.title"
             />
             <div class="button-box">
-              <button class="gitHub-btn">GitHub</button>
+              <button
+                type="button"
+                (click)="openBtnLink(project.gitHub_Link)"
+                class="gitHub-btn"
+              >
+                GitHub
+              </button>
               <button class="live-test-btn">Live Test</button>
             </div>
           </div>

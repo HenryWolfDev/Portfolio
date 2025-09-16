@@ -29,16 +29,23 @@
     "PROJECT_TEXT": "Ermutige Menschen, einen Blick auf deine Projekte zu werfen und mit ihnen zu interagieren.Hebe dabei deinen Ansatz hervor, responsive und benutzerfreundliche Projekte mit effizientem Code zu entwickeln."
   },
   "projects": {
+    "TITLE_DESCRIPTON": "Beschreibung",
+    "TITLE_DETAILS": "Technische Umsetzung",
+    "DURATION": "Dauer: ",
+    "WEEKS": "Wochen",
     "join": {
       "title": "Join",
+      "details": "Kurzer Text, der deine Rolle oder den Workflow für dieses spezielle Projekt beschreibt. Lass Recruiter:innen mehr über dein Wissen sowie deine Fähigkeit erfahren, strukturiert und entweder eigenständig oder gemeinsam im Team zu arbeiten.",
       "teaser": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Nutzer und Kategorien zu."
     },
     "elPolloLoco": {
       "title": "El Pollo Loco",
+      "details": "Kurzer Text, der deine Rolle oder den Workflow für dieses spezielle Projekt beschreibt. Lass Recruiter:innen mehr über dein Wissen sowie deine Fähigkeit erfahren, strukturiert und entweder eigenständig oder gemeinsam im Team zu arbeiten.",
       "teaser": "Jump-and-Run-Spiel mit objektorientiertem Ansatz. Hilf Pepe Münzen und Tabasco-Salsa zu sammeln, um gegen das verrückte Huhn zu kämpfen."
     },
     "dabubble": {
       "title": "DABubble",
+      "details": "Kurzer Text, der deine Rolle oder den Workflow für dieses spezielle Projekt beschreibt. Lass Recruiter:innen mehr über dein Wissen sowie deine Fähigkeit erfahren, strukturiert und entweder eigenständig oder gemeinsam im Team zu arbeiten.",
       "teaser": "Diese App ist ein Slack-Klon. Sie revolutioniert Team-Kommunikation und Zusammenarbeit mit intuitivem Interface, Echtzeit-Messaging und starker Kanalorganisation."
     }
   },

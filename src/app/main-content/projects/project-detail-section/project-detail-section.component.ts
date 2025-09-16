@@ -17,4 +17,8 @@ export class ProjectDetailSectionComponent {
     const slug = this.route.snapshot.paramMap.get('slug');
     return PROJECTS.find((p) => p.slug === slug);
   })();
+
+  openBtnLink(url: string) {
+    window.open(url, 'blank');
+  }
 }
