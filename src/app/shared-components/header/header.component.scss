@@ -1,11 +1,12 @@
 @use "../../../../public/styles/all-styles.scss" as *;
 
 :host {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 500;
   display: block;
   background-color: rgba(14, 16, 19, 0.5);
+  width: 100%;
 }
 
 header {

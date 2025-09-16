@@ -8,17 +8,7 @@ import { TranslatePipe } from '@ngx-translate/core';
   selector: 'app-project-detail-section',
   standalone: true,
   imports: [CommonModule, TranslatePipe],
-  template: ` <ng-container *ngIf="project; else notFound">
-      <section class="project-detail container">
-        <h1>{{ project.title | translate }}</h1>
-        <img [src]="project.image" [alt]="project.title" />
-        <p>{{ project.teaser_text | translate }}</p>
-        <!-- hier kannst du weitere Detailinfos rendern -->
-      </section>
-    </ng-container>
-    <ng-template #notFound>
-      <p>Project not found.</p>
-    </ng-template>`,
+  templateUrl: './project-detail-section.component.html',
   styleUrl: './project-detail-section.component.scss',
 })
 export class ProjectDetailSectionComponent {

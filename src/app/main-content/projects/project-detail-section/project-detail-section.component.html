@@ -1,1 +1,105 @@
-<p>project-detail-section works!</p>
+<ng-container *ngIf="project; else notFound">
+  <section>
+    <div class="container">
+      <div class="content">
+        <div class="go-back-box">
+          <img
+            class="draw-line-back-arrow"
+            src="/assets/Design material/00_Hand-drawn lines/03_Portfolio/Breadcrumbs/Breadcrumb arrow 1.png"
+            alt=""
+          />
+          <span>Go Back</span>
+        </div>
+        <div class="explain-content">
+          <!-- #region text-content -->
+          <div class="text-content">
+            <div class="title">
+              <h1>{{ project.title | translate }}</h1>
+            </div>
+            <div>
+              <div class="description-box box">
+                <h3>Description</h3>
+                <p>
+                  Task manager inspired by the Kanban System. Create and
+                  organize tasks using drag and drop functions, assign users and
+                  categories.
+                </p>
+              </div>
+              <div class="details-box box">
+                <h3>Implementations Details</h3>
+                <p>
+                  Short text that describes your role or the workflow for this
+                  specific project. Let a recruiter know more about your
+                  knowledge and ability to work independently or collaboratively
+                  in a structured way.
+                </p>
+              </div>
+              <div class="duration-bo box">
+                <span> <strong>Duration: </strong>5 weeks</span>
+              </div>
+              <div class="tech-icons-box">
+                <img
+                  class="icon"
+                  src="/assets/icons/skill-icons/css-icon.png"
+                  alt=""
+                />
+                <span>CSS</span>
+                <img
+                  class="icon"
+                  src="/assets/icons/skill-icons/html-icon.png"
+                  alt=""
+                />
+                <span>HTML</span>
+                <img
+                  class="icon"
+                  src="/assets/icons/skill-icons/firebase-icon.png"
+                  alt=""
+                />
+                <span>Firebase</span>
+                <img
+                  class="icon"
+                  src="/assets/icons/skill-icons/angular-icon.png"
+                  alt=""
+                />
+                <span>Angular</span>
+                <img
+                  class="icon"
+                  src="/assets/icons/skill-icons/typeScript-icon.png"
+                  alt=""
+                />
+                <span>TypeScript</span>
+              </div>
+            </div>
+          </div>
+          <!-- #endregion text-content -->
+
+          <!-- #region image-content -->
+          <div class="image-content">
+            <img
+              class="project-image"
+              [src]="project.image"
+              [alt]="project.title"
+            />
+            <div class="button-box">
+              <button class="gitHub-btn">GitHub</button>
+              <button class="live-test-btn">Live Test</button>
+            </div>
+          </div>
+          <!-- #endregion image-content -->
+        </div>
+        <div class="go-next-box">
+          <span>Next Project</span>
+          <img
+            class="draw-line-next-arrow"
+            src="/assets/Design material/00_Hand-drawn lines/03_Portfolio/Breadcrumbs/Next project arrow 1.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</ng-container>
+
+<ng-template #notFound>
+  <p>Project not found.</p>
+</ng-template>
