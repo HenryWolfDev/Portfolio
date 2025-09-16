@@ -1,7 +1,8 @@
-<ng-container *ngIf="project; else notFound">
+<ng-container *ngIf="project">
   <section>
     <div class="container">
       <div class="content">
+        <!--#region Routes to previous project -->
         <div class="go-back-box">
           <img
             class="draw-line-back-arrow"
@@ -10,8 +11,10 @@
           />
           <span>Go Back</span>
         </div>
+        <!--#endregion Routes to previous project -->
+
+        <!-- #region information-content -->
         <div class="explain-content">
-          <!-- #region text-content -->
           <div class="text-content">
             <div class="title">
               <h1>{{ project.title | translate }}</h1>
@@ -37,6 +40,8 @@
               <div class="duration-bo box">
                 <span> <strong>Duration: </strong>5 weeks</span>
               </div>
+
+              <!-- #region shows-tech-icons -->
               <div class="tech-icons-box">
                 <img
                   class="icon"
@@ -69,9 +74,9 @@
                 />
                 <span>TypeScript</span>
               </div>
+              <!-- #endregion shows-tech-icons -->
             </div>
           </div>
-          <!-- #endregion text-content -->
 
           <!-- #region image-content -->
           <div class="image-content">
@@ -87,6 +92,9 @@
           </div>
           <!-- #endregion image-content -->
         </div>
+        <!-- #endregion information-content -->
+
+        <!-- Routes to next Project -->
         <div class="go-next-box">
           <span>Next Project</span>
           <img
@@ -99,7 +107,3 @@
     </div>
   </section>
 </ng-container>
-
-<ng-template #notFound>
-  <p>Project not found.</p>
-</ng-template>

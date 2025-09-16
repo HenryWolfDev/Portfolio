@@ -88,7 +88,7 @@ section {
         gap: 4rem;
 
         .skill-icon-box {
-          @include display-flex-col-c-c();
+          @include display-flex($dir: column, $jc: center, $ai: center);
           gap: 1rem;
           font-size: 1.8rem;
           text-align: center;
