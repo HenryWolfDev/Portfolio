@@ -71,10 +71,9 @@ section {
       transform: rotate(5deg);
     }
 
-    /* Hover / Keyboard-Fokus bekommt "Top" */
     .cards-box > app-colleague-card:hover,
     .cards-box > app-colleague-card:focus-within {
-      z-index: 999;
+      z-index: 100;
     }
   }
 }

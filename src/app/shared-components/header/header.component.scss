@@ -3,14 +3,14 @@
 :host {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 500;
   display: block;
   background-color: rgba(14, 16, 19, 0.5);
 }
 
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 2rem 2rem;
 
