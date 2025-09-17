@@ -15,10 +15,9 @@
           {{ "PROJECTS_SECTION.PROJECT_TEXT" | translate }}
         </p>
       </div>
-      <app-project-card
-        *ngFor="let p of projects"
-        [project]="p"
-      ></app-project-card>
+      @for(p of projects; track projects){
+      <app-project-card [project]="p"></app-project-card>
+      }
     </div>
   </div>
 </section>

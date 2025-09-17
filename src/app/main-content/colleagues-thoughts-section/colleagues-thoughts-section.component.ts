@@ -1,11 +1,11 @@
-import { CommonModule, NgFor } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ColleagueCardComponent } from './colleague-card/colleague-card.component';
 import { COLLEAGUE_MATES } from './colleague.data';
 
 @Component({
   selector: 'app-colleagues-thoughts-section',
-  imports: [NgFor, CommonModule, ColleagueCardComponent],
+  imports: [CommonModule, ColleagueCardComponent],
   templateUrl: './colleagues-thoughts-section.component.html',
   styleUrl: './colleagues-thoughts-section.component.scss',
 })

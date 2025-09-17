@@ -8,7 +8,6 @@ export const PROJECTS: Project[] = [
     details: 'projects.join.details',
     teaser_text: 'projects.join.teaser',
     image: '/assets/Design material/05_Projects_Images/Join.png',
-    featured: true,
   },
   {
     slug: 'el-pollo-loco',

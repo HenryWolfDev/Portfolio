@@ -9,7 +9,6 @@ export interface Project {
   details: string;
   teaser_text: string;
   image: string;
-  featured?: boolean;
 }
 
 @Component({
