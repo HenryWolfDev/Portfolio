@@ -27,31 +27,80 @@
         </div>
       </div>
       <div class="contact-formular-box">
-        <div class="formular-data-box">
-          <div class="name-box data-box">
-            <span class="question-text">What's your name?</span>
-            <span class="answer-text">Your name goes here</span>
-          </div>
-          <div class="email-box data-box">
-            <span class="question-text">What's your email?</span>
-            <span class="answer-text">youremail&#64;email.com</span>
-          </div>
-          <div class="message-box data-box">
-            <span class="question-text">How can I help you?</span>
-            <span class="answer-text">Hello Henry, I am interested in...</span>
-          </div>
-        </div>
+        <!-- #region Formular -->
 
-        <div class="read-policy-box">
-          <img class="check-box" src="/assets/icons/check-mark.png" alt="" />
-          <span class="policy-text"
-            >I've read the <span class="policy">privacy policy</span> and agree
-            to the processing of my data as outlined.</span
-          >
-        </div>
-        <div class="select-formular-box">
-          <button class="send-btn">Send</button>
-        </div>
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+          <div>
+            <div class="name-box data-box">
+              <span class="question-text">What's your name?</span>
+              <input
+                [(ngModel)]="contactData.name"
+                class="answer-text"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name goes here"
+                required
+              />
+            </div>
+            <div class="email-box data-box">
+              <span class="question-text">What's your email?</span>
+              <input
+                #email="ngModel"
+                [(ngModel)]="contactData.email"
+                class="answer-text"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="youremail&#64;email.com"
+                required
+                pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+              />
+            </div>
+            <div class="message-box data-box">
+              <span class="question-text">How can I help you?</span>
+
+              <textarea
+                #message="ngModel"
+                [(ngModel)]="contactData.message"
+                class="message-text"
+                name="message"
+                id="message"
+                placeholder="Hello Henry, I am interested in..."
+                required
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="read-policy-box">
+            <input
+              class="check-box"
+              type="checkbox"
+              id="privacyPolicy"
+              name="privacyPolicy"
+              [(ngModel)]="contactData.acceptedPolicy"
+              required
+            />
+
+            <span class="policy-text"
+              >I've read the <span class="policy">privacy policy</span> and
+              agree to the processing of my data as outlined.</span
+            >
+          </div>
+          <div class="select-btn-box">
+            <span
+              class="error-text"
+              *ngIf="contactForm.invalid && contactForm.submitted"
+              style="color: red"
+            >
+              Please fill out all required fields.
+            </span>
+
+            <button class="send-btn" type="submit" value="Submit">Send</button>
+          </div>
+        </form>
+
+        <!-- #endregion Formular -->
       </div>
     </div>
   </div>

@@ -5,7 +5,7 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  background-color: #f8f9fa;
+  background-color: var(--color-white);
 
   .contact-content {
     display: flex;
@@ -48,64 +48,90 @@ section {
     }
   }
   .contact-formular-box {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
     padding: 4rem 0;
     width: 100%;
     max-width: 48rem;
-    .formular-data-box {
+    form {
       display: flex;
       flex-direction: column;
+      gap: 1.5rem;
 
+      input,
+      textarea {
+        padding: 0.5rem 0;
+        border-style: none;
+        background-color: rgba(14, 16, 19, 0);
+        color: var(--color-white);
+        font-size: 1.8rem;
+      }
+
+      // each input box (name, mail, message)
       .data-box {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        gap: 1rem;
         width: 100%;
-
         height: 6.1rem;
         padding: 1.5rem 0;
         border-bottom: 0.1rem solid #f7c518;
-        cursor: pointer;
+
         .question-text {
           font-size: 2.4rem;
         }
 
-        .answer-text {
-          font-size: 1.8rem;
+        textarea {
+          width: 100%;
+          resize: none;
+          overflow: auto;
+          box-sizing: border-box;
         }
       }
-    }
-    .read-policy-box {
-      display: flex;
-      align-items: start;
-      gap: 1rem;
-      font-size: 1.5rem;
 
-      .policy-text {
-        .policy {
-          color: #3355ff;
-        }
-        .policy:hover {
-          color: #f7c518;
+      .data-box:hover {
+        .question-text {
+          color: var(--color-red);
         }
       }
-      .check-box {
-        cursor: pointer;
+
+      // style for check-box policy
+      .read-policy-box {
+        display: flex;
+        align-items: start;
+        gap: 1rem;
+        font-size: 1.5rem;
+
+        .policy-text {
+          .policy {
+            color: #3355ff;
+          }
+          .policy:hover {
+            color: #f7c518;
+          }
+        }
+        .check-box {
+          cursor: pointer;
+        }
       }
-    }
-    .select-formular-box {
-      display: flex;
-      justify-content: end;
-      .send-btn {
-        font-size: 1.8rem;
-        @include press-button(
-          $bg-color: #0e1013,
-          $bs-color: #f8f9fa,
-          $color: #f8f9fa,
-          $b-color: #f8f9fa
-        );
+      // style for send btn
+      .select-btn-box {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 1rem;
+
+        .error-text {
+          font-size: 1.6rem;
+        }
+        .send-btn {
+          font-size: 1.8rem;
+          @include press-button(
+            $bg-color: #0e1013,
+            $bs-color: #f8f9fa,
+            $color: #f8f9fa,
+            $b-color: #f8f9fa
+          );
+        }
       }
     }
   }
