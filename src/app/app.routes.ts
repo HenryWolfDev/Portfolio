@@ -5,6 +5,14 @@ export const routes: Routes = [
   { path: '', component: MainContentComponent },
 
   {
+    path: 'legal-notice',
+    loadComponent: () =>
+      import('./legal-notice/legal-notice.component').then(
+        (m) => m.LegalNoticeComponent
+      ),
+  },
+
+  {
     path: 'projects/:slug',
     loadComponent: () =>
       import(
