@@ -1,6 +1,4 @@
-import type { Project } from './project-card/project-card.component';
-
-export const PROJECTS: Project[] = [
+export const PROJECTS = [
   {
     slug: 'join',
     title: 'Join',

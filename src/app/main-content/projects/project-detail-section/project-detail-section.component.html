@@ -9,7 +9,9 @@
             src="/assets/Design material/00_Hand-drawn lines/03_Portfolio/Breadcrumbs/Breadcrumb arrow 1.png"
             alt=""
           />
-          <span [routerLink]="['/']" fragment="projects-section">Go Back</span>
+          <span [routerLink]="['/']" fragment="projects-section">{{
+            "projects.GO_BACK" | translate
+          }}</span>
         </div>
         <!--#endregion Routes to previous project -->
 
@@ -96,7 +98,7 @@
 
         <!-- Routes to next Project -->
         <div class="go-next-box" [routerLink]="['/projects', nextSlug]">
-          <span>Next Project</span>
+          <span>{{ "projects.NEXT_PROJECT" | translate }}</span>
           <img
             class="draw-line-next-arrow"
             src="/assets/Design material/00_Hand-drawn lines/03_Portfolio/Breadcrumbs/Next project arrow 1.png"

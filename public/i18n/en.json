@@ -32,6 +32,8 @@
     "TITLE_DETAILS": "Implementations Details",
     "DURATION": "Duration: ",
     "WEEKS": "weeks",
+    "GO_BACK": "Go back",
+    "NEXT_PROJECT": "Next Project",
     "join": {
       "title": "Join",
       "details": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.",
