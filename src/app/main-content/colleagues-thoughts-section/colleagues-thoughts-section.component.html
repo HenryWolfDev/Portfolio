@@ -11,7 +11,7 @@
         <h2>Colleagues Thoughts</h2>
       </div>
       <div class="cards-box">
-        @for(c of colleagues; track colleagues){
+        @for(c of colleagues; track c.slug){
         <app-colleague-card [colleagueCard]="c"></app-colleague-card>
         }
       </div>

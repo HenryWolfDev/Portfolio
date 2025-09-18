@@ -15,7 +15,7 @@
           {{ "PROJECTS_SECTION.PROJECT_TEXT" | translate }}
         </p>
       </div>
-      @for(p of projects; track projects){
+      @for(p of projects; track p.slug){
       <app-project-card [project]="p"></app-project-card>
       }
     </div>
