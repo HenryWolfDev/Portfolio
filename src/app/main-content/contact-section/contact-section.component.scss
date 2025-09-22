@@ -151,4 +151,12 @@ section {
       }
     }
   }
+  @include mobile {
+    .contact-content {
+      .contact-formular-box {
+        width: 100%;
+        max-width: 30rem;
+      }
+    }
+  }
 }

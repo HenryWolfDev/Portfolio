@@ -7,7 +7,8 @@
 }
 
 .projects-info-box {
-  width: 56rem;
+  width: 100%;
+  max-width: 56rem;
   height: 51.4rem;
   display: flex;
   flex-direction: column;
@@ -46,5 +47,22 @@
 @media (max-width: 1400px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+}
+@include mobile {
+  .PROJECTS_SECTION {
+    .grid {
+      .projects-info-box {
+        .my-craft {
+          font-size: 1.8rem;
+        }
+        .projects {
+          font-size: 4rem;
+        }
+        .p-text {
+          font-size: 1.6rem;
+        }
+      }
+    }
   }
 }

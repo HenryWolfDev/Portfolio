@@ -244,9 +244,20 @@ section {
       }
     }
   }
+}
 
-  @include tablet {
+@include tablet {
+  .SKILL_SET_SECTION {
+    height: 130vh;
     .content {
+      .introduction-box {
+        .skill-ripped-paper {
+          width: 35.6rem;
+          height: 24.4rem;
+          background-image: url("/assets/Design material/02_Ripped Paper/1C. Alternative 1 mobile.png");
+          background-size: cover;
+        }
+      }
       .skill-icons-box {
         .skill-icons {
           grid-template-columns: repeat((3, 100px));
@@ -262,6 +273,33 @@ section {
           top: auto;
           right: auto;
           left: 45%;
+          bottom: -100px;
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  .SKILL_SET_SECTION {
+    height: 180vh;
+    .content {
+      .introduction-box {
+        .skill-ripped-paper {
+          width: 30.6rem;
+          height: 24.4rem;
+        }
+      }
+      .skill-icons-box {
+        .skill-icons {
+          grid-template-columns: repeat((3, 80px));
+        }
+        .peel-off-box {
+          left: 32.5%;
+          bottom: -100px;
+        }
+        .peel-off-box-overlay {
+          left: 32.5%;
           bottom: -100px;
         }
       }

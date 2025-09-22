@@ -1,7 +1,8 @@
 @use "../../../../../public/styles/responsive-points.scss" as *;
 .colleague-card {
   position: relative;
-  width: 51.2rem;
+  width: 100%;
+  max-width: 51.2rem;
   height: 32rem;
   background-image: url("/assets/Design material/01_Background/Design Size Relation@3x/colleague-card.png");
   background-repeat: no-repeat;
@@ -52,7 +53,8 @@
 }
 .hover-image {
   position: absolute;
-  width: 51.2rem;
+  width: 100%;
+  max-width: 51.2rem;
   height: 32rem;
   z-index: -100;
 }
@@ -82,5 +84,19 @@
 
   .hover-image {
     width: 100%;
+  }
+}
+
+@include mobile {
+  .colleague-card {
+    width: 36rem;
+
+    background-image: url("/assets/Design material/01_Background/Design Size Relation@3x/colleague-card_mobile_1.png");
+
+    .text-box {
+      p {
+        font-size: 1.6rem;
+      }
+    }
   }
 }

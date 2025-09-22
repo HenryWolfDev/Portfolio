@@ -66,17 +66,6 @@ section {
       }
     }
 
-    @include notebook {
-      .image-box {
-        display: none;
-      }
-      .image-box-2 {
-        display: block;
-        bottom: -150px;
-        left: 50px;
-      }
-    }
-
     .title-box {
       width: 100%;
       max-width: 95rem;
@@ -158,12 +147,6 @@ section {
       }
     }
 
-    @include mobile {
-      .title-word {
-        font-size: 3rem;
-      }
-    }
-
     .social-icon-box {
       position: absolute;
       bottom: 15%;
@@ -191,7 +174,30 @@ section {
       }
     }
 
+    @include notebook {
+      .image-box {
+        display: none;
+      }
+      .image-box-2 {
+        display: block;
+        bottom: -150px;
+        left: 50px;
+      }
+    }
+
     @include mobile {
+      .title-box {
+        width: 100%;
+        max-width: 25rem;
+
+        .title-word {
+          font-size: 4.5rem;
+        }
+      }
+      .image-box-2 {
+        bottom: -50px;
+        left: 5%;
+      }
       .social-icon-box {
         display: none;
       }

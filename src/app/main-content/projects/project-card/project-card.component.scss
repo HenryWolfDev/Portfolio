@@ -13,7 +13,7 @@
 .image-box {
   overflow: hidden;
   position: relative;
-  width: 56rem;
+  width: 100%;
   height: 39.8rem;
   border-radius: 0.75rem;
   clip-path: inset(0 round 1.75rem);
@@ -96,5 +96,20 @@
   .project-details-mobile {
     opacity: 1;
     align-self: flex-end;
+  }
+}
+
+@include mobile {
+  .card {
+    width: 100%;
+    max-width: 30rem;
+  }
+
+  .card_title {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .teaser_text {
+    font-size: 1.6rem;
   }
 }
