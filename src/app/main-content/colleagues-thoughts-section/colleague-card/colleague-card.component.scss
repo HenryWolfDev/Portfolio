@@ -1,3 +1,4 @@
+@use "../../../../../public/styles/responsive-points.scss" as *;
 .colleague-card {
   position: relative;
   width: 51.2rem;
@@ -66,5 +67,20 @@
   .name-box {
     z-index: 10;
     color: #f8f9fa;
+  }
+}
+
+@include tablet {
+  .colleague-card {
+    width: 41rem;
+    height: 40rem;
+    background-image: url("/assets/Design material/01_Background/Design Size Relation@3x/colleague-card_mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+  }
+
+  .hover-image {
+    width: 100%;
   }
 }
