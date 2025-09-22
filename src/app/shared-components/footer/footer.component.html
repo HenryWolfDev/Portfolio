@@ -10,8 +10,10 @@
       </div>
       <div class="footer-links-box">
         <ul>
+          <!-- #region Legal Notice structure -->
           <li>
             <a
+              class="legal-notice"
               [routerLink]="['legal-notice']"
               href=""
               (mouseenter)="mouseEntered('legal-notice')"
@@ -29,17 +31,48 @@
               (animationend)="onAnimationEnd($event, 'legal-notice')"
             />
           </li>
-          <li>
-            <a href="https://github.com/HenryWolfDev" target="_blank">Github</a>
-          </li>
+          <!-- #endregion Legal Notice structure -->
+          <!-- #region GitHub Icon Structure -->
           <li>
             <a
+              class="footer-link"
+              href="https://github.com/HenryWolfDev"
+              target="_blank"
+              (mouseenter)="mouseEntered('github')"
+              (mouseleave)="mouseLeaved('github')"
+              >Github
+              <img
+                class="footer-link-icon"
+                src="/assets/icons/git-hub.png"
+                alt=""
+            /></a>
+          </li>
+          <!-- #endregion GitHub Icon Structure -->
+          <!-- #region Linkedin icon structure -->
+          <li>
+            <a
+              class="footer-link"
               href="https://www.linkedin.com/in/henry-wolf-261baa383/"
               target="_blank"
-              >LinkedIn</a
-            >
+              (mouseenter)="mouseEntered('LinkedIn')"
+              (mouseleave)="mouseLeaved('LinkedIn')"
+              >LinkedIn
+              <img class="footer-link-icon" src="/assets/icons/in.png" alt=""
+            /></a>
           </li>
-          <li><a href="mailto:HWolf.binz@gmail.com">Email</a></li>
+          <!-- #endregion Linkedin icon structure -->
+          <!-- #region Mail icon structure -->
+          <li>
+            <a
+              class="footer-link"
+              href="mailto:HWolf.binz@gmail.com"
+              (mouseenter)="mouseEntered('Email')"
+              (mouseleave)="mouseLeaved('Email')"
+              >Email
+              <img class="footer-link-icon" src="/assets/icons/mail.png" alt=""
+            /></a>
+          </li>
+          <!-- #endregion Mail icon structure -->
         </ul>
       </div>
     </div>
