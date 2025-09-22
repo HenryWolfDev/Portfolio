@@ -1,161 +1,165 @@
 <section class="SKILL_SET_SECTION" id="skill-set-section">
-  <div class="content">
-    <div class="introduction-box">
-      <div class="text-left-box">
-        <span class="MY_STACK_TEXT">
-          {{ "SKILL_SET_SECTION.MY_STACK_TEXT" | translate }}
-        </span>
-        <h2 class="skill-set">Skill set</h2>
-        <img
-          class="skill-draw-line"
-          src="/assets/Design material/00_Hand-drawn lines/02_Skills/Color option 1.png"
-          alt=""
-        />
-      </div>
-      <div class="skill-ripped-paper">
-        <p>
-          {{ "SKILL_SET_SECTION.SKILL_INTRODUCTION_TEXT" | translate }}
-        </p>
-      </div>
-    </div>
-
-    <!-- #region skill-icon-box -->
-    <div class="skill-icons-box">
-      <div class="skill-icons">
-        <div class="skill-icon-box">
+  <div class="container">
+    <div class="content">
+      <div class="introduction-box">
+        <div class="text-left-box">
+          <span class="MY_STACK_TEXT">
+            {{ "SKILL_SET_SECTION.MY_STACK_TEXT" | translate }}
+          </span>
+          <h2 class="skill-set">Skill set</h2>
           <img
-            class="skill-icon"
-            src="/assets/icons/skill-icons/html-icon.png"
+            class="skill-draw-line"
+            src="/assets/Design material/00_Hand-drawn lines/02_Skills/Color option 1.png"
             alt=""
           />
-          <span>HTML</span>
         </div>
-
-        <div class="skill-icon-box">
-          <img
-            class="skill-icon"
-            src="/assets/icons/skill-icons/css-icon.png"
-            alt=""
-          />
-          <span>CSS</span>
-        </div>
-
-        <div class="skill-icon-box">
-          <img
-            class="skill-icon"
-            src="/assets/icons/skill-icons/javaScript-icon.png"
-            alt=""
-          />
-          <span>JavaScript</span>
-        </div>
-
-        <div class="skill-icon-box">
-          <img
-            class="skill-icon"
-            src="/assets/icons/skill-icons/typeScript-icon.png"
-            alt=""
-          />
-          <span>TypeScript</span>
-        </div>
-
-        <div class="skill-icon-box">
-          <img
-            class="skill-icon"
-            src="/assets/icons/skill-icons/angular-icon.png"
-            alt=""
-          />
-          <span>Angular</span>
-        </div>
-
-        <div class="skill-icon-box">
-          <img
-            class="skill-icon"
-            src="/assets/icons/skill-icons/firebase-icon.png"
-            alt=""
-          />
-          <span>Firebase</span>
-        </div>
-
-        <div class="skill-icon-box">
-          <img
-            class="skill-icon"
-            src="/assets/icons/skill-icons/git-icon.png"
-            alt=""
-          />
-          <span>GitHub</span>
-        </div>
-
-        <div class="skill-icon-box">
-          <img
-            class="skill-icon"
-            src="/assets/icons/skill-icons/restAPI-icon.png"
-            alt=""
-          />
-          <span>Rest-API</span>
-        </div>
-
-        <div class="skill-icon-box">
-          <img
-            class="skill-icon"
-            src="/assets/icons/skill-icons/scrum-icon.png"
-            alt=""
-          />
-          <span>Scrum</span>
-        </div>
-
-        <div class="skill-icon-box">
-          <img
-            class="skill-icon"
-            src="/assets/icons/skill-icons/material-design-icon.png"
-            alt=""
-          />
-          <span>Material Design</span>
+        <div class="skill-ripped-paper">
+          <p>
+            {{ "SKILL_SET_SECTION.SKILL_INTRODUCTION_TEXT" | translate }}
+          </p>
         </div>
       </div>
-    </div>
-    <!-- #endregion skill-icon-box -->
-    <div
-      class="peel-off-box"
-      (click)="togglePeelBox()"
-      [class.hide]="hideFirtLayer"
-    >
-      <img
-        class="peel-off"
-        src="/assets/Design material/03_Stickers/01_Skills - Peel off/Default.png"
-        alt=""
-      />
 
-      <img
-        class="arrow-icon"
-        src="/assets/Design material/03_Stickers/Arrow.png"
-        alt=""
-      />
-      <span>{{ "SKILL_SET_SECTION.PEEL_TEXT" | translate }}</span>
-    </div>
-    <div
-      class="peel-off-box-overlay"
-      (click)="togglePeelBox()"
-      [class.show]="peelOffVisible"
-    >
-      <img
-        class="peel-off"
-        src="/assets/Design material/03_Stickers/01_Skills - Peel off/Final.png"
-        alt=""
-      />
-      <span>{{ "SKILL_SET_SECTION.DIVING_TEXT" | translate }}</span>
+      <!-- #region skill-icon-box -->
+      <div class="skill-icons-box">
+        <div class="skill-icons">
+          <div class="skill-icon-box">
+            <img
+              class="skill-icon"
+              src="/assets/icons/skill-icons/html-icon.png"
+              alt=""
+            />
+            <span>HTML</span>
+          </div>
 
-      <div class="diving-icons-box">
-        <img
-          class="diving-icon"
-          src="/assets/icons/skill-icons/react-icon.png"
-          alt=""
-        />
-        <img
-          class="diving-icon"
-          src="/assets/icons/skill-icons/vue-icon.png"
-          alt=""
-        />
+          <div class="skill-icon-box">
+            <img
+              class="skill-icon"
+              src="/assets/icons/skill-icons/css-icon.png"
+              alt=""
+            />
+            <span>CSS</span>
+          </div>
+
+          <div class="skill-icon-box">
+            <img
+              class="skill-icon"
+              src="/assets/icons/skill-icons/javaScript-icon.png"
+              alt=""
+            />
+            <span>JavaScript</span>
+          </div>
+
+          <div class="skill-icon-box">
+            <img
+              class="skill-icon"
+              src="/assets/icons/skill-icons/typeScript-icon.png"
+              alt=""
+            />
+            <span>TypeScript</span>
+          </div>
+
+          <div class="skill-icon-box">
+            <img
+              class="skill-icon"
+              src="/assets/icons/skill-icons/angular-icon.png"
+              alt=""
+            />
+            <span>Angular</span>
+          </div>
+
+          <div class="skill-icon-box">
+            <img
+              class="skill-icon"
+              src="/assets/icons/skill-icons/firebase-icon.png"
+              alt=""
+            />
+            <span>Firebase</span>
+          </div>
+
+          <div class="skill-icon-box">
+            <img
+              class="skill-icon"
+              src="/assets/icons/skill-icons/git-icon.png"
+              alt=""
+            />
+            <span>GitHub</span>
+          </div>
+
+          <div class="skill-icon-box">
+            <img
+              class="skill-icon"
+              src="/assets/icons/skill-icons/restAPI-icon.png"
+              alt=""
+            />
+            <span>Rest-API</span>
+          </div>
+
+          <div class="skill-icon-box">
+            <img
+              class="skill-icon"
+              src="/assets/icons/skill-icons/scrum-icon.png"
+              alt=""
+            />
+            <span>Scrum</span>
+          </div>
+
+          <div class="skill-icon-box">
+            <img
+              class="skill-icon"
+              src="/assets/icons/skill-icons/material-design-icon.png"
+              alt=""
+            />
+            <span>Material Design</span>
+          </div>
+        </div>
+
+        <div
+          class="peel-off-box"
+          (click)="togglePeelBox()"
+          [class.hide]="hideFirtLayer"
+        >
+          <img
+            class="peel-off"
+            src="/assets/Design material/03_Stickers/01_Skills - Peel off/default_2.png"
+            alt=""
+          />
+
+          <img
+            class="arrow-icon"
+            src="/assets/Design material/03_Stickers/Arrow.png"
+            alt=""
+          />
+          <span>{{ "SKILL_SET_SECTION.PEEL_TEXT" | translate }}</span>
+        </div>
+
+        <div
+          class="peel-off-box-overlay"
+          (click)="togglePeelBox()"
+          [class.show]="peelOffVisible"
+        >
+          <img
+            class="peel-off"
+            src="/assets/Design material/03_Stickers/01_Skills - Peel off/final_2.png"
+            alt=""
+          />
+          <span>{{ "SKILL_SET_SECTION.DIVING_TEXT" | translate }}</span>
+
+          <div class="diving-icons-box">
+            <img
+              class="diving-icon"
+              src="/assets/icons/skill-icons/react-icon.png"
+              alt=""
+            />
+            <img
+              class="diving-icon"
+              src="/assets/icons/skill-icons/vue-icon.png"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
+      <!-- #endregion skill-icon-box -->
     </div>
   </div>
 </section>

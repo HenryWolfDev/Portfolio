@@ -46,7 +46,7 @@ export interface ColleagueCard {
     </div>
     <img
       class="hover-image"
-      src="/assets/Design material/03_Stickers/02_Testimonials/Color option 1/Hover.png"
+      src="/assets/Design material/03_Stickers/02_Testimonials/Color option 1/hover_2.png"
       alt=""
     />
   </div>`,

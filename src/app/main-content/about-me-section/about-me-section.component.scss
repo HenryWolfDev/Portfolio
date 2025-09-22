@@ -1,4 +1,5 @@
 @use "../../../../public/styles/all-styles.scss" as *;
+@use "../../../../public/styles/responsive-points.scss" as *;
 
 section {
   background-color: #f8f9f8;
@@ -119,5 +120,11 @@ section {
     .lets-talk-btn:hover {
       color: #f8f9f8;
     }
+  }
+}
+
+@include notebook {
+  section {
+    flex-direction: column;
   }
 }

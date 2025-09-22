@@ -1,11 +1,12 @@
 @use "../../../../../public/styles/all-styles.scss" as *;
+@use "../../../../../public/styles/responsive-points.scss" as *;
 
 .card {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 56rem;
-  height: 51.4rem;
+  width: 100%;
+  max-width: 56rem;
   padding: 1rem;
   color: #0e1013;
 }
@@ -76,4 +77,24 @@
 }
 .teaser_text {
   font-size: 1.8rem;
+}
+
+.project-details-mobile {
+  opacity: 0;
+  width: 14.5rem;
+  height: 4rem;
+  font-size: 1.8rem;
+  @include press-button(
+    $bg-color: rgba(248, 249, 248, 0),
+    $bs-color: var(--color-dark),
+    $color: var(--color-dark),
+    $b-color: var(--color-dark)
+  );
+}
+
+@include notebook {
+  .project-details-mobile {
+    opacity: 1;
+    align-self: flex-end;
+  }
 }

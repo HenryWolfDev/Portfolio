@@ -10,4 +10,11 @@
   </div>
   <h3 class="card_title">{{ project().title | translate }}</h3>
   <p class="teaser_text">{{ project().teaser_text | translate }}</p>
+
+  <button
+    class="project-details-mobile"
+    [routerLink]="['/projects', project().slug]"
+  >
+    Project details
+  </button>
 </div>

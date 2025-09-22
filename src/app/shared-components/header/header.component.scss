@@ -1,183 +1,182 @@
 @use "../../../../public/styles/all-styles.scss" as *;
 
-:host {
+header {
   position: fixed;
   top: 0;
   z-index: 500;
-  display: block;
   background-color: rgba(14, 16, 19, 0.5);
   width: 100%;
-}
+  height: auto;
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 2rem;
-
-  .logo-box {
-    .logo_1 {
-      opacity: 1;
-      transition: opacity 0.3s ease-in-out;
-    }
-
-    .logo_2 {
-      position: absolute;
-      left: 0;
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
-    }
-    &:hover {
-      .logo_1 {
-        opacity: 0;
-      }
-      .logo_2 {
-        opacity: 1;
-      }
-    }
-  }
-
-  a {
-    font-size: 1.8rem;
-    color: #f8f9fa;
-  }
-
-  // #region Header-links-style
-  .about-me-link {
-    .about-me-draw-line {
-      @include draw-image(10.5rem, 4.2rem, -7px, -10px);
-    }
-
-    .draw-forward {
-      opacity: 1;
-      @include draw-animation-once(draw-line, bottom, 2.5s, true);
-    }
-
-    .draw-reverse {
-      opacity: 1;
-      @include draw-animation-reverse-once(draw-line-reverse, bottom, 0.25s);
-    }
-  }
-
-  .skills-link {
-    .skill-draw-line {
-      @include draw-image(6.8rem, 4.2rem, -10px, -10px);
-    }
-
-    .draw-forward {
-      opacity: 1;
-      @include draw-animation-once(draw-skill-line, right, 2.5s, true);
-    }
-
-    .draw-reverse {
-      opacity: 1;
-      @include draw-animation-reverse-once(
-        draw-skill-line-reverse,
-        right,
-        0.25s
-      );
-    }
-  }
-
-  .projects-link {
-    .project-draw-line {
-      @include draw-image(9rem, 4.2rem, -10px, -10px);
-    }
-    .draw-forward {
-      opacity: 1;
-      @include draw-animation-once(draw-skill-line, right, 2.5s, true);
-    }
-
-    .draw-reverse {
-      opacity: 1;
-      @include draw-animation-reverse-once(
-        draw-skill-line-reverse,
-        right,
-        0.25s
-      );
-    }
-  }
-
-  .contact-link {
-    .contact-draw-line {
-      @include draw-image(10.5rem, 4.2rem, -20px, -10px);
-    }
-    .draw-forward {
-      opacity: 1;
-      @include draw-animation-once(draw-skill-line, right, 2.5s, true);
-    }
-
-    .draw-reverse {
-      opacity: 1;
-      @include draw-animation-reverse-once(
-        draw-skill-line-reverse,
-        right,
-        0.25s
-      );
-    }
-  }
-
-  // #endregion Header-links-style
-
-  // language-switch-style
-  .language-switch-box {
+  .content {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 1.5rem;
-    font-size: 1.6rem;
-
-    span {
-      cursor: pointer;
-      transition: color 0.3s ease;
-
-      .toggle-line {
-        position: absolute;
-        width: 3.2rem;
-        height: 3.2rem;
-        left: 50%;
-        bottom: -7px;
-        transform: translateX(-50%);
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        pointer-events: none;
-      }
-
-      &.inactive:hover .toggle-line {
+    padding: 2rem 2rem;
+    .logo-box {
+      .logo_1 {
         opacity: 1;
-        @include draw-animation-once(draw-swicht-line, left, 2.5s, true);
+        transition: opacity 0.3s ease-in-out;
       }
 
-      &.active {
-        color: red;
-        pointer-events: none;
+      .logo_2 {
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+      &:hover {
+        .logo_1 {
+          opacity: 0;
+        }
+        .logo_2 {
+          opacity: 1;
+        }
       }
     }
-    .switch-icon-box {
-      position: relative;
-      width: 3.2rem;
-      height: 0.8rem;
-      display: inline-block;
 
-      .switch-bar {
-        width: 100%;
-        height: 100%;
-        display: block;
-      }
-      .switch-point {
-        position: absolute;
-        left: 0;
-        bottom: -5px;
-        z-index: 1;
-        transition: left 0.35s ease-in-out;
-        pointer-events: none;
+    a {
+      font-size: 1.8rem;
+      color: #f8f9fa;
+    }
+
+    // #region Header-links-style
+    .about-me-link {
+      .about-me-draw-line {
+        @include draw-image(10.5rem, 4.2rem, -7px, -10px);
       }
 
-      &.lang-de .switch-point {
-        left: calc(100% - 1.5rem);
+      .draw-forward {
+        opacity: 1;
+        @include draw-animation-once(draw-line, bottom, 2.5s, true);
       }
 
-      &.lang-en .switch-point {
-        left: 0;
+      .draw-reverse {
+        opacity: 1;
+        @include draw-animation-reverse-once(draw-line-reverse, bottom, 0.25s);
+      }
+    }
+
+    .skills-link {
+      .skill-draw-line {
+        @include draw-image(6.8rem, 4.2rem, -10px, -10px);
+      }
+
+      .draw-forward {
+        opacity: 1;
+        @include draw-animation-once(draw-skill-line, right, 2.5s, true);
+      }
+
+      .draw-reverse {
+        opacity: 1;
+        @include draw-animation-reverse-once(
+          draw-skill-line-reverse,
+          right,
+          0.25s
+        );
+      }
+    }
+
+    .projects-link {
+      .project-draw-line {
+        @include draw-image(9rem, 4.2rem, -10px, -10px);
+      }
+      .draw-forward {
+        opacity: 1;
+        @include draw-animation-once(draw-skill-line, right, 2.5s, true);
+      }
+
+      .draw-reverse {
+        opacity: 1;
+        @include draw-animation-reverse-once(
+          draw-skill-line-reverse,
+          right,
+          0.25s
+        );
+      }
+    }
+
+    .contact-link {
+      .contact-draw-line {
+        @include draw-image(10.5rem, 4.2rem, -20px, -10px);
+      }
+      .draw-forward {
+        opacity: 1;
+        @include draw-animation-once(draw-skill-line, right, 2.5s, true);
+      }
+
+      .draw-reverse {
+        opacity: 1;
+        @include draw-animation-reverse-once(
+          draw-skill-line-reverse,
+          right,
+          0.25s
+        );
+      }
+    }
+
+    // #endregion Header-links-style
+
+    // language-switch-style
+    .language-switch-box {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      font-size: 1.6rem;
+
+      span {
+        cursor: pointer;
+        transition: color 0.3s ease;
+
+        .toggle-line {
+          position: absolute;
+          width: 3.2rem;
+          height: 3.2rem;
+          left: 50%;
+          bottom: -7px;
+          transform: translateX(-50%);
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          pointer-events: none;
+        }
+
+        &.inactive:hover .toggle-line {
+          opacity: 1;
+          @include draw-animation-once(draw-swicht-line, left, 2.5s, true);
+        }
+
+        &.active {
+          color: red;
+          pointer-events: none;
+        }
+      }
+      .switch-icon-box {
+        position: relative;
+        width: 3.2rem;
+        height: 0.8rem;
+        display: inline-block;
+
+        .switch-bar {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+        .switch-point {
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          z-index: 1;
+          transition: left 0.35s ease-in-out;
+          pointer-events: none;
+        }
+
+        &.lang-de .switch-point {
+          left: calc(100% - 1.5rem);
+        }
+
+        &.lang-en .switch-point {
+          left: 0;
+        }
       }
     }
   }

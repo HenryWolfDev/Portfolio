@@ -1,4 +1,5 @@
 @use "../../../../../public/styles/all-styles.scss" as *;
+@use "../../../../../public/styles/responsive-points.scss" as *;
 
 .PROJECTS_SECTION {
   background-color: #f8f9fa;
@@ -40,10 +41,10 @@
   display: grid;
   justify-items: center;
   align-items: center;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
 }
-@media (min-width: 900px) {
+@media (max-width: 1400px) {
   .grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
