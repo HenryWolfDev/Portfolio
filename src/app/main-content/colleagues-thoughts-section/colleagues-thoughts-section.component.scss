@@ -1,4 +1,5 @@
 @use "../../../../public/styles/all-styles.scss" as *;
+@use "../../../../public/styles/responsive-points.scss" as *;
 section {
   background-color: #f8f9fa;
   color: #0e1013;
@@ -37,7 +38,7 @@ section {
       }
     }
     .cards-box {
-      position: relative;
+      height: 100%;
       min-height: 540px;
       display: flex;
       justify-content: center;
@@ -46,12 +47,7 @@ section {
 
     .cards-box > app-colleague-card {
       position: absolute;
-
       transition: z-index 0s, transform 0.2s;
-    }
-
-    .cards-box > app-colleague-card {
-      position: absolute;
     }
 
     .cards-box > app-colleague-card:nth-child(1) {
@@ -74,6 +70,37 @@ section {
     .cards-box > app-colleague-card:hover,
     .cards-box > app-colleague-card:focus-within {
       z-index: 100;
+    }
+  }
+
+  @include notebook {
+    .section-content {
+      .cards-box {
+        flex-direction: column;
+        height: 100%;
+        min-height: 1000px;
+
+        .cards-box > app-colleague-card {
+          position: relative;
+        }
+      }
+      .cards-box > app-colleague-card:nth-child(1) {
+        z-index: 10;
+        bottom: -50px;
+        left: 20%;
+        transform: rotate(5deg);
+      }
+      .cards-box > app-colleague-card:nth-child(2) {
+        z-index: 5;
+        bottom: 30%;
+        transform: rotate(0deg);
+      }
+      .cards-box > app-colleague-card:nth-child(3) {
+        z-index: 1;
+        bottom: 65%;
+        right: 20%;
+        transform: rotate(-5deg);
+      }
     }
   }
 }

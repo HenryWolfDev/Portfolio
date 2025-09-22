@@ -218,8 +218,15 @@ section {
         .peel-off-box {
           top: auto;
           right: auto;
-          left: -50px;
-          bottom: 500px;
+          left: 5%;
+          bottom: 700px;
+        }
+
+        .peel-off-box-overlay {
+          top: auto;
+          right: auto;
+          left: 5%;
+          bottom: 700px;
         }
       }
     }
