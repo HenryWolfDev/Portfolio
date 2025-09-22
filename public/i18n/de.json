@@ -55,5 +55,13 @@
     "henry": {
       "text": "Irgendein Text"
     }
+  },
+  "CONTACT_SECTION": {
+    "CONTACT": "Kontakt aufnehmen",
+    "TITLE": "Zusammen Großes schaffen",
+    "ROLE_INTEREST": "Ermutigen Sie die Leute, mit Ihnen Kontakt aufzunehmen und beschreiben Sie, für welche Rolle Sie sich interessieren. Drücken Sie Ihr Selbstvertrauen darin aus, durch Ihre Fachkenntnisse und Ihre Begeisterung für die Weiterentwicklung Ihrer Fähigkeiten einen wertvollen Beitrag zu einem Team leisten zu können.",
+    "NAME": "Dein Name",
+    "EMAIL": "Deine E-Mail",
+    "HELP": "Wie kann ich dir helfen?"
   }
 }
