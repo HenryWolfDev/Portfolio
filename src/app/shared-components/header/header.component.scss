@@ -37,94 +37,87 @@ header {
     }
   }
 
-  ul {
-    display: flex;
-    justify-content: space-between;
+  a {
     font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 120%;
-
-    a {
-      color: #f8f9fa;
-    }
-
-    // #region Header-links-style
-    .about-me-link {
-      .about-me-draw-line {
-        @include draw-image(10.5rem, 4.2rem, -7px, -10px);
-      }
-
-      .draw-forward {
-        opacity: 1;
-        @include draw-animation-once(draw-line, bottom, 2.5s, true);
-      }
-
-      .draw-reverse {
-        opacity: 1;
-        @include draw-animation-reverse-once(draw-line-reverse, bottom, 0.25s);
-      }
-    }
-
-    .skills-link {
-      .skill-draw-line {
-        @include draw-image(6.8rem, 4.2rem, -10px, -10px);
-      }
-
-      .draw-forward {
-        opacity: 1;
-        @include draw-animation-once(draw-skill-line, right, 2.5s, true);
-      }
-
-      .draw-reverse {
-        opacity: 1;
-        @include draw-animation-reverse-once(
-          draw-skill-line-reverse,
-          right,
-          0.25s
-        );
-      }
-    }
-
-    .projects-link {
-      .project-draw-line {
-        @include draw-image(9rem, 4.2rem, -10px, -10px);
-      }
-      .draw-forward {
-        opacity: 1;
-        @include draw-animation-once(draw-skill-line, right, 2.5s, true);
-      }
-
-      .draw-reverse {
-        opacity: 1;
-        @include draw-animation-reverse-once(
-          draw-skill-line-reverse,
-          right,
-          0.25s
-        );
-      }
-    }
-
-    .contact-link {
-      .contact-draw-line {
-        @include draw-image(10.5rem, 4.2rem, -20px, -10px);
-      }
-      .draw-forward {
-        opacity: 1;
-        @include draw-animation-once(draw-skill-line, right, 2.5s, true);
-      }
-
-      .draw-reverse {
-        opacity: 1;
-        @include draw-animation-reverse-once(
-          draw-skill-line-reverse,
-          right,
-          0.25s
-        );
-      }
-    }
-
-    // #endregion Header-links-style
+    color: #f8f9fa;
   }
+
+  // #region Header-links-style
+  .about-me-link {
+    .about-me-draw-line {
+      @include draw-image(10.5rem, 4.2rem, -7px, -10px);
+    }
+
+    .draw-forward {
+      opacity: 1;
+      @include draw-animation-once(draw-line, bottom, 2.5s, true);
+    }
+
+    .draw-reverse {
+      opacity: 1;
+      @include draw-animation-reverse-once(draw-line-reverse, bottom, 0.25s);
+    }
+  }
+
+  .skills-link {
+    .skill-draw-line {
+      @include draw-image(6.8rem, 4.2rem, -10px, -10px);
+    }
+
+    .draw-forward {
+      opacity: 1;
+      @include draw-animation-once(draw-skill-line, right, 2.5s, true);
+    }
+
+    .draw-reverse {
+      opacity: 1;
+      @include draw-animation-reverse-once(
+        draw-skill-line-reverse,
+        right,
+        0.25s
+      );
+    }
+  }
+
+  .projects-link {
+    .project-draw-line {
+      @include draw-image(9rem, 4.2rem, -10px, -10px);
+    }
+    .draw-forward {
+      opacity: 1;
+      @include draw-animation-once(draw-skill-line, right, 2.5s, true);
+    }
+
+    .draw-reverse {
+      opacity: 1;
+      @include draw-animation-reverse-once(
+        draw-skill-line-reverse,
+        right,
+        0.25s
+      );
+    }
+  }
+
+  .contact-link {
+    .contact-draw-line {
+      @include draw-image(10.5rem, 4.2rem, -20px, -10px);
+    }
+    .draw-forward {
+      opacity: 1;
+      @include draw-animation-once(draw-skill-line, right, 2.5s, true);
+    }
+
+    .draw-reverse {
+      opacity: 1;
+      @include draw-animation-reverse-once(
+        draw-skill-line-reverse,
+        right,
+        0.25s
+      );
+    }
+  }
+
+  // #endregion Header-links-style
 
   // language-switch-style
   .language-switch-box {

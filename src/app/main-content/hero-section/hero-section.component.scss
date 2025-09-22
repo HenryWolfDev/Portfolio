@@ -22,8 +22,8 @@ section {
 
     .image-box {
       position: absolute;
-      top: 100px;
-      right: 400px;
+      top: -10%;
+      right: 10%;
       width: 20.3rem;
       height: 24.4rem;
       transform: rotate(7.5deg);
@@ -42,12 +42,37 @@ section {
         font-weight: 700;
       }
     }
-    @include mobile {
+
+    .image-box-2 {
+      display: none;
+      width: 20.3rem;
+      height: 24.4rem;
+      transform: rotate(7.5deg);
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        bottom: 0;
+      }
+
+      p {
+        position: absolute;
+        bottom: 1rem;
+        left: 30%;
+        color: black;
+        font-size: 2.4rem;
+        font-family: "Kalam", sans-serif;
+        font-weight: 700;
+      }
+    }
+    @include notebook {
       .image-box {
-        top: auto;
-        right: auto;
-        left: 20%;
-        bottom: 80px;
+        display: none;
+      }
+      .image-box-2 {
+        display: block;
+        bottom: -150px;
+        left: 50px;
       }
     }
 
@@ -57,18 +82,12 @@ section {
       display: flex;
       flex-direction: column;
       gap: 2rem;
-      padding: 0 1rem;
 
       .title-word {
         font-weight: 700;
         font-size: 12.8rem;
         text-align: start;
         transition: all 0.8s ease;
-      }
-      @include mobile {
-        .title-word {
-          font-size: 4rem;
-        }
       }
 
       .DEVELOPER {
@@ -115,6 +134,22 @@ section {
           $color: #f8f9fa,
           $b-color: #f8f9fa
         );
+      }
+    }
+
+    @include notebook {
+      .title-box {
+        width: 100%;
+        max-width: 60rem;
+
+        .title-word {
+          font-size: 10rem;
+        }
+      }
+    }
+    @include mobile {
+      .title-word {
+        font-size: 3rem;
       }
     }
 
