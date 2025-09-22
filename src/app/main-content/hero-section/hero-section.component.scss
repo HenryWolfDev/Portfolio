@@ -65,6 +65,7 @@ section {
         font-weight: 700;
       }
     }
+
     @include notebook {
       .image-box {
         display: none;
@@ -147,6 +148,16 @@ section {
         }
       }
     }
+    @include tablet {
+      .title-box {
+        width: 100%;
+        max-width: 50rem;
+        .title-word {
+          font-size: 6rem;
+        }
+      }
+    }
+
     @include mobile {
       .title-word {
         font-size: 3rem;
