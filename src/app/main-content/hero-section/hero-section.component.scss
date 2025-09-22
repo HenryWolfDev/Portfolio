@@ -1,9 +1,10 @@
 @use "../../../../public/styles/all-styles.scss" as *;
+@use "../../../../public/styles/responsive-points.scss" as *;
 
 section {
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-image: url("/assets/Design material/01_Background/Design Size Relation@3x/01_Hero_1.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,26 +12,25 @@ section {
   background-position: bottom center;
   background-color: #f8f9f8;
 
-  .title-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 95rem;
+  .content {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    justify-content: center;
+    align-items: center;
 
     .image-box {
       position: absolute;
-      top: -5rem;
-      right: 10%;
+      top: 100px;
+      right: 400px;
       width: 20.3rem;
       height: 24.4rem;
       transform: rotate(7.5deg);
       img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
       }
       p {
         position: absolute;
@@ -42,84 +42,113 @@ section {
         font-weight: 700;
       }
     }
-
-    .title-word {
-      font-weight: 700;
-      font-size: 12.8rem;
-      text-align: start;
-      transition: all 0.8s ease;
-    }
-    .DEVELOPER {
-      margin-left: auto;
+    @include mobile {
+      .image-box {
+        top: auto;
+        right: auto;
+        left: 20%;
+        bottom: 80px;
+      }
     }
 
-    .frontend .letter:first-child:hover {
-      text-transform: lowercase;
+    .title-box {
+      width: 100%;
+      max-width: 95rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 0 1rem;
+
+      .title-word {
+        font-weight: 700;
+        font-size: 12.8rem;
+        text-align: start;
+        transition: all 0.8s ease;
+      }
+      @include mobile {
+        .title-word {
+          font-size: 4rem;
+        }
+      }
+
+      .DEVELOPER {
+        margin-left: auto;
+      }
+
+      .frontend .letter:first-child:hover {
+        text-transform: lowercase;
+      }
+
+      .frontend .letter:hover {
+        text-transform: uppercase;
+        color: #f7c518;
+      }
+
+      .DEVELOPER .letter:hover {
+        text-transform: lowercase;
+        color: #f7c518;
+      }
+
+      div:last-of-type {
+        margin-left: auto;
+      }
+
+      .hello-world-btn {
+        position: relative;
+        font-size: 1.8rem;
+        @include button-layout(
+          $bg-color: #0e1013,
+          $color: #f8f9fa,
+          $b-color: #f8f9fa
+        );
+        @include bg-animation();
+        @include text-fading();
+        @include hand-icon(".hand-img");
+        @include button-width-effect();
+      }
+
+      .get-in-touch-btn {
+        font-size: 1.8rem;
+        @include press-button(
+          $bg-color: #0e1013,
+          $bs-color: #f8f9fa,
+          $color: #f8f9fa,
+          $b-color: #f8f9fa
+        );
+      }
     }
 
-    .frontend .letter:hover {
-      text-transform: uppercase;
-      color: #f7c518;
+    .social-icon-box {
+      position: absolute;
+      bottom: 15%;
+      left: 25%;
+
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      .social-icon {
+        border: 0.1rem solid #f8f9fa;
+        border-radius: 4rem;
+        padding: 0.5rem;
+        width: 3.2rem;
+        height: 3.2rem;
+
+        background-image: linear-gradient(#3355ff, #3355ff);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 100% 0%;
+        transition: background-size 0.1s ease;
+      }
+
+      .social-icon:hover {
+        background-size: 100% 100%;
+      }
     }
 
-    .DEVELOPER .letter:hover {
-      text-transform: lowercase;
-      color: #f7c518;
-    }
-
-    div:last-of-type {
-      margin-left: auto;
-    }
-
-    .hello-world-btn {
-      position: relative;
-      font-size: 1.8rem;
-      @include button-layout(
-        $bg-color: #0e1013,
-        $color: #f8f9fa,
-        $b-color: #f8f9fa
-      );
-      @include bg-animation();
-      @include text-fading();
-      @include hand-icon(".hand-img");
-      @include button-width-effect();
-    }
-
-    .get-in-touch-btn {
-      font-size: 1.8rem;
-      @include press-button(
-        $bg-color: #0e1013,
-        $bs-color: #f8f9fa,
-        $color: #f8f9fa,
-        $b-color: #f8f9fa
-      );
-    }
-  }
-
-  .social-icon-box {
-    position: absolute;
-    bottom: 15%;
-    left: 25%;
-
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    .social-icon {
-      border: 0.1rem solid #f8f9fa;
-      border-radius: 4rem;
-      padding: 0.5rem;
-      width: 3.2rem;
-      height: 3.2rem;
-
-      background-image: linear-gradient(#3355ff, #3355ff);
-      background-repeat: no-repeat;
-      background-position: bottom;
-      background-size: 100% 0%;
-      transition: background-size 0.1s ease;
-    }
-
-    .social-icon:hover {
-      background-size: 100% 100%;
+    @include mobile {
+      .social-icon-box {
+        display: none;
+      }
     }
   }
 }

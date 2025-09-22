@@ -1,56 +1,68 @@
 <section>
-  <div class="title-box">
-    <div class="image-box">
-      <img
-        src="assets/Design material/03_Stickers/Polaroid Frame.png"
-        alt="Polaroid photo frame illustration"
-      />
-      <p>Henry :)</p>
-    </div>
-    <div>
-      <button
-        class="hello-world-btn"
-        (mouseenter)="helloWorldHovered = true"
-        (mouseleave)="helloWorldHovered = false"
-        [ngClass]="{ hovered: helloWorldHovered }"
-      >
-        <span class="text-default">Hello world</span>
-        <span class="text-hover">{{ "HELLO_WORLD_BTN" | translate }}</span>
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
         <img
-          class="hand-img"
-          src="assets/Design material/04_Icons/waving_hand.png"
-          alt="Waving hand icon"
+          src="assets/Design material/03_Stickers/Polaroid Frame.png"
+          alt="Polaroid photo frame illustration"
         />
-      </button>
+        <p>Henry :)</p>
+      </div>
+      <div class="title-box">
+        <div>
+          <button
+            class="hello-world-btn"
+            (mouseenter)="helloWorldHovered = true"
+            (mouseleave)="helloWorldHovered = false"
+            [ngClass]="{ hovered: helloWorldHovered }"
+          >
+            <span class="text-default">Hello world</span>
+            <span class="text-hover">{{ "HELLO_WORLD_BTN" | translate }}</span>
+            <img
+              class="hand-img"
+              src="assets/Design material/04_Icons/waving_hand.png"
+              alt="Waving hand icon"
+            />
+          </button>
+        </div>
+
+        <h1 class="frontend title-word">
+          @for(letter of frontendLetters; track $index){
+          <span class="letter">{{ letter }}</span
+          >}
+        </h1>
+        <h1 class="DEVELOPER title-word">
+          @for(letter of developerLettersBig; track $index){
+          <span class="letter">{{ letter }}</span
+          >}
+        </h1>
+
+        <div><button class="get-in-touch-btn">Get in Touch</button></div>
+      </div>
+      <div class="social-icon-box">
+        <a
+          href="https://www.linkedin.com/in/henry-wolf-261baa383/"
+          target="_blank"
+          ><img
+            class="social-icon"
+            src="/assets/icons/in.png"
+            alt="LinkedIn logo"
+        /></a>
+
+        <a href="https://github.com/HenryWolfDev" target="_blank">
+          <img
+            class="social-icon"
+            src="/assets/icons/git-hub.png"
+            alt="GitHub logo"
+        /></a>
+
+        <a href="mailto:HWolf.binz@gmail.com"
+          ><img
+            class="social-icon"
+            src="/assets/icons/mail.png"
+            alt="Email icon"
+        /></a>
+      </div>
     </div>
-
-    <h1 class="frontend title-word">
-      @for(letter of frontendLetters; track $index){
-      <span class="letter">{{ letter }}</span
-      >}
-    </h1>
-    <h1 class="DEVELOPER title-word">
-      @for(letter of developerLettersBig; track $index){
-      <span class="letter">{{ letter }}</span
-      >}
-    </h1>
-
-    <div><button class="get-in-touch-btn">Get in Touch</button></div>
-  </div>
-  <div class="social-icon-box">
-    <a href="https://www.linkedin.com/in/henry-wolf-261baa383/" target="_blank"
-      ><img class="social-icon" src="/assets/icons/in.png" alt="LinkedIn logo"
-    /></a>
-
-    <a href="https://github.com/HenryWolfDev" target="_blank">
-      <img
-        class="social-icon"
-        src="/assets/icons/git-hub.png"
-        alt="GitHub logo"
-    /></a>
-
-    <a href="mailto:HWolf.binz@gmail.com"
-      ><img class="social-icon" src="/assets/icons/mail.png" alt="Email icon"
-    /></a>
   </div>
 </section>
