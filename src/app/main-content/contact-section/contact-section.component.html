@@ -36,7 +36,7 @@
                 type="text"
                 id="name"
                 name="name"
-                placeholder="Your name goes here"
+                [placeholder]="'CONTACT_SECTION.NAME_PLACEHOLDER' | translate"
                 required
               />
             </div>
@@ -67,7 +67,7 @@
                 class="message-text text"
                 name="message"
                 id="message"
-                placeholder="Hello Henry, I am interested in..."
+                [placeholder]="'CONTACT_SECTION.HELP_PLACEHOLDER' | translate"
                 required
               ></textarea>
             </div>
@@ -83,19 +83,25 @@
               required
             />
 
-            <span class="policy-text"
+            <!-- <span class="policy-text"
               >I've read the <span class="policy">privacy policy</span> and
               agree to the processing of my data as outlined.</span
+            > -->
+            <span class="policy-text"
+              >{{ "CONTACT_SECTION.POLICY_TEXT_1" | translate }}
+              <a class="policy" [routerLink]="['legal-notice']">{{
+                "CONTACT_SECTION.PRIVACY_POLICY" | translate
+              }}</a
+              >{{ "CONTACT_SECTION.POLICY_TEXT_2" | translate }}</span
             >
           </div>
           <div class="select-btn-box">
             <span class="error-text" *ngIf="errorMessage" style="color: red">
-              Please fill out all required fields and accept privacy policy.
+              {{ "CONTACT_SECTION.ERROR_MESSAGE" | translate }}
             </span>
-            <span class="valid-text" *ngIf="messageSend"
-              >Your message has been sent successfully. Thank you for contacting
-              me!</span
-            >
+            <span class="valid-text" *ngIf="messageSend">{{
+              "CONTACT_SECTION.SEND_MESSAGE" | translate
+            }}</span>
 
             <button class="send-btn" type="submit" value="Submit">Send</button>
           </div>
