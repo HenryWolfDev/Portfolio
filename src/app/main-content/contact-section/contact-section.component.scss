@@ -68,14 +68,12 @@ section {
 
         // each input box (name, mail, message)
         .data-box {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
+          @include display-flex(column, space-between, flex-start);
           gap: 1rem;
           width: 100%;
           height: 6.1rem;
           padding: 1.5rem 0;
-          border-bottom: 0.1rem solid #f7c518;
+          border-bottom: 0.1rem solid var(--color-yellow);
 
           .question-text {
             font-size: 2.4rem;
@@ -104,10 +102,10 @@ section {
 
           .policy-text {
             .policy {
-              color: #3355ff;
+              color: var(--color-blue);
             }
             .policy:hover {
-              color: #f7c518;
+              color: var(--color-yellow);
             }
           }
           .check-box {
@@ -116,9 +114,7 @@ section {
         }
         // style for send btn
         .select-btn-box {
-          display: flex;
-          justify-content: end;
-          align-items: center;
+          @include display-flex(row, flex-end, center);
           gap: 1rem;
 
           .error-text {
@@ -127,10 +123,10 @@ section {
           .send-btn {
             font-size: 1.8rem;
             @include press-button(
-              $bg-color: #0e1013,
-              $bs-color: #f8f9fa,
-              $color: #f8f9fa,
-              $b-color: #f8f9fa
+              $bg-color: var(--color-dark),
+              $bs-color: var(--color-white),
+              $color: var(--color-white),
+              $b-color: var(--color-white)
             );
           }
         }
@@ -140,9 +136,7 @@ section {
 
   @include notebook {
     .contact-content {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      @include display-flex(column, center, center);
 
       .contact-info-box {
         .draw-image-box {

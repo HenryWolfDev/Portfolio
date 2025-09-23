@@ -2,11 +2,9 @@
 @use "../../../../public/styles/responsive-points.scss" as *;
 
 section {
-  background-color: #f8f9f8;
-  color: #0e1013;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: var(--color-white);
+  color: var(--color-dark);
+  @include display-flex(row, center, center);
   gap: 10rem;
   padding: 5rem;
 
@@ -14,7 +12,7 @@ section {
     width: 100%;
     max-width: 56rem;
     height: 40rem;
-    color: #f8f9f8;
+    color: var(--color-white);
     font-size: 2.4rem;
     .ripped-paper {
       width: 100%;
@@ -81,9 +79,7 @@ section {
     max-width: 56rem;
     height: 100%;
     max-height: 70.2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include display-flex(column, space-between, flex-start);
 
     .hello-text {
       font-size: 2rem;
@@ -116,14 +112,14 @@ section {
       font-size: 2rem;
       font-weight: 500;
       @include press-button(
-        $bg-color: #f8f9f8,
-        $bs-color: #0e1013,
-        $color: #0e1013,
-        $b-color: #0e1013
+        $bg-color: var(--color-white),
+        $bs-color: var(--color-dark),
+        $color: var(--color-dark),
+        $b-color: var(--color-dark)
       );
     }
     .lets-talk-btn:hover {
-      color: #f8f9f8;
+      color: var(--color-white);
     }
   }
 }

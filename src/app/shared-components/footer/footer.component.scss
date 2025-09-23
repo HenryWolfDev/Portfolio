@@ -11,9 +11,7 @@ footer {
     gap: 1.5rem;
     padding: 2rem;
     .icon-box {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
+      @include display-flex(column, flex-start, flex-start);
       gap: 1rem;
 
       .logo-box {
@@ -119,7 +117,7 @@ footer {
         }
 
         a {
-          color: #f8f9fa;
+          color: var(--color-white);
         }
         // #endregion Footer Icon style and movement
       }

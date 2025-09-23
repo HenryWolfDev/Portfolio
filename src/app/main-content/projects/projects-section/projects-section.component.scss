@@ -2,18 +2,15 @@
 @use "../../../../../public/styles/responsive-points.scss" as *;
 
 .PROJECTS_SECTION {
-  background-color: #f8f9fa;
-  color: #0e1013;
+  background-color: var(--color-white);
+  color: var(--color-dark);
 }
 
 .projects-info-box {
   width: 100%;
   max-width: 56rem;
   height: 51.4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
+  @include display-flex(column, center, flex-start);
   gap: 1rem;
 
   .projects-draw-line {

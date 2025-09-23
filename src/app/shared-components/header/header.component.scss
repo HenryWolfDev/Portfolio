@@ -9,9 +9,7 @@ header {
   height: auto;
 
   .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include display-flex(row, space-between, center);
     padding: 2rem 2rem;
     .logo-box {
       .logo_1 {
@@ -37,7 +35,7 @@ header {
 
     a {
       font-size: 1.8rem;
-      color: #f8f9fa;
+      color: var(--color-white);
     }
 
     // #region Header-links-style
@@ -146,7 +144,7 @@ header {
         }
 
         &.active {
-          color: red;
+          color: var(--color-red);
           pointer-events: none;
         }
       }

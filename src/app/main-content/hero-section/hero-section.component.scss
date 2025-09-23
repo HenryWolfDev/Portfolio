@@ -10,15 +10,12 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-position: bottom center;
-  background-color: #f8f9f8;
+  background-color: var(--color-white);
 
   .content {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include display-flex(column, center, center);
 
     .image-box {
       position: absolute;
@@ -36,7 +33,7 @@ section {
         position: absolute;
         bottom: 1rem;
         left: 30%;
-        color: black;
+        color: var(--color-dark);
         font-size: 2.4rem;
         font-family: "Kalam", sans-serif;
         font-weight: 700;
@@ -59,7 +56,7 @@ section {
         position: absolute;
         bottom: 1rem;
         left: 30%;
-        color: black;
+        color: var(--color-dark);
         font-size: 2.4rem;
         font-family: "Kalam", sans-serif;
         font-weight: 700;
@@ -90,12 +87,12 @@ section {
 
       .frontend .letter:hover {
         text-transform: uppercase;
-        color: #f7c518;
+        color: var(--color-yellow);
       }
 
       .DEVELOPER .letter:hover {
         text-transform: lowercase;
-        color: #f7c518;
+        color: var(--color-yellow);
       }
 
       div:last-of-type {
@@ -106,9 +103,9 @@ section {
         position: relative;
         font-size: 1.8rem;
         @include button-layout(
-          $bg-color: #0e1013,
-          $color: #f8f9fa,
-          $b-color: #f8f9fa
+          $bg-color: var(--color-dark),
+          $color: var(--color-white),
+          $b-color: var(--color-white)
         );
         @include bg-animation();
         @include text-fading();
@@ -119,10 +116,10 @@ section {
       .get-in-touch-btn {
         font-size: 1.8rem;
         @include press-button(
-          $bg-color: #0e1013,
-          $bs-color: #f8f9fa,
-          $color: #f8f9fa,
-          $b-color: #f8f9fa
+          $bg-color: var(--color-dark),
+          $bs-color: var(--color-white),
+          $color: var(--color-white),
+          $b-color: var(--color-white)
         );
       }
     }
@@ -156,13 +153,13 @@ section {
       flex-direction: column;
       gap: 1rem;
       .social-icon {
-        border: 0.1rem solid #f8f9fa;
+        border: 0.1rem solid var(--color-white);
         border-radius: 4rem;
         padding: 0.5rem;
         width: 3.2rem;
         height: 3.2rem;
 
-        background-image: linear-gradient(#3355ff, #3355ff);
+        background-image: linear-gradient(var(--color-blue), var(--color-blue));
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: 100% 0%;
