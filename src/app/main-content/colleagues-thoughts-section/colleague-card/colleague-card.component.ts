@@ -12,7 +12,7 @@ export interface ColleagueCard {
 @Component({
   selector: 'app-colleague-card',
   standalone: true,
-  imports: [RouterModule, TranslatePipe],
+  imports: [TranslatePipe],
   templateUrl: './colleague-card.component.html',
   styleUrl: './colleague-card.component.scss',
 })

@@ -1,5 +1,6 @@
 @use "../../../../../public/styles/all-styles.scss" as *;
-section {
+@use "../../../../../public/styles/responsive-points.scss" as *;
+.detail-section {
   position: relative;
   height: 100vh;
   background-image: url("../../../../../public/assets/Design material/01_Background/Design Size Relation@3x/Note book paper_1.png");
@@ -137,6 +138,19 @@ section {
             );
           }
         }
+      }
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .detail-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .content {
+      color: var(--color-white);
+      .explain-content {
+        @include display-flex(column, center, center);
       }
     }
   }
