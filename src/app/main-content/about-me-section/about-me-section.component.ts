@@ -7,4 +7,8 @@ import { TranslatePipe } from '@ngx-translate/core';
   templateUrl: './about-me-section.component.html',
   styleUrl: './about-me-section.component.scss',
 })
-export class AboutMeSectionComponent {}
+export class AboutMeSectionComponent {
+  scrollTo(section: string) {
+    document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+  }
+}

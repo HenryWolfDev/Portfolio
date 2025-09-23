@@ -14,4 +14,8 @@ export class HeroSectionComponent {
 
   frontendLetters = 'Frontend'.split('');
   developerLettersBig = 'DEVELOPER'.split('');
+
+  scrollTo(section: string) {
+    document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+  }
 }
