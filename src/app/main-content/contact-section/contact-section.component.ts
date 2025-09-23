@@ -16,9 +16,25 @@ export class ContactSectionComponent {
     message: '',
     acceptedPolicy: false,
   };
+
+  messageSend = false;
+  errorMessage = false;
   onSubmit(ngForm: NgForm) {
     if (ngForm.valid && ngForm.submitted) {
-      console.log(this.contactData);
+      this.messageSend = true;
+      this.errorMessage = false;
+      ngForm.resetForm();
+
+      setTimeout(() => {
+        this.messageSend = false;
+      }, 4000);
+    } else {
+      this.messageSend = false;
+      this.errorMessage = true;
+
+      setTimeout(() => {
+        this.errorMessage = false;
+      }, 4000);
     }
   }
 }

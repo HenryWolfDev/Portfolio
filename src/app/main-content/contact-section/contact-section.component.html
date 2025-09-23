@@ -32,7 +32,7 @@
               }}</span>
               <input
                 [(ngModel)]="contactData.name"
-                class="answer-text"
+                class="answer-text text"
                 type="text"
                 id="name"
                 name="name"
@@ -47,7 +47,7 @@
               <input
                 #email="ngModel"
                 [(ngModel)]="contactData.email"
-                class="answer-text"
+                class="answer-text text"
                 type="email"
                 id="email"
                 name="email"
@@ -64,7 +64,7 @@
               <textarea
                 #message="ngModel"
                 [(ngModel)]="contactData.message"
-                class="message-text"
+                class="message-text text"
                 name="message"
                 id="message"
                 placeholder="Hello Henry, I am interested in..."
@@ -89,13 +89,13 @@
             >
           </div>
           <div class="select-btn-box">
-            <span
-              class="error-text"
-              *ngIf="contactForm.invalid && contactForm.submitted"
-              style="color: red"
-            >
-              Please fill out all required fields.
+            <span class="error-text" *ngIf="errorMessage" style="color: red">
+              Please fill out all required fields and accept privacy policy.
             </span>
+            <span class="valid-text" *ngIf="messageSend"
+              >Your message has been sent successfully. Thank you for contacting
+              me!</span
+            >
 
             <button class="send-btn" type="submit" value="Submit">Send</button>
           </div>

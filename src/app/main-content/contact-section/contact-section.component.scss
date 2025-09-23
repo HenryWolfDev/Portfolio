@@ -57,6 +57,10 @@ section {
         flex-direction: column;
         gap: 1.5rem;
 
+        .text {
+          width: 100%;
+        }
+
         input,
         textarea {
           padding: 0.5rem 0;
@@ -79,11 +83,17 @@ section {
             font-size: 2.4rem;
           }
 
+          textarea::-webkit-scrollbar {
+            display: none;
+          }
+
           textarea {
             width: 100%;
             resize: none;
             overflow: auto;
             box-sizing: border-box;
+            white-space: pre-wrap;
+            word-wrap: break-word;
           }
         }
 
@@ -117,7 +127,8 @@ section {
           @include display-flex(row, flex-end, center);
           gap: 1rem;
 
-          .error-text {
+          .error-text,
+          .valid-text {
             font-size: 1.6rem;
           }
           .send-btn {
