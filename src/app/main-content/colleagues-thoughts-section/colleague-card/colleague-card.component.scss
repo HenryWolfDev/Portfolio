@@ -4,7 +4,7 @@
   width: 100%;
   max-width: 51.2rem;
   height: 32rem;
-  background-image: url("/assets/Design material/01_Background/Design Size Relation@3x/colleague-card.png");
+  background-image: url("../../../../../public/assets/Design material/01_Background/Design Size Relation@3x/colleague-card.png");
   background-repeat: no-repeat;
 
   display: flex;
@@ -76,7 +76,7 @@
   .colleague-card {
     width: 41rem;
     height: 40rem;
-    background-image: url("/assets/Design material/01_Background/Design Size Relation@3x/colleague-card_mobile.png");
+    background-image: url("../../../../../public/assets/Design material/01_Background/Design Size Relation@3x/colleague-card_mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
@@ -91,7 +91,7 @@
   .colleague-card {
     width: 36rem;
 
-    background-image: url("/assets/Design material/01_Background/Design Size Relation@3x/colleague-card_mobile_1.png");
+    background-image: url("../../../../../public/assets/Design material/01_Background/Design Size Relation@3x/colleague-card_mobile_1.png");
 
     .text-box {
       p {
