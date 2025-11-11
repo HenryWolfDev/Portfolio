@@ -1,55 +1,83 @@
-# My Portfolio
+# Portfolio
 
-This project is my personal portfolio showcasing my **frontend development skills**.  
-It is built as a **Single Page Application (SPA)** using Angular, TypeScript, and SCSS.  
-The focus lies on **animations**, **interactive components**, and a modern **UI/UX design**.
+Personal portfolio website showcasing my work, skills, and contact information. Built as a fast, responsive Single Page Application with Angular, TypeScript, and SCSS.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+This project uses Angular CLI 19 and modern Angular features (standalone components, control flow, optimized builds).
 
----
+## Features
 
-## 🚀 Features
+- Projects overview with detail pages (Angular Router)
+- Skills section with clear visual grouping
+- Testimonials/colleagues thoughts cards with hover effects
+- Responsive layout from mobile to desktop (custom SCSS breakpoints)
+- Smooth micro‑interactions and animations
+- Internationalization support via ngx‑translate
+- Theming and typography via CSS variables and web fonts
 
-- Overview of my **skills** (HTML, CSS, JavaScript/TypeScript, Angular, and more)
-- **Project showcase**: each project has its own detail page using Angular routing
-- Smooth **animations** for an engaging user experience
-- **Contact form** to get in touch with me (coming soon)
-- Future feature: **Live demos** of projects directly embedded in the portfolio
+## Tech Stack
 
----
+- Framework: Angular 19 (TypeScript, RxJS, Zone.js)
+- Styling: SCSS modules, custom mixins, CSS variables
+- i18n: @ngx-translate/core + @ngx-translate/http-loader
+- Tooling: Angular CLI, Jasmine/Karma for unit tests
+- Fonts: @fontsource/bricolage-grotesque, @fontsource/kalam
 
-## 🛠️ Tech Stack
+## Project Structure
 
-- **Framework:** Angular
-- **Languages:** TypeScript, SCSS
-- **Routing:** Angular Router
-- **Styling:** SCSS with mixins & variables
-- **Build & Dev Server:** Angular CLI
+- `src/app/main-content/*` feature sections (hero, projects, skills, colleagues, contact)
+- `src/app/shared-components/*` shared UI pieces (header, footer, etc.)
+- `public/styles/*` global mixins and utilities (responsive breakpoints, animations)
+- `assets/*` static assets (images, icons, i18n)
+- `src/styles.scss` global variables, fonts, and base styles
 
----
+## Styling & Responsiveness
 
-## ▶️ Gettin Started
+- Breakpoints are centralized in `public/styles/responsive-points.scss` (forwarded from `responsive/breakpoints.scss`).
+- Components use SCSS with small, focused partials. Spacing and sizing follow rem units for consistent scaling.
+- Images use modern techniques (e.g., `srcset`/`picture`, `object-fit`) to keep visuals crisp without distortion.
 
-1. **Clone repository:**
+## Internationalization
 
-```bash
-git clone <repo-url>
-```
+- Translations live under `assets/i18n/*.json`.
+- Use the `translate` pipe in templates, e.g. `{{ 'home.title' | translate }}`.
 
-2. **Install dependencies:**
+## Commands
 
-```bash
-npm install
-```
+- `npm start` or `ng serve` – runs the dev server at `http://localhost:4200`
+- `npm run build` – production build in `dist/`
+- `npm run watch` – rebuild on changes (development configuration)
+- `npm test` – unit tests (Jasmine/Karma)
 
-3. **To start a local development server, run:**
+## Development
 
-```bash
-ng serve
-```
+Prerequisites:
+- Node.js 18+ and npm
+- Angular CLI `npm i -g @angular/cli`
 
-4. **Open in browser. The application will automatically reload whenever you modify any of the source files.**
+Setup:
+1) `npm install`
+2) `npm start` and open `http://localhost:4200`
 
-```bash
-http://localhost:4200
-```
+## Deployment
+
+Production build:
+- `npm run build` (outputs to `dist/portfolio/`)
+
+Deploy the contents of the `dist/portfolio/browser` folder to any static host (e.g., GitHub Pages, Netlify, Vercel, S3/CloudFront). No server logic is required.
+
+## Accessibility & Performance
+
+- Semantic HTML, keyboard‑friendly interactions, and sufficient color contrast
+- Responsive images and efficient asset loading
+- Animations tuned to avoid jank and respect layout flow
+
+## Roadmap
+
+- Contact form with validation and email integration
+- More project case studies and live demos
+- Dark/Light theme toggle
+
+## Author
+
+Built with care using Angular. If you have feedback or opportunities, feel free to reach out!
+

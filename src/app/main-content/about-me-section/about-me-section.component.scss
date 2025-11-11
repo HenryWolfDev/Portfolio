@@ -147,6 +147,18 @@ section {
       width: 100%;
       max-width: 70rem;
       font-size: 1.8rem;
+
+      .yellow-paper-box {
+        .ripped-paper-y {
+          transform: rotate(0deg);
+        }
+      }
+
+      .blue-paper-box {
+        .ripped-paper-b {
+          transform: rotate(0deg);
+        }
+      }
     }
   }
 }
