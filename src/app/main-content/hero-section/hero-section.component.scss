@@ -181,8 +181,12 @@ section {
         left: 50px;
       }
     }
+  }
+}
 
-    @include mobile {
+@include mobile {
+  section {
+    .content {
       .title-box {
         width: 100%;
         max-width: 25rem;

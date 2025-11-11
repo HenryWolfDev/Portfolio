@@ -16,7 +16,6 @@ section {
     font-size: 2.4rem;
     .ripped-paper {
       width: 100%;
-      max-width: 50.6rem;
       height: 14.5rem;
     }
 
@@ -127,8 +126,27 @@ section {
 @include notebook {
   section {
     flex-direction: column;
+    padding: 0;
+    gap: 0;
+
+    .paper-box {
+      order: 2;
+    }
+
+    .about-me-box {
+      order: 1;
+      width: auto;
+      padding: 5rem;
+    }
   }
 }
 
 @include mobile {
+  section {
+    .paper-box {
+      width: 100%;
+      max-width: 70rem;
+      font-size: 1.8rem;
+    }
+  }
 }

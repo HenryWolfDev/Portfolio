@@ -4,12 +4,13 @@
   position: relative;
   width: 100%;
   max-width: 51.2rem;
-  height: 32rem;
-  background-image: url("../../../../../public/assets/Design material/01_Background/Design Size Relation@3x/colleague-card.png");
-  background-repeat: no-repeat;
+  aspect-ratio: 16 / 10;
   @include display-flex(column, space-between, stretch);
+  box-sizing: border-box;
 
   .text-box {
+    position: relative;
+    z-index: 2;
     padding: 4rem;
     p {
       font-size: 1.8rem;
@@ -21,6 +22,8 @@
     justify-content: space-between;
     padding: 4rem;
     z-index: 10;
+    position: relative;
+    z-index: 2;
     .name-box {
       display: flex;
       flex-direction: column;
@@ -50,12 +53,21 @@
     }
   }
 }
+.colleague-card .bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  z-index: 0;
+}
 .hover-image {
   position: absolute;
+  inset: 0;
   width: 100%;
-  max-width: 51.2rem;
-  height: 32rem;
-  z-index: -100;
+  height: 100%;
+  object-fit: contain;
+  z-index: -1;
 }
 .colleague-card:hover {
   .text-box {
@@ -72,13 +84,11 @@
 }
 
 @include tablet {
+  .text-box {
+    padding: 2rem;
+  }
   .colleague-card {
-    width: 41rem;
-    height: 40rem;
-    background-image: url("../../../../../public/assets/Design material/01_Background/Design Size Relation@3x/colleague-card_mobile.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: center;
+    aspect-ratio: 260 / 120;
   }
 
   .hover-image {
@@ -88,10 +98,7 @@
 
 @include mobile {
   .colleague-card {
-    width: 36rem;
-
-    background-image: url("../../../../../public/assets/Design material/01_Background/Design Size Relation@3x/colleague-card_mobile_1.png");
-
+    aspect-ratio: 260 / 120;
     .text-box {
       p {
         font-size: 1.6rem;

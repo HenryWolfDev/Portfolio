@@ -106,7 +106,13 @@ section {
 
   @include mobile {
     .section-content {
+      padding: 0;
       .head-box {
+        padding-right: 0;
+        h2 {
+          font-size: 4.8rem;
+        }
+
         .draw-line-thoughts {
           right: auto;
           left: 25%;
@@ -114,6 +120,23 @@ section {
           width: 6rem;
           height: 3.6rem;
         }
+      }
+      .cards-box > app-colleague-card:nth-child(1) {
+        z-index: 10;
+        bottom: 10%;
+        left: auto;
+        transform: rotate(0deg);
+      }
+      .cards-box > app-colleague-card:nth-child(2) {
+        z-index: 5;
+        bottom: 35%;
+        transform: rotate(0deg);
+      }
+      .cards-box > app-colleague-card:nth-child(3) {
+        z-index: 5;
+        bottom: 65%;
+        left: auto;
+        transform: rotate(0deg);
       }
     }
   }
