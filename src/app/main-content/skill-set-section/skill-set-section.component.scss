@@ -32,7 +32,6 @@ section {
 
         .MY_STACK_TEXT {
           font-size: 2rem;
-          text-align: end;
           text-transform: uppercase;
         }
 
@@ -57,7 +56,7 @@ section {
         width: 65.6rem;
         height: 14.4rem;
         background-image: url("../../../../public/assets/Design material/02_Ripped Paper/1D. Alternative 1.png");
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
         z-index: 5;
@@ -68,6 +67,7 @@ section {
           color: #0e1013;
           font-size: 1.8rem;
           text-align: start;
+          margin-left: 3rem;
         }
       }
 
@@ -76,7 +76,7 @@ section {
           width: 35.6rem;
           height: 24.4rem;
           background-image: url("../../../../public/assets/Design material/02_Ripped Paper/1C. Alternative 1 mobile.png");
-          background-size: cover;
+          background-size: contain;
         }
       }
     }
@@ -248,7 +248,7 @@ section {
           width: 35.6rem;
           height: 24.4rem;
           background-image: url("../../../../public/assets/Design material/02_Ripped Paper/1C. Alternative 1 mobile.png");
-          background-size: cover;
+          background-size: contain;
         }
       }
       .skill-icons-box {
@@ -279,11 +279,13 @@ section {
     .content {
       .introduction-box {
         .skill-ripped-paper {
-          width: 20.6rem;
+          width: 30.6rem;
           height: 24.4rem;
-
+          padding: 0;
           p {
             font-size: 1.6rem;
+            text-align: start;
+            margin: 0 3rem;
           }
         }
       }
