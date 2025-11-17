@@ -13,12 +13,12 @@
     "REMOTE_TEXT": "Open to work remote",
     "WHOS_TEXT": "Who’s is Henry?",
     "ABOUT_TEXT": "About Me",
-    "ABOUT_ME_TEXT": "Hey there, I'm Henry. Write some information about yourself that is IT related. Why are you passionate about coding? What is your source of inspiration for improving your programming skills?  Do you learn from each challenge as you search for the most efficient or elegant solution?",
+    "ABOUT_ME_TEXT": "Hey there, I'm Henry. What fascinates me about IT, especially programming is the creative process behind it. I love having an idea in my mind and turning it directly into something visible and functional. Very few activities give me the feeling as quickly that my thoughts can become reality.",
     "CORPORATE_TEXT": "Let’s collaborate and build something remarkable together!"
   },
   "SKILL_SET_SECTION": {
     "MY_STACK_TEXT": "My stack",
-    "SKILL_INTRODUCTION_TEXT": "A short introduction of your skills. Highlight your experience of using different front-end technologies and emphasise your openness to learning and adapting to new technologies",
+    "SKILL_INTRODUCTION_TEXT": "I have extensive experience working with modern frontend technologies such as HTML, CSS, JavaScript, and frameworks like Angular. At the same time, I’m always open to learning new tools and technologies.",
     "PEEL_TEXT": "Pull to peel",
     "DIVING_TEXT": "Also, I'm interested in diving into:"
   },

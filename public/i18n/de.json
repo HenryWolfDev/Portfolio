@@ -14,12 +14,12 @@
     "REMOTE_TEXT": "Homeoffice-fähig",
     "WHOS_TEXT": "Wer ist Henry?",
     "ABOUT_TEXT": "Über mich",
-    "ABOUT_ME_TEXT": "Hey, ich bin Henry.Schreibe ein paar Informationen über dich, die mit IT zu tun haben.Warum bist du leidenschaftlich am Programmieren interessiert?Was ist deine Inspirationsquelle, um deine Programmierfähigkeiten zu verbessern?",
+    "ABOUT_ME_TEXT": "Hey, ich bin Henry. Was mich an der IT, insbesondere am Programmieren begeistert, ist der kreative Prozess dahinter. Ich liebe es, eine Idee im Kopf zu haben und sie direkt in etwas Sichtbares und Funktionierendes zu verwandeln. Kaum eine andere Tätigkeit gibt mir so schnell das Gefühl, dass meine Gedanken Realität werden können.",
     "CORPORATE_TEXT": "Lass uns zusammenarbeiten und etwas Bemerkenswertes schaffen!"
   },
   "SKILL_SET_SECTION": {
     "MY_STACK_TEXT": "Mein stack",
-    "SKILL_INTRODUCTION_TEXT": "Eine kurze Vorstellung deiner Fähigkeiten.Hebe deine Erfahrung im Umgang mit verschiedenen Frontend-Technologien hervor und betone deine Offenheit, neue Technologien zu erlernen und dich daran anzupassen.",
+    "SKILL_INTRODUCTION_TEXT": "Ich habe umfangreiche Erfahrung im Umgang mit modernen Frontend-Technologien wie HTML, CSS, JavaScript und Frameworks wie Angular. Gleichzeitig bin ich offen dafür, neue Tools und Technologien kennenzulernen.",
     "PEEL_TEXT": "Öffne mich",
     "DIVING_TEXT": "Außerdem möchte ich mich vertiefen in:"
   },
