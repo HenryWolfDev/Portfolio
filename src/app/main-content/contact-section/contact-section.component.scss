@@ -159,6 +159,9 @@ section {
   }
   @include mobile {
     .contact-content {
+      .contact-info-box {
+        padding: 0 1.6rem;
+      }
       .contact-formular-box {
         width: 100%;
         max-width: 30rem;
