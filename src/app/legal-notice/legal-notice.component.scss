@@ -24,6 +24,7 @@
       .header {
         h1 {
           font-size: 4.8rem;
+          padding-left: 1.6rem;
         }
       }
     }
@@ -66,9 +67,11 @@
 
 @include mobile {
   .notice-section {
+    padding: 0 1.6rem;
     .go-back-box-mobile {
       @include display-flex(row, start, center);
       gap: 1rem;
+      padding-bottom: 1.6rem;
       opacity: 1;
 
       span {
