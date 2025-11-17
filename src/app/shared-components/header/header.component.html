@@ -140,8 +140,17 @@
   </div>
 
   <!-- #endregion language-switch -->
-  <div class="mobile-menu" *ngIf="isMenuOpen">
-    <div class="mobile-menu__inner">
+  <div
+    class="mobile-menu"
+    *ngIf="menuVisible"
+    [class.is-open]="isMenuOpen"
+    [class.is-closing]="isClosing"
+  >
+    <div
+      class="mobile-menu__inner"
+      [class.is-open]="isMenuOpen"
+      [class.is-closing]="isClosing"
+    >
       <div class="mobile-menu__top">
         <img
           src="assets/icons/logo_1.png"

@@ -274,6 +274,8 @@ header {
 
       display: flex;
       justify-content: center;
+      opacity: 0;
+      pointer-events: none;
 
       &__inner {
         width: 100%;
@@ -281,7 +283,25 @@ header {
         @include display-flex(column, space-between, stretch);
         height: auto;
         gap: 3rem;
-        // overflow: auto;
+        transform: translateY(-100%);
+      }
+
+      &.is-open {
+        pointer-events: auto;
+        animation: mobileMenuFadeIn 0.45s ease forwards;
+      }
+
+      &.is-closing {
+        pointer-events: none;
+        animation: mobileMenuFadeOut 0.45s ease forwards;
+      }
+
+      &__inner.is-open {
+        animation: mobileMenuSlideIn 0.45s ease forwards;
+      }
+
+      &__inner.is-closing {
+        animation: mobileMenuSlideOut 0.45s ease forwards;
       }
 
       // #region close-btn
@@ -395,5 +415,41 @@ header {
         }
       }
     }
+  }
+}
+
+@keyframes mobileMenuFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes mobileMenuFadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes mobileMenuSlideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes mobileMenuSlideOut {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
   }
 }

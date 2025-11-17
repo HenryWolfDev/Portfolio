@@ -15,10 +15,14 @@ import {
 export class HeaderComponent implements OnDestroy {
   private translate = inject(TranslateService);
   private document = inject(DOCUMENT);
+  private readonly menuAnimationDuration = 450;
+  private menuCloseTimeout: ReturnType<typeof setTimeout> | null = null;
 
   // checking language switch
   currentLang = this.translate.currentLang || 'en';
   isMenuOpen = false;
+  isClosing = false;
+  menuVisible = false;
 
   useLanguage(language: string): void {
     this.translate.use(language);
@@ -26,20 +30,61 @@ export class HeaderComponent implements OnDestroy {
   }
 
   toggleMenu(): void {
-    this.isMenuOpen = !this.isMenuOpen;
-    this.updateBodyScroll();
+    if (this.isMenuOpen) {
+      this.closeMenu();
+    } else {
+      this.openMenu();
+    }
+  }
+
+  private openMenu(): void {
+    if (this.menuCloseTimeout) {
+      clearTimeout(this.menuCloseTimeout);
+      this.menuCloseTimeout = null;
+    }
+
+    this.isClosing = false;
+
+    if (!this.menuVisible) {
+      this.menuVisible = true;
+    }
+
+    this.lockBodyScroll(true);
+
+    if (typeof window !== 'undefined' && window.requestAnimationFrame) {
+      window.requestAnimationFrame(() => {
+        this.isMenuOpen = true;
+      });
+    } else {
+      this.isMenuOpen = true;
+    }
   }
 
   closeMenu(): void {
+    if (!this.menuVisible && !this.isMenuOpen) {
+      return;
+    }
+
+    this.isClosing = true;
     this.isMenuOpen = false;
-    this.updateBodyScroll();
+
+    if (this.menuCloseTimeout) {
+      clearTimeout(this.menuCloseTimeout);
+    }
+
+    this.menuCloseTimeout = setTimeout(() => {
+      this.menuVisible = false;
+      this.isClosing = false;
+      this.lockBodyScroll(false);
+      this.menuCloseTimeout = null;
+    }, this.menuAnimationDuration);
   }
 
-  private updateBodyScroll(): void {
+  private lockBodyScroll(shouldLock: boolean): void {
     const body = this.document?.body;
     if (!body) return;
 
-    if (this.isMenuOpen) {
+    if (shouldLock) {
       body.classList.add('no-scroll');
     } else {
       body.classList.remove('no-scroll');
@@ -48,7 +93,13 @@ export class HeaderComponent implements OnDestroy {
 
   ngOnDestroy(): void {
     this.isMenuOpen = false;
-    this.updateBodyScroll();
+    this.isClosing = false;
+    this.menuVisible = false;
+    if (this.menuCloseTimeout) {
+      clearTimeout(this.menuCloseTimeout);
+      this.menuCloseTimeout = null;
+    }
+    this.lockBodyScroll(false);
   }
 
   // checking id before starting methods for the HTML Element
