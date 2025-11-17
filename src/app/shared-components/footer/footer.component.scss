@@ -11,6 +11,7 @@ footer {
     flex-direction: column;
     gap: 1.5rem;
     padding: 2rem;
+
     .icon-box {
       @include display-flex(column, flex-start, flex-start);
       gap: 1rem;
