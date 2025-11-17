@@ -1,3 +1,50 @@
+<ng-template #languageSwitch>
+  <div class="language-switch-box">
+    <span
+      (click)="useLanguage('en')"
+      [class.active]="currentLang === 'en'"
+      [class.inactive]="currentLang !== 'en'"
+      >EN
+
+      <img
+        class="toggle-line"
+        src="assets/Design material/00_Hand-drawn lines/00_Header/Color option 1/Toggle.png"
+        alt=""
+      />
+    </span>
+
+    <div
+      class="switch-icon-box"
+      [class.lang-en]="currentLang === 'en'"
+      [class.lang-de]="currentLang === 'de'"
+    >
+      <img
+        class="switch-bar"
+        src="assets/icons/switch_bar.png"
+        alt="switch left"
+      />
+      <img
+        class="switch-point"
+        src="assets/icons/switch_point.png"
+        alt="switch right"
+      />
+    </div>
+
+    <span
+      (click)="useLanguage('de')"
+      [class.active]="currentLang === 'de'"
+      [class.inactive]="currentLang !== 'de'"
+      >DE
+
+      <img
+        class="toggle-line"
+        src="assets/Design material/00_Hand-drawn lines/00_Header/Color option 1/Toggle.png"
+        alt=""
+      />
+    </span>
+  </div>
+</ng-template>
+
 <header class="HEADER">
   <div class="container">
     <div class="content">
@@ -72,59 +119,90 @@
 
       <!-- #endregion Header-links -->
       <!-- #region language-switch -->
-      <div class="language-switch-box">
-        <span
-          (click)="useLanguage('en')"
-          [class.active]="currentLang === 'en'"
-          [class.inactive]="currentLang !== 'en'"
-          >EN
-
-          <img
-            class="toggle-line"
-            src="assets/Design material/00_Hand-drawn lines/00_Header/Color option 1/Toggle.png"
-            alt=""
-          />
-        </span>
-
-        <div
-          class="switch-icon-box"
-          [class.lang-en]="currentLang === 'en'"
-          [class.lang-de]="currentLang === 'de'"
-        >
-          <img
-            class="switch-bar"
-            src="assets/icons/switch_bar.png"
-            alt="switch left"
-          />
-          <img
-            class="switch-point"
-            src="assets/icons/switch_point.png"
-            alt="switch right"
-          />
-        </div>
-
-        <span
-          (click)="useLanguage('de')"
-          [class.active]="currentLang === 'de'"
-          [class.inactive]="currentLang !== 'de'"
-          >DE
-
-          <img
-            class="toggle-line"
-            src="assets/Design material/00_Hand-drawn lines/00_Header/Color option 1/Toggle.png"
-            alt=""
-          />
-        </span>
-      </div>
+      <ng-container *ngTemplateOutlet="languageSwitch"></ng-container>
 
       <!-- #region mobile burger-menu -->
-      <div>
-        <span>
-          <img src="assets/icons/burger-default.png" alt="" />
-        </span>
-      </div>
+      <button
+        type="button"
+        class="burger-button"
+        [class.is-open]="isMenuOpen"
+        aria-label="Toggle navigation"
+        (click)="toggleMenu()"
+      >
+        <img
+          class="burger-icon"
+          src="assets/icons/burger-default.png"
+          alt="Open menu"
+        />
+        <span class="burger-close-icon" aria-hidden="true"></span>
+      </button>
     </div>
   </div>
 
   <!-- #endregion language-switch -->
+  <div class="mobile-menu" *ngIf="isMenuOpen">
+    <div class="mobile-menu__inner">
+      <div class="mobile-menu__top">
+        <img
+          src="assets/icons/logo_1.png"
+          alt="Logo"
+          class="mobile-menu__logo"
+        />
+        <button
+          type="button"
+          class="mobile-menu__close"
+          aria-label="Close navigation"
+          (click)="closeMenu()"
+        >
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="mobile-menu__middle">
+        <nav class="mobile-menu__links">
+          <a href="#about-me-section" (click)="closeMenu()">{{
+            "HEADER.ABOUT_ME" | translate
+          }}</a>
+          <a href="#skill-set-section" (click)="closeMenu()">{{
+            "HEADER.SKILLS" | translate
+          }}</a>
+          <a href="#projects-section" (click)="closeMenu()">{{
+            "HEADER.PROJECTS" | translate
+          }}</a>
+          <a href="#contact-section" (click)="closeMenu()">{{
+            "HEADER.CONTACT" | translate
+          }}</a>
+        </nav>
+        <div class="mobile-menu__language">
+          <ng-container *ngTemplateOutlet="languageSwitch"></ng-container>
+        </div>
+      </div>
+      <div class="mobile-menu__bottom">
+        <div class="social-icon-box">
+          <a
+            href="https://www.linkedin.com/in/henry-wolf-261baa383/"
+            target="_blank"
+            ><img
+              class="social-icon"
+              src="assets/icons/in.png"
+              alt="LinkedIn logo"
+          /></a>
+
+          <a href="https://github.com/HenryWolfDev" target="_blank">
+            <img
+              class="social-icon"
+              src="assets/icons/git-hub.png"
+              alt="GitHub logo"
+          /></a>
+
+          <a href="mailto:HWolf.binz@gmail.com"
+            ><img
+              class="social-icon"
+              src="assets/icons/mail.png"
+              alt="Email icon"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>

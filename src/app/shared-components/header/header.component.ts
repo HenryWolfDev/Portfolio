@@ -17,9 +17,19 @@ export class HeaderComponent {
 
   // checking language switch
   currentLang = this.translate.currentLang || 'en';
+  isMenuOpen = false;
+
   useLanguage(language: string): void {
     this.translate.use(language);
     this.currentLang = language;
+  }
+
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  closeMenu(): void {
+    this.isMenuOpen = false;
   }
 
   // checking id before starting methods for the HTML Element
