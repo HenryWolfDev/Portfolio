@@ -6,7 +6,14 @@
           <img class="logo_1" src="assets/icons/logo_1.png" alt="" />
           <img class="logo_2" src="assets/icons/logo_1_hover.png" alt="" />
         </div>
-        <span>© Henry Wolf 2025</span>
+        <span>&copy; Henry Wolf 2025</span>
+        <a
+          class="legal-notice legal-notice--mobile"
+          [routerLink]="['legal-notice']"
+          href=""
+          (mouseenter)="mouseEntered('legal-notice')"
+          (mouseleave)="mouseLeaved('legal-notice')"
+          >Legal Notice</a>
       </div>
       <div class="footer-links-box">
         <ul>
@@ -78,3 +85,4 @@
     </div>
   </div>
 </footer>
+

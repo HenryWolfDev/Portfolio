@@ -1,4 +1,5 @@
 @use "../../../../public/styles/all-styles.scss" as *;
+@use "../../../../public/styles/responsive-points.scss" as *;
 footer {
   background-image: url("../../../../public/assets/Design material/01_Background/Design Size Relation@3x/06_Contact_1.png");
   background-size: cover;
@@ -38,6 +39,12 @@ footer {
       }
       span {
         font-size: 1.8rem;
+      }
+      .legal-notice--mobile {
+        display: none;
+        color: var(--color-white);
+        font-size: 1.6rem;
+        text-decoration: none;
       }
     }
 
@@ -120,6 +127,27 @@ footer {
           color: var(--color-white);
         }
         // #endregion Footer Icon style and movement
+      }
+    }
+  }
+  @include mobile {
+    .content {
+      gap: 5rem;
+
+      .icon-box {
+        @include display-flex(row, space-between, center);
+        flex-wrap: wrap;
+        gap: 0.5rem 1rem;
+
+        .legal-notice--mobile {
+          display: inline-block;
+        }
+      }
+
+      .footer-links-box {
+        .legal-notice {
+          display: none;
+        }
       }
     }
   }
