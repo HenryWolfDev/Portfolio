@@ -18,13 +18,13 @@
   },
   "SKILL_SET_SECTION": {
     "MY_STACK_TEXT": "My stack",
-    "SKILL_INTRODUCTION_TEXT": "I have extensive experience working with modern frontend technologies such as HTML, CSS, JavaScript, and frameworks like Angular. At the same time, I’m always open to learning new tools and technologies.",
+    "SKILL_INTRODUCTION_TEXT": "I appreciate the simplicity of Signals, as they make component logic much easier to manage. Likewise, TypeScript’s strong type system helps me write clear and reliable code.",
     "PEEL_TEXT": "Pull to peel",
     "DIVING_TEXT": "Also, I'm interested in diving into:"
   },
   "PROJECTS_SECTION": {
     "PROJECTS_TITLE": "Projects",
-    "PROJECT_TEXT": "Encourage people to take a look and interact with your projects. Highlight your approach to creating responsive, user-friendly projects with efficient code."
+    "PROJECT_TEXT": "Feel free to explore my projects and try them out — I appreciate any feedback."
   },
 
   "projects": {
@@ -58,7 +58,7 @@
   "CONTACT_SECTION": {
     "CONTACT": "Contact me",
     "TITLE": "Ready to work together?",
-    "ROLE_INTEREST": " Encourage people to contact you and describe what role you are interested in. Express confidence in your ability to make a meaningful contribution to a team through your expertise andenthusiasm for improving your skills.",
+    "ROLE_INTEREST": "It’s incredibly exciting to grow in a new environment and gain deeper insights into the world of IT. I have a genuine interest in learning new things, trying out ideas, and creating exciting projects together with others.",
     "NAME": "What's your name?",
     "NAME_PLACEHOLDER": "Your Name goes here",
     "EMAIL": "What's your email?",

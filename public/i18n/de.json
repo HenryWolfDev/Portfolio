@@ -19,14 +19,14 @@
   },
   "SKILL_SET_SECTION": {
     "MY_STACK_TEXT": "Mein stack",
-    "SKILL_INTRODUCTION_TEXT": "Ich habe umfangreiche Erfahrung im Umgang mit modernen Frontend-Technologien wie HTML, CSS, JavaScript und Frameworks wie Angular. Gleichzeitig bin ich offen dafür, neue Tools und Technologien kennenzulernen.",
+    "SKILL_INTRODUCTION_TEXT": "Ich schätze die einfache Nutzung von Signals, da sie komponentenbasierte Logik deutlich vereinfachen. Ebenso TypeScripts starkes Typsystem, um klaren und zuverlässigen Code zu schreiben.",
     "PEEL_TEXT": "Öffne mich",
     "DIVING_TEXT": "Außerdem möchte ich mich vertiefen in:"
   },
 
   "PROJECTS_SECTION": {
     "PROJECTS_TITLE": "Projekte",
-    "PROJECT_TEXT": "Ermutige Menschen, einen Blick auf deine Projekte zu werfen und mit ihnen zu interagieren.Hebe dabei deinen Ansatz hervor, responsive und benutzerfreundliche Projekte mit effizientem Code zu entwickeln."
+    "PROJECT_TEXT": "Schau dir gern meine Projekte an und probiere sie aus – ich freue mich über jedes Feedback."
   },
   "projects": {
     "TITLE_DESCRIPTON": "Beschreibung",
@@ -59,7 +59,7 @@
   "CONTACT_SECTION": {
     "CONTACT": "Kontakt aufnehmen",
     "TITLE": "Zusammen Großes schaffen",
-    "ROLE_INTEREST": "Ermutigen Sie die Leute, mit Ihnen Kontakt aufzunehmen und beschreiben Sie, für welche Rolle Sie sich interessieren. Drücken Sie Ihr Selbstvertrauen darin aus, durch Ihre Fachkenntnisse und Ihre Begeisterung für die Weiterentwicklung Ihrer Fähigkeiten einen wertvollen Beitrag zu einem Team leisten zu können.",
+    "ROLE_INTEREST": "Es ist unglaublich spannend, in einem neuen Umfeld weiterzuwachsen und noch tiefere Einblicke in die Welt der IT zu bekommen. Ich habe einfach echtes Interesse daran, Neues zu lernen, mich auszuprobieren und gemeinsam mit anderen spannende Dinge zu entwickeln.",
     "NAME": "Ihr Name",
     "NAME_PLACEHOLDER": "Schreiben Sie hier Ihren Namen",
     "EMAIL": "Ihre E-Mail",

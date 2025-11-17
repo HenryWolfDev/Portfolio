@@ -143,10 +143,21 @@ section {
 
 @include mobile {
   section {
+    .about-me-box {
+      .about-me {
+        font-size: 4.8rem;
+      }
+    }
+
+    .introduction-box {
+      p {
+        font-size: 1.6rem;
+      }
+    }
     .paper-box {
       width: 100%;
       max-width: 70rem;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
 
       .yellow-paper-box {
         .ripped-paper-y {

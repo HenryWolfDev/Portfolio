@@ -274,13 +274,14 @@ header {
 
       display: flex;
       justify-content: center;
-      overflow: hidden;
+
       &__inner {
         width: 100%;
         padding: 2rem 2rem;
         @include display-flex(column, space-between, stretch);
         height: auto;
         gap: 3rem;
+        // overflow: auto;
       }
 
       // #region close-btn
@@ -318,12 +319,12 @@ header {
 
       &__middle {
         @include display-flex(column, center, stretch);
-        gap: 4rem;
+        gap: 6.4rem;
       }
 
       &__links {
         @include display-flex(column, center, center);
-        gap: 2.4rem;
+        gap: 6.4rem;
 
         a {
           font-size: 2.4rem;
