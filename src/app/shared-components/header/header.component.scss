@@ -149,34 +149,6 @@ header {
           pointer-events: none;
         }
       }
-      .switch-icon-box {
-        position: relative;
-        width: 3.2rem;
-        height: 0.8rem;
-        display: inline-block;
-
-        .switch-bar {
-          width: 100%;
-          height: 100%;
-          display: block;
-        }
-        .switch-point {
-          position: absolute;
-          left: 0;
-          bottom: -5px;
-          z-index: 1;
-          transition: left 0.35s ease-in-out;
-          pointer-events: none;
-        }
-
-        &.lang-de .switch-point {
-          left: calc(100% - 1.5rem);
-        }
-
-        &.lang-en .switch-point {
-          left: 0;
-        }
-      }
     }
 
     .burger-button {
@@ -238,9 +210,39 @@ header {
   }
 }
 
+.switch-icon-box {
+  position: relative;
+  width: 3.2rem;
+  height: 0.8rem;
+  display: inline-block;
+
+  .switch-bar {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .switch-point {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    z-index: 1;
+    transition: left 0.35s ease-in-out;
+    pointer-events: none;
+  }
+
+  &.lang-de .switch-point {
+    left: calc(100% - 1.5rem);
+  }
+
+  &.lang-en .switch-point {
+    left: 0;
+  }
+}
+
 @include mobile {
   header {
     width: 100%;
+
     .content {
       .about-me-link {
         display: none;
@@ -272,7 +274,7 @@ header {
 
       display: flex;
       justify-content: center;
-
+      overflow: hidden;
       &__inner {
         width: 100%;
         padding: 2rem 2rem;
@@ -376,6 +378,18 @@ header {
             border: 0.1rem solid var(--color-white);
             border-radius: 4rem;
             padding: 0.5rem;
+
+            background-image: linear-gradient(
+              var(--color-blue),
+              var(--color-blue)
+            );
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: 100% 0%;
+            transition: background-size 0.1s ease;
+          }
+          .social-icon:active {
+            background-size: 100% 100%;
           }
         }
       }

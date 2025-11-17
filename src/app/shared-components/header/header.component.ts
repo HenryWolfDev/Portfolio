@@ -1,5 +1,5 @@
-import { CommonModule } from '@angular/common';
-import { Component, signal, inject } from '@angular/core';
+import { CommonModule, DOCUMENT } from '@angular/common';
+import { Component, inject, OnDestroy } from '@angular/core';
 import {
   TranslatePipe,
   TranslateDirective,
@@ -12,8 +12,9 @@ import {
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnDestroy {
   private translate = inject(TranslateService);
+  private document = inject(DOCUMENT);
 
   // checking language switch
   currentLang = this.translate.currentLang || 'en';
@@ -26,10 +27,28 @@ export class HeaderComponent {
 
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
+    this.updateBodyScroll();
   }
 
   closeMenu(): void {
     this.isMenuOpen = false;
+    this.updateBodyScroll();
+  }
+
+  private updateBodyScroll(): void {
+    const body = this.document?.body;
+    if (!body) return;
+
+    if (this.isMenuOpen) {
+      body.classList.add('no-scroll');
+    } else {
+      body.classList.remove('no-scroll');
+    }
+  }
+
+  ngOnDestroy(): void {
+    this.isMenuOpen = false;
+    this.updateBodyScroll();
   }
 
   // checking id before starting methods for the HTML Element
