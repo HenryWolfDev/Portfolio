@@ -185,6 +185,12 @@ section {
   }
 }
 
+@include bigscreen {
+  section {
+    height: 50vh;
+  }
+}
+
 @include mobile {
   section {
     .content {

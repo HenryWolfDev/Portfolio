@@ -4,7 +4,7 @@
 section {
   position: relative;
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   background-image: url("../../../../public/assets/Design material/01_Background/Design Size Relation@3x/03_Skills.png");
 
   background-repeat: no-repeat;
@@ -236,6 +236,11 @@ section {
         }
       }
     }
+  }
+}
+@include bigscreen {
+  section {
+    height: 50vh;
   }
 }
 
