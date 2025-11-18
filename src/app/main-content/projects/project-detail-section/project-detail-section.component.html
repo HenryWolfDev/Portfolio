@@ -1,110 +1,86 @@
 <ng-container *ngIf="project">
   <section class="detail-section">
     <div class="container">
-      <div class="content">
-        <!--#region Routes to previous project -->
-        <div class="go-back-box">
-          <img
-            class="draw-line-back-arrow"
-            src="assets/Design material/00_Hand-drawn lines/03_Portfolio/Breadcrumbs/Breadcrumb arrow 1.png"
-            alt=""
-          />
-          <span [routerLink]="['/']" fragment="projects-section">{{
-            "projects.GO_BACK" | translate
-          }}</span>
-        </div>
-        <!--#endregion Routes to previous project -->
-
+      <div class="wrapper">
         <!-- #region information-content -->
-        <div class="explain-content">
-          <div class="text-content">
-            <div class="title">
+        <div class="main-content">
+          <!--#region Routes to previous project -->
+          <div class="go-back">
+            <img
+              class="draw-line-back-arrow"
+              src="assets/Design material/00_Hand-drawn lines/03_Portfolio/Breadcrumbs/Breadcrumb arrow 1.png"
+              alt=""
+            />
+            <span [routerLink]="['/']" fragment="projects-section">{{
+              "projects.GO_BACK" | translate
+            }}</span>
+          </div>
+          <!--#endregion Routes to previous project -->
+          <div class="project-content">
+            <div class="info-content">
               <h1>{{ project.title | translate }}</h1>
-            </div>
-            <div>
-              <div class="description-box box">
-                <h3>{{ "projects.TITLE_DESCRIPTON" | translate }}</h3>
-                <p>{{ project.teaser_text | translate }}</p>
-              </div>
-              <div class="details-box box">
-                <h3>{{ "projects.TITLE_DETAILS" | translate }}</h3>
-                <p>{{ project.details | translate }}</p>
-              </div>
-              <div class="duration-bo box">
-                <span>
-                  <strong>{{ "projects.DURATION" | translate }}</strong
-                  >5 {{ "projects.WEEKS" | translate }}</span
-                >
+
+              <div class="project-info">
+                <div class="info">
+                  <h3>{{ "projects.TITLE_DESCRIPTON" | translate }}</h3>
+                  <p>{{ project.teaser_text | translate }}</p>
+                </div>
+                <div class="info">
+                  <h3>{{ "projects.TITLE_DETAILS" | translate }}</h3>
+                  <p>{{ project.details | translate }}</p>
+                </div>
+                <div class="info">
+                  <span>
+                    <strong>{{ "projects.DURATION" | translate }}</strong
+                    >{{ project.duration }}
+                    {{ "projects.WEEKS" | translate }}</span
+                  >
+                </div>
               </div>
 
               <!-- #region shows-tech-icons -->
               <div class="tech-icons-box">
-                <img
-                  class="icon"
-                  src="assets/icons/skill-icons/css-icon.png"
-                  alt=""
-                />
-                <span>CSS</span>
-                <img
-                  class="icon"
-                  src="assets/icons/skill-icons/html-icon.png"
-                  alt=""
-                />
-                <span>HTML</span>
-                <img
-                  class="icon"
-                  src="assets/icons/skill-icons/firebase-icon.png"
-                  alt=""
-                />
-                <span>Firebase</span>
-                <img
-                  class="icon"
-                  src="assets/icons/skill-icons/angular-icon.png"
-                  alt=""
-                />
-                <span>Angular</span>
-                <img
-                  class="icon"
-                  src="assets/icons/skill-icons/typeScript-icon.png"
-                  alt=""
-                />
-                <span>TypeScript</span>
+                <ng-container *ngFor="let tech of techIcons">
+                  <img [src]="tech.iconSrc" class="icon" />
+                  <span>{{ tech.label }}</span>
+                </ng-container>
               </div>
+
               <!-- #endregion shows-tech-icons -->
             </div>
+
+            <!-- #region image-content -->
+            <div class="image-content">
+              <img
+                class="project-image"
+                [src]="project.image"
+                [alt]="project.title"
+              />
+              <div class="project-links">
+                <button
+                  type="button"
+                  (click)="openBtnLink(project.gitHub_Link)"
+                  class="gitHub-btn"
+                >
+                  GitHub
+                </button>
+                <button class="live-test-btn">Live Test</button>
+              </div>
+            </div>
+            <!-- #endregion image-content -->
           </div>
 
-          <!-- #region image-content -->
-          <div class="image-content">
+          <!-- Routes to next Project -->
+          <div class="go-next" [routerLink]="['/projects', nextSlug]">
+            <span>{{ "projects.NEXT_PROJECT" | translate }}</span>
             <img
-              class="project-image"
-              [src]="project.image"
-              [alt]="project.title"
+              class="draw-line-next-arrow"
+              src="assets/Design material/00_Hand-drawn lines/03_Portfolio/Breadcrumbs/Next project arrow 1.png"
+              alt=""
             />
-            <div class="button-box">
-              <button
-                type="button"
-                (click)="openBtnLink(project.gitHub_Link)"
-                class="gitHub-btn"
-              >
-                GitHub
-              </button>
-              <button class="live-test-btn">Live Test</button>
-            </div>
           </div>
-          <!-- #endregion image-content -->
         </div>
         <!-- #endregion information-content -->
-
-        <!-- Routes to next Project -->
-        <div class="go-next-box" [routerLink]="['/projects', nextSlug]">
-          <span>{{ "projects.NEXT_PROJECT" | translate }}</span>
-          <img
-            class="draw-line-next-arrow"
-            src="assets/Design material/00_Hand-drawn lines/03_Portfolio/Breadcrumbs/Next project arrow 1.png"
-            alt=""
-          />
-        </div>
       </div>
     </div>
   </section>

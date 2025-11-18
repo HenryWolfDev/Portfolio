@@ -2,8 +2,9 @@
 @use "../../../../../public/styles/responsive-points.scss" as *;
 .detail-section {
   position: relative;
-  height: 100vh;
-  background-image: url("../../../../../public/assets/Design material/01_Background/Design Size Relation@3x/Note book paper_1.png");
+  width: 100%;
+  height: 100dvh;
+  background-image: url("../../../../../public/assets/Design material/01_Background/Design Size Relation@3x/03_Skills_1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -20,122 +21,158 @@
     font-size: 1.8rem;
   }
 
-  .content {
-    position: absolute;
+  .wrapper {
     width: 100%;
     height: 100%;
-    @include display-flex(column, center, center);
-    gap: 2rem;
-    color: var(--color-dark);
+    @include display-flex(column, space-around, center);
+    padding: 0 1.6rem;
+    color: var(--color-white);
 
-    // #region Routes styles for btn back & next project
-    .go-back-box {
-      @include display-flex(row, flex-start, center);
-      gap: 1rem;
-      width: 100%;
-      padding-left: 15%;
-      font-weight: 700;
+    .main-content {
+      // #region moving back to main-page
+      .go-back {
+        @include display-flex(row, flex-start, start);
+        gap: 1rem;
+        padding-left: 5%;
+        font-weight: 700;
 
-      span {
-        cursor: pointer;
-      }
-
-      .draw-line-back-arrow {
-        width: 2.4rem;
-        height: 2.4rem;
-      }
-    }
-
-    .go-back-box {
-      span:hover {
-        color: var(--color-red);
-      }
-    }
-
-    .go-next-box {
-      @include display-flex(row, flex-end, center);
-      gap: 1rem;
-      width: 100%;
-      padding-right: 15%;
-      font-weight: 700;
-
-      span {
-        color: var(--color-white);
-        cursor: pointer;
-      }
-
-      .draw-line-next-arrow {
-        width: 2.4rem;
-        height: 2.4rem;
-      }
-    }
-
-    .go-next-box {
-      span:hover {
-        color: var(--color-yellow);
-      }
-    }
-    // #endregion Routes styles for btn back & next project
-
-    .explain-content {
-      @include display-flex(row, space-around, center);
-      width: 100%;
-
-      // #region text-content
-      .text-content {
-        width: 54rem;
-        @include display-flex(column, flex-start, flex-start);
-        gap: 4rem;
-
-        .tech-icons-box {
-          @include display-flex(row, flex-start, center);
-          gap: 1rem;
-          padding: 2rem 0;
-
-          .icon {
-            width: 2.4rem;
-            height: 2.4rem;
-          }
+        span {
+          cursor: pointer;
         }
-        .box {
+
+        .draw-line-back-arrow {
+          width: 2.4rem;
+          height: 2.4rem;
+        }
+      }
+
+      .go-back {
+        span:hover {
+          color: var(--color-red);
+        }
+      }
+      // #endregion moving back to main-page
+
+      // #region moving to next project
+      .go-next {
+        @include display-flex(row, flex-end, flex-end);
+        gap: 1rem;
+        padding-right: 5%;
+        margin-left: auto;
+        font-weight: 700;
+
+        span {
+          color: var(--color-white);
+          cursor: pointer;
+        }
+
+        .draw-line-next-arrow {
+          width: 2.4rem;
+          height: 2.4rem;
+        }
+      }
+
+      .go-next {
+        span:hover {
+          color: var(--color-yellow);
+        }
+      }
+      // #endregion moving to next project
+
+      .project-content {
+        @include display-flex(row, space-around, center);
+        width: 100%;
+        .info-content {
           @include display-flex(column, flex-start, flex-start);
-          gap: 1rem;
-          padding: 2rem 0;
-        }
-      }
-      // #endregion text-content
-      .image-content {
-        display: flex;
-        flex-direction: column;
-        gap: 6rem;
-        .project-image {
-          width: 56rem;
-          height: 40rem;
-        }
-        .button-box {
-          display: flex;
-          justify-content: flex-end;
           gap: 4rem;
 
-          .gitHub-btn {
-            font-size: 2rem;
-            font-weight: 500;
-            @include press-button(
-              $bg-color: var(--color-dark),
-              $bs-color: var(--color-white),
-              $color: var(--color-white),
-              $b-color: var(--color-white)
-            );
+          .project-info {
+            width: 100%;
+            max-width: 48.8rem;
           }
 
-          .live-test-btn {
-            font-size: 2rem;
-            @include press-button(
-              $bg-color: var(--color-dark),
-              $bs-color: var(--color-white),
-              $color: var(--color-white),
-              $b-color: var(--color-white)
-            );
+          .tech-icons-box {
+            @include display-flex(row, flex-start, center);
+            gap: 1rem;
+            padding: 2rem 0;
+
+            .icon {
+              width: 2.4rem;
+              height: 2.4rem;
+            }
+          }
+          .info {
+            @include display-flex(column, flex-start, flex-start);
+            gap: 1rem;
+            padding: 2rem 0;
+          }
+        }
+        // #endregion text-content
+        .image-content {
+          display: flex;
+          flex-direction: column;
+          gap: 6rem;
+          .project-image {
+            width: 100%;
+            max-width: 56rem;
+            height: 100%;
+            max-height: 40rem;
+          }
+          .project-links {
+            display: flex;
+            justify-content: flex-end;
+            gap: 4rem;
+
+            .gitHub-btn {
+              font-size: 2rem;
+              font-weight: 500;
+              @include press-button(
+                $bg-color: var(--color-dark),
+                $bs-color: var(--color-white),
+                $color: var(--color-white),
+                $b-color: var(--color-white)
+              );
+            }
+
+            .live-test-btn {
+              font-size: 2rem;
+              @include press-button(
+                $bg-color: var(--color-dark),
+                $bs-color: var(--color-white),
+                $color: var(--color-white),
+                $b-color: var(--color-white)
+              );
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include mobile {
+  .detail-section {
+    h1 {
+      font-size: 6.4rem;
+    }
+    h3 {
+      font-size: 2.4rem;
+    }
+    p,
+    span {
+      font-size: 1.8rem;
+    }
+    .wrapper {
+      .main-content {
+        @include display-flex(column, flex-start, start);
+        .project-content {
+          .image-content {
+            padding: 0 1.6rem;
+            .project-image {
+              width: 100%;
+              max-width: 36rem;
+              height: 100%;
+              max-height: 40rem;
+            }
           }
         }
       }
@@ -144,13 +181,13 @@
 }
 @media (max-width: 1400px) {
   .detail-section {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    .content {
-      color: var(--color-white);
-      .explain-content {
-        @include display-flex(column, center, center);
+    .wrapper {
+      .main-content {
+        @include display-flex(column, center, start);
+        padding: 10rem 0;
+        .project-content {
+          @include display-flex(column, center, center);
+        }
       }
     }
   }

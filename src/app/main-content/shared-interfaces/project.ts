@@ -5,4 +5,12 @@ export interface Project {
   details: string;
   teaser_text: string;
   image: string;
+  techStack: string[];
+  duration: number;
+}
+
+export interface TechIcon {
+  key: string;
+  label: string;
+  iconSrc: string;
 }
