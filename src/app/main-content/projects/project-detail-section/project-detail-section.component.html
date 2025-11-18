@@ -41,8 +41,10 @@
               <!-- #region shows-tech-icons -->
               <div class="tech-icons-box">
                 <ng-container *ngFor="let tech of techIcons">
-                  <img [src]="tech.iconSrc" class="icon" />
-                  <span>{{ tech.label }}</span>
+                  <div>
+                    <img [src]="tech.iconSrc" class="icon" />
+                    <span>{{ tech.label }}</span>
+                  </div>
                 </ng-container>
               </div>
 
