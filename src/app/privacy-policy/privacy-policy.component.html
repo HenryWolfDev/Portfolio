@@ -1,1 +1,84 @@
-<p>privacy-policy works!</p>
+<section class="header-section">
+  <div class="container header-content">
+    <div class="header">
+      <h1>{{ "PRIVACY_POLICY.HEADER" | translate }}</h1>
+    </div>
+  </div>
+</section>
+
+<section class="notice-section">
+  <div class="container">
+    <div
+      class="go-back-box-mobile"
+      [routerLink]="['/']"
+      fragment="contact-section"
+    >
+      <img
+        class="draw-line-back-arrow"
+        src="assets/Design material/00_Hand-drawn lines/03_Portfolio/Breadcrumbs/Breadcrumb arrow 1.png"
+        alt=""
+      />
+      <span>{{ "PRIVACY_POLICY.GO_BACK" | translate }}</span>
+    </div>
+
+    <div class="notice-content box">
+      <div class="students-list">
+        <h3>{{ "PRIVACY_POLICY.RESPONSIBLE_TITLE" | translate }}</h3>
+        <ul>
+          <li>
+            <span>{{ "PRIVACY_POLICY.RESPONSIBLE_NAME" | translate }}</span>
+          </li>
+          <li>
+            <span>{{ "PRIVACY_POLICY.RESPONSIBLE_ADDRESS" | translate }}</span>
+          </li>
+          <li>
+            <span>{{ "PRIVACY_POLICY.RESPONSIBLE_CITY" | translate }}</span>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>{{ "PRIVACY_POLICY.CONTACT_TITLE" | translate }}</h3>
+        <span>{{ "PRIVACY_POLICY.CONTACT_EMAIL" | translate }}</span>
+      </div>
+
+      <div class="acceptance-box box">
+        <h3>{{ "PRIVACY_POLICY.GENERAL_TITLE" | translate }}</h3>
+        <p>{{ "PRIVACY_POLICY.GENERAL_TEXT" | translate }}</p>
+      </div>
+
+      <div class="ownership-box box">
+        <h3>{{ "PRIVACY_POLICY.DATA_TITLE" | translate }}</h3>
+        <p>{{ "PRIVACY_POLICY.DATA_TEXT_1" | translate }}</p>
+        <p>{{ "PRIVACY_POLICY.DATA_TEXT_2" | translate }}</p>
+      </div>
+
+      <div class="rights-box box">
+        <h3>{{ "PRIVACY_POLICY.THIRD_PARTY_TITLE" | translate }}</h3>
+        <p>{{ "PRIVACY_POLICY.THIRD_PARTY_TEXT" | translate }}</p>
+      </div>
+
+      <div class="product-use-box box">
+        <h3>{{ "PRIVACY_POLICY.RETENTION_TITLE" | translate }}</h3>
+        <p>{{ "PRIVACY_POLICY.RETENTION_TEXT" | translate }}</p>
+      </div>
+
+      <div class="disclaimer-box box">
+        <h3>{{ "PRIVACY_POLICY.RIGHTS_TITLE" | translate }}</h3>
+        <p>{{ "PRIVACY_POLICY.RIGHTS_TEXT" | translate }}</p>
+      </div>
+
+      <div class="indemnity box">
+        <h3>{{ "PRIVACY_POLICY.WITHDRAWAL_TITLE" | translate }}</h3>
+        <p>{{ "PRIVACY_POLICY.WITHDRAWAL_TEXT_1" | translate }}</p>
+        <p>{{ "PRIVACY_POLICY.WITHDRAWAL_TEXT_2" | translate }}</p>
+      </div>
+
+      <div>
+        <span>{{ "PRIVACY_POLICY.DATE" | translate }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>

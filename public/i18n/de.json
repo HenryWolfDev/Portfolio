@@ -107,5 +107,40 @@
     "INDEMNITY_TEXT_2": "Bei Fragen oder Mitteilungen kontaktieren Sie uns bitte unter [Kontakt-E-Mail].",
 
     "DATE": "Datum: 26. Juli 2025"
+  },
+
+  "PRIVACY_POLICY": {
+    "HEADER": "Datenschutzerklärung",
+    "GO_BACK": "Zurück zur Kontaktsektion",
+
+    "RESPONSIBLE_TITLE": "Verantwortliche Stelle",
+    "RESPONSIBLE_NAME": "Anja Mustermann",
+    "RESPONSIBLE_ADDRESS": "Portfolio Straße 12",
+    "RESPONSIBLE_CITY": "12345 Musterstadt, Deutschland",
+
+    "CONTACT_TITLE": "Kontakt",
+    "CONTACT_EMAIL": "privacy@portfolio.dev",
+
+    "GENERAL_TITLE": "Allgemeines zur Datenverarbeitung",
+    "GENERAL_TEXT": "Ich verarbeite personenbezogene Daten nur in dem Umfang, der erforderlich ist, um meine Website und Services bereitzustellen. Die Verarbeitung erfolgt auf Grundlage von Art. 6 DSGVO und nur solange ein legitimer Zweck besteht.",
+
+    "DATA_TITLE": "Erhobene Daten",
+    "DATA_TEXT_1": "Beim Besuch der Website werden technische Logfiles (IP-Adresse, Browser, Zugriffsuhrzeit, Referrer) erfasst, um die Sicherheit der Anwendung zu gewährleisten.",
+    "DATA_TEXT_2": "Über das Kontaktformular erhalte ich die Daten, die du freiwillig eingibst (Name, E-Mail, Nachricht). Diese Informationen nutze ich ausschließlich zur Bearbeitung deiner Anfrage.",
+
+    "THIRD_PARTY_TITLE": "Nutzung von Diensten Dritter",
+    "THIRD_PARTY_TEXT": "Medieninhalte wie Schriftarten oder Illustrationen können über Content-Delivery-Netzwerke geladen werden. Dabei werden technische Informationen an die Anbieter übertragen. Es werden keine Cookies gesetzt, die dich über mehrere Seiten verfolgen.",
+
+    "RETENTION_TITLE": "Speicherdauer",
+    "RETENTION_TEXT": "Kontaktanfragen lösche ich spätestens nach sechs Monaten, sofern keine gesetzliche Aufbewahrungspflicht besteht. Server-Logfiles werden zur Fehleranalyse spätestens nach 30 Tagen anonymisiert.",
+
+    "RIGHTS_TITLE": "Deine Rechte",
+    "RIGHTS_TEXT": "Du hast jederzeit das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Widerspruch gegen die Verarbeitung deiner Daten. Richte Anfragen bitte an die oben angegebene Kontaktadresse.",
+
+    "WITHDRAWAL_TITLE": "Widerruf von Einwilligungen",
+    "WITHDRAWAL_TEXT_1": "Bereits erteilte Einwilligungen kannst du jederzeit mit Wirkung für die Zukunft widerrufen. Die Rechtmäßigkeit der Datenverarbeitung bis zum Widerruf bleibt davon unberührt.",
+    "WITHDRAWAL_TEXT_2": "Solltest du der Ansicht sein, dass die Verarbeitung gegen geltendes Datenschutzrecht verstößt, steht dir das Beschwerderecht bei einer Aufsichtsbehörde zu.",
+
+    "DATE": "Letzte Aktualisierung: 18. November 2025"
   }
 }

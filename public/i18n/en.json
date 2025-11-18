@@ -106,5 +106,40 @@
     "INDEMNITY_TEXT_2": "For any questions or notices, please contact us at [Contact Email].",
 
     "DATE": "Date: July 26, 2025"
+  },
+
+  "PRIVACY_POLICY": {
+    "HEADER": "Privacy Policy",
+    "GO_BACK": "Back to contact section",
+
+    "RESPONSIBLE_TITLE": "Controller",
+    "RESPONSIBLE_NAME": "Anja Mustermann",
+    "RESPONSIBLE_ADDRESS": "Portfolio Street 12",
+    "RESPONSIBLE_CITY": "12345 Sample City, Germany",
+
+    "CONTACT_TITLE": "Contact",
+    "CONTACT_EMAIL": "privacy@portfolio.dev",
+
+    "GENERAL_TITLE": "General Information on Data Processing",
+    "GENERAL_TEXT": "I process personal data only to the extent necessary to provide my website and services. Processing is based on Art. 6 GDPR and only continues while a legitimate purpose exists.",
+
+    "DATA_TITLE": "Data Collected",
+    "DATA_TEXT_1": "When you visit the website, technical log files (IP address, browser, access time, referrer) are captured to keep the application secure.",
+    "DATA_TEXT_2": "Through the contact form I receive the data you voluntarily submit (name, email, message). I use this information solely to respond to your request.",
+
+    "THIRD_PARTY_TITLE": "Use of Third-Party Services",
+    "THIRD_PARTY_TEXT": "Media assets such as fonts or illustrations may be loaded via content delivery networks. Technical information is transmitted to those providers, but no cookies are set that track you across multiple pages.",
+
+    "RETENTION_TITLE": "Retention Period",
+    "RETENTION_TEXT": "I delete contact requests after six months at the latest unless statutory retention duties apply. Server log files are anonymized within 30 days for troubleshooting purposes.",
+
+    "RIGHTS_TITLE": "Your Rights",
+    "RIGHTS_TEXT": "You have the right to request access, rectification, deletion, restriction of processing, data portability, and to object to the processing of your data at any time. Please direct your requests to the contact listed above.",
+
+    "WITHDRAWAL_TITLE": "Withdrawal of Consent",
+    "WITHDRAWAL_TEXT_1": "You may revoke any consent you have previously given at any time with future effect. The lawfulness of the processing carried out until the withdrawal remains unaffected.",
+    "WITHDRAWAL_TEXT_2": "If you believe the processing violates applicable data protection law, you have the right to lodge a complaint with a supervisory authority.",
+
+    "DATE": "Last updated: November 18, 2025"
   }
 }

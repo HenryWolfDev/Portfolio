@@ -1,0 +1,88 @@
+@use "../../../public/styles/all-styles.scss" as *;
+@use "../../../public/styles/responsive-points.scss" as *;
+.header-section {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background-image: url("../../../public/assets/Design material/01_Background/Design Size Relation@3x/01_Hero.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: var(--color-white);
+  background-color: var(--color-white);
+
+  .header-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .header {
+      h1 {
+        font-size: 6.4rem;
+      }
+    }
+    @include mobile {
+      .header {
+        h1 {
+          font-size: 4.8rem;
+          padding-left: 1.6rem;
+        }
+      }
+    }
+  }
+}
+
+.notice-section {
+  background-color: var(--color-white);
+  color: var(--color-dark);
+
+  .go-back-box-mobile {
+    opacity: 0;
+  }
+
+  .notice-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .box {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mark {
+      color: var(--color-blue);
+    }
+
+    h3 {
+      font-size: 2.4rem;
+      color: var(--color-blue);
+    }
+
+    p,
+    span {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@include mobile {
+  .notice-section {
+    padding: 0 1.6rem;
+    .go-back-box-mobile {
+      @include display-flex(row, start, center);
+      gap: 1rem;
+      padding-bottom: 1.6rem;
+      opacity: 1;
+
+      span {
+        font-size: 1.6rem;
+        font-weight: bold;
+      }
+
+      .draw-line-back-arrow {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+    }
+  }
+}
