@@ -283,25 +283,26 @@ header {
         @include display-flex(column, space-between, stretch);
         height: auto;
         gap: 3rem;
+
         transform: translateY(-100%);
+        transition: transform 0.45s ease;
+      }
+
+      // Overlay ein-/ausblenden
+      & {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.45s ease;
       }
 
       &.is-open {
+        opacity: 1;
         pointer-events: auto;
-        animation: mobileMenuFadeIn 0.45s ease forwards;
       }
 
-      &.is-closing {
-        pointer-events: none;
-        animation: mobileMenuFadeOut 0.45s ease forwards;
-      }
-
+      // Inhalt hoch/runter sliden
       &__inner.is-open {
-        animation: mobileMenuSlideIn 0.45s ease forwards;
-      }
-
-      &__inner.is-closing {
-        animation: mobileMenuSlideOut 0.45s ease forwards;
+        transform: translateY(0);
       }
 
       // #region close-btn
@@ -415,41 +416,5 @@ header {
         }
       }
     }
-  }
-}
-
-@keyframes mobileMenuFadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes mobileMenuFadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes mobileMenuSlideIn {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
-@keyframes mobileMenuSlideOut {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-100%);
   }
 }

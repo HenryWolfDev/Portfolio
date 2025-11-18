@@ -30,14 +30,18 @@ export class HeaderComponent implements OnDestroy {
   }
 
   toggleMenu(): void {
+    console.log('toggleMenu; isMenuOpen before:', this.isMenuOpen);
     if (this.isMenuOpen) {
+      console.log('→ closeMenu');
       this.closeMenu();
     } else {
+      console.log('→ openMenu');
       this.openMenu();
     }
   }
 
   private openMenu(): void {
+    console.log('openMenu');
     if (this.menuCloseTimeout) {
       clearTimeout(this.menuCloseTimeout);
       this.menuCloseTimeout = null;
@@ -61,6 +65,7 @@ export class HeaderComponent implements OnDestroy {
   }
 
   closeMenu(): void {
+    console.log('closeMenu');
     if (!this.menuVisible && !this.isMenuOpen) {
       return;
     }
