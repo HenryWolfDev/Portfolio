@@ -78,12 +78,12 @@
   "LEGAL_NOTICE": {
     "HEADER": "Legal Notice",
     "IMPRINT_TITLE": "Imprint",
-    "IMPRINT_STUDENTS": "[List of student names]",
-    "IMPRINT_ADDRESS": "[Address of the JOIN operator – e.g. one of the students]",
-    "IMPRINT_CITY": "[Postcode and city]",
+    "IMPRINT_STUDENTS": "[Henry Wolf]",
+    "IMPRINT_ADDRESS": "[Henry Wolf]",
+    "IMPRINT_CITY": "[18609 Ostseebad Binz]",
 
     "EXPLORING_TITLE": "Exploring the Board",
-    "EXPLORING_EMAIL": "Email: [Email]",
+    "EXPLORING_EMAIL": "Email: [HWolf.binz@gmail.com]",
 
     "ACCEPTANCE_TITLE": "Acceptance of Terms",
     "ACCEPTANCE_TEXT": "By accessing and using Portfolio (Product), you acknowledge and agree to the following terms and conditions, as well as any policies, guidelines, or amendments that may be presented to you from time to time. We, the listed students, may update or change these terms and conditions without prior notice.",
@@ -113,12 +113,12 @@
     "GO_BACK": "Back to contact section",
 
     "RESPONSIBLE_TITLE": "Controller",
-    "RESPONSIBLE_NAME": "Anja Mustermann",
-    "RESPONSIBLE_ADDRESS": "Portfolio Street 12",
-    "RESPONSIBLE_CITY": "12345 Sample City, Germany",
+    "RESPONSIBLE_NAME": "Henry Wolf",
+    "RESPONSIBLE_ADDRESS": "Dollahner Straße 4b",
+    "RESPONSIBLE_CITY": "18609 Ostseebad Binz, Germany",
 
     "CONTACT_TITLE": "Contact",
-    "CONTACT_EMAIL": "privacy@portfolio.dev",
+    "CONTACT_EMAIL": "HWolf.binz@gmail.com",
 
     "GENERAL_TITLE": "General Information on Data Processing",
     "GENERAL_TEXT": "I process personal data only to the extent necessary to provide my website and services. Processing is based on Art. 6 GDPR and only continues while a legitimate purpose exists.",

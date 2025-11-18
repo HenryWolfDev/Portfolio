@@ -79,12 +79,12 @@
   "LEGAL_NOTICE": {
     "HEADER": "Rechtlicher Hinweis",
     "IMPRINT_TITLE": "Impressum",
-    "IMPRINT_STUDENTS": "[Liste der Studierendennamen]",
-    "IMPRINT_ADDRESS": "[Adresse des JOIN-Betreibers – z. B. einer der Studierenden]",
-    "IMPRINT_CITY": "[Postleitzahl und Stadt]",
+    "IMPRINT_STUDENTS": "[Henry Wolf]",
+    "IMPRINT_ADDRESS": "[Henry Wolf]",
+    "IMPRINT_CITY": "[18609 Ostseebad Binz]",
 
     "EXPLORING_TITLE": "Das Board erkunden",
-    "EXPLORING_EMAIL": "E-Mail: [E-Mail]",
+    "EXPLORING_EMAIL": "E-Mail: [HWolf.binz@gmail.com]",
 
     "ACCEPTANCE_TITLE": "Akzeptanz der Bedingungen",
     "ACCEPTANCE_TEXT": "Durch den Zugriff auf und die Nutzung von Portfolio (Produkt) erkennen Sie die folgenden Bedingungen sowie alle Richtlinien, Leitlinien oder Änderungen, die Ihnen von Zeit zu Zeit vorgelegt werden, an und stimmen ihnen zu. Wir, die aufgeführten Studierenden, können die Bedingungen jederzeit und ohne Ankündigung aktualisieren oder ändern.",
@@ -114,32 +114,32 @@
     "GO_BACK": "Zurück zur Kontaktsektion",
 
     "RESPONSIBLE_TITLE": "Verantwortliche Stelle",
-    "RESPONSIBLE_NAME": "Anja Mustermann",
-    "RESPONSIBLE_ADDRESS": "Portfolio Straße 12",
-    "RESPONSIBLE_CITY": "12345 Musterstadt, Deutschland",
+    "RESPONSIBLE_NAME": "Henry Wolf",
+    "RESPONSIBLE_ADDRESS": "Dollahner Straße 4b",
+    "RESPONSIBLE_CITY": "18609 Ostseebad Binz, Deutschland",
 
     "CONTACT_TITLE": "Kontakt",
-    "CONTACT_EMAIL": "privacy@portfolio.dev",
+    "CONTACT_EMAIL": "HWolf.binz@gmail.com",
 
     "GENERAL_TITLE": "Allgemeines zur Datenverarbeitung",
-    "GENERAL_TEXT": "Ich verarbeite personenbezogene Daten nur in dem Umfang, der erforderlich ist, um meine Website und Services bereitzustellen. Die Verarbeitung erfolgt auf Grundlage von Art. 6 DSGVO und nur solange ein legitimer Zweck besteht.",
+    "GENERAL_TEXT": "Ich verarbeite personenbezogene Daten nur soweit nötig, um Website und Services bereitzustellen und berufe mich dabei auf Art. 6 DSGVO.",
 
     "DATA_TITLE": "Erhobene Daten",
-    "DATA_TEXT_1": "Beim Besuch der Website werden technische Logfiles (IP-Adresse, Browser, Zugriffsuhrzeit, Referrer) erfasst, um die Sicherheit der Anwendung zu gewährleisten.",
-    "DATA_TEXT_2": "Über das Kontaktformular erhalte ich die Daten, die du freiwillig eingibst (Name, E-Mail, Nachricht). Diese Informationen nutze ich ausschließlich zur Bearbeitung deiner Anfrage.",
+    "DATA_TEXT_1": "Beim Seitenaufruf fallen technische Logfiles (IP, Browser, Zeitpunkt, Referrer) an, um Sicherheit und Stabilität zu gewährleisten.",
+    "DATA_TEXT_2": "Formulardaten (Name, E-Mail, Nachricht) werden ausschließlich zur Beantwortung deiner Anfrage genutzt.",
 
     "THIRD_PARTY_TITLE": "Nutzung von Diensten Dritter",
-    "THIRD_PARTY_TEXT": "Medieninhalte wie Schriftarten oder Illustrationen können über Content-Delivery-Netzwerke geladen werden. Dabei werden technische Informationen an die Anbieter übertragen. Es werden keine Cookies gesetzt, die dich über mehrere Seiten verfolgen.",
+    "THIRD_PARTY_TEXT": "Schriftarten und Illustrationen können über CDNs geladen werden; dabei werden technische Basisdaten übertragen, jedoch keine Tracking-Cookies gesetzt.",
 
     "RETENTION_TITLE": "Speicherdauer",
-    "RETENTION_TEXT": "Kontaktanfragen lösche ich spätestens nach sechs Monaten, sofern keine gesetzliche Aufbewahrungspflicht besteht. Server-Logfiles werden zur Fehleranalyse spätestens nach 30 Tagen anonymisiert.",
+    "RETENTION_TEXT": "Kontaktanfragen lösche ich nach spätestens sechs Monaten, Server-Logs anonymisiere ich innerhalb von 30 Tagen.",
 
     "RIGHTS_TITLE": "Deine Rechte",
-    "RIGHTS_TEXT": "Du hast jederzeit das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Widerspruch gegen die Verarbeitung deiner Daten. Richte Anfragen bitte an die oben angegebene Kontaktadresse.",
+    "RIGHTS_TEXT": "Du kannst Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit sowie Widerspruch verlangen – nutze dazu die oben genannte Kontaktadresse.",
 
     "WITHDRAWAL_TITLE": "Widerruf von Einwilligungen",
-    "WITHDRAWAL_TEXT_1": "Bereits erteilte Einwilligungen kannst du jederzeit mit Wirkung für die Zukunft widerrufen. Die Rechtmäßigkeit der Datenverarbeitung bis zum Widerruf bleibt davon unberührt.",
-    "WITHDRAWAL_TEXT_2": "Solltest du der Ansicht sein, dass die Verarbeitung gegen geltendes Datenschutzrecht verstößt, steht dir das Beschwerderecht bei einer Aufsichtsbehörde zu.",
+    "WITHDRAWAL_TEXT_1": "Einwilligungen lassen sich jederzeit mit Wirkung für die Zukunft widerrufen; bis dahin bleibt die Verarbeitung rechtmäßig.",
+    "WITHDRAWAL_TEXT_2": "Bei Datenschutzbeschwerden kannst du dich an eine Aufsichtsbehörde wenden.",
 
     "DATE": "Letzte Aktualisierung: 18. November 2025"
   }
