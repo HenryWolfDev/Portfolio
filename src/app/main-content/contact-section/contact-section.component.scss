@@ -82,6 +82,11 @@ section {
           .question-text {
             font-size: 2.4rem;
           }
+          @include mobile {
+            .question-text {
+              font-size: 2rem;
+            }
+          }
 
           textarea::-webkit-scrollbar {
             display: none;

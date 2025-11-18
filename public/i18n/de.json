@@ -17,6 +17,7 @@
     "ABOUT_ME_TEXT": "Hey, ich bin Henry. Was mich an der IT, insbesondere am Programmieren begeistert, ist der kreative Prozess dahinter. Ich liebe es, eine Idee im Kopf zu haben und sie direkt in etwas Sichtbares und Funktionierendes zu verwandeln. Kaum eine andere Tätigkeit gibt mir so schnell das Gefühl, dass meine Gedanken Realität werden können.",
     "CORPORATE_TEXT": "Lass uns zusammenarbeiten und etwas Bemerkenswertes schaffen!"
   },
+
   "SKILL_SET_SECTION": {
     "MY_STACK_TEXT": "Mein stack",
     "SKILL_INTRODUCTION_TEXT": "Ich schätze die einfache Nutzung von Signals, da sie komponentenbasierte Logik deutlich vereinfachen. Ebenso TypeScripts starkes Typsystem, um klaren und zuverlässigen Code zu schreiben.",
@@ -26,8 +27,9 @@
 
   "PROJECTS_SECTION": {
     "PROJECTS_TITLE": "Projekte",
-    "PROJECT_TEXT": "Schau dir gern meine Projekte an und probiere sie aus – ich freue mich über jedes Feedback."
+    "PROJECT_TEXT": "Schau dir gern meine Projekte an und probiere sie aus. Ich freue mich über jedes Feedback."
   },
+
   "projects": {
     "TITLE_DESCRIPTON": "Beschreibung",
     "TITLE_DETAILS": "Technische Umsetzung",
@@ -51,11 +53,13 @@
       "teaser": "Diese App ist ein Slack-Klon. Sie revolutioniert Team-Kommunikation und Zusammenarbeit mit intuitivem Interface, Echtzeit-Messaging und starker Kanalorganisation."
     }
   },
+
   "colleagues": {
     "henry": {
       "text": "Karl hat das Team wirklich mit seiner großartigen Organisation und klaren Kommunikation zusammengehalten. Ohne sein Engagement wären wir nicht so weit gekommen."
     }
   },
+
   "CONTACT_SECTION": {
     "CONTACT": "Kontakt aufnehmen",
     "TITLE": "Zusammen Großes schaffen",
@@ -70,5 +74,38 @@
     "PRIVACY_POLICY": "Datenschutzerklärung",
     "ERROR_MESSAGE": "Bitte füllen Sie alle erforderlichen Felder aus und akzeptieren Sie die Datenschutzerklärung.",
     "SEND_MESSAGE": "Ihre Nachricht wurde erfolgreich versendet. Vielen Dank, dass Sie mich kontaktiert haben!"
+  },
+
+  "LEGAL_NOTICE": {
+    "HEADER": "Rechtlicher Hinweis",
+    "IMPRINT_TITLE": "Impressum",
+    "IMPRINT_STUDENTS": "[Liste der Studierendennamen]",
+    "IMPRINT_ADDRESS": "[Adresse des JOIN-Betreibers – z. B. einer der Studierenden]",
+    "IMPRINT_CITY": "[Postleitzahl und Stadt]",
+
+    "EXPLORING_TITLE": "Das Board erkunden",
+    "EXPLORING_EMAIL": "E-Mail: [E-Mail]",
+
+    "ACCEPTANCE_TITLE": "Akzeptanz der Bedingungen",
+    "ACCEPTANCE_TEXT": "Durch den Zugriff auf und die Nutzung von Portfolio (Produkt) erkennen Sie die folgenden Bedingungen sowie alle Richtlinien, Leitlinien oder Änderungen, die Ihnen von Zeit zu Zeit vorgelegt werden, an und stimmen ihnen zu. Wir, die aufgeführten Studierenden, können die Bedingungen jederzeit und ohne Ankündigung aktualisieren oder ändern.",
+
+    "SCOPE_TITLE": "Umfang und Eigentum des Produkts",
+    "SCOPE_TEXT_1": "Portfolio wurde im Rahmen eines studentischen Gruppenprojekts im Web-Development-Bootcamp an der Developer Akademie GmbH entwickelt. Es dient zu Ausbildungszwecken und ist nicht für umfangreiche private oder geschäftliche Nutzung vorgesehen. Daher können wir keine durchgängige Verfügbarkeit, Zuverlässigkeit, Genauigkeit oder sonstige Qualitätsmerkmale dieses Produkts garantieren.",
+    "SCOPE_TEXT_2": "Das Design von Portfolio ist Eigentum der Developer Akademie GmbH. Die unbefugte Nutzung, Reproduktion, Modifikation, Verbreitung oder Vervielfältigung des Designs ist strengstens untersagt.",
+
+    "RIGHTS_TITLE": "Eigentumsrechte",
+    "RIGHTS_TEXT": "Abgesehen vom Design, das der Developer Akademie GmbH gehört, behalten wir, die aufgeführten Studierenden, alle Eigentumsrechte an Portfolio, einschließlich aller zugehörigen urheberrechtlich geschützten Materialien, Marken und anderer geschützter Informationen.",
+
+    "USE_TITLE": "Nutzung des Produkts",
+    "USE_TEXT": "Portfolio darf ausschließlich für rechtmäßige Zwecke und in Übereinstimmung mit allen geltenden Gesetzen und Vorschriften verwendet werden. Jegliche Nutzung für illegale Aktivitäten oder zur Belästigung, Schädigung, Bedrohung oder Einschüchterung anderer Personen ist strengstens verboten. Sie allein sind für Ihre Interaktionen mit anderen Nutzern verantwortlich.",
+
+    "DISCLAIMER_TITLE": "Haftungsausschluss und Begrenzung der Gewährleistung",
+    "DISCLAIMER_TEXT": "Portfolio wird „wie besehen“ ohne jegliche ausdrückliche oder stillschweigende Gewährleistung bereitgestellt. Wir, die aufgeführten Studierenden, oder die Developer Akademie haften in keinem Fall für direkte, indirekte, zufällige, besondere oder Folgeschäden, einschließlich, aber nicht beschränkt auf entgangenen Gewinn, Verlust von Geschäftswert, Datenverlust oder andere immaterielle Schäden – selbst wenn wir auf die Möglichkeit solcher Schäden hingewiesen wurden.",
+
+    "INDEMNITY_TITLE": "Schadloshaltung",
+    "INDEMNITY_TEXT_1": "Sie erklären sich damit einverstanden, uns, die aufgeführten Studierenden, die Developer Akademie sowie unsere verbundenen Unternehmen, Partner, leitenden Angestellten, Direktoren, Vertreter und Mitarbeitenden von jeglichen Ansprüchen, Forderungen, Verlusten, Schäden, Kosten oder Haftungen freizustellen, die sich aus Ihrer Nutzung von Portfolio oder einem Verstoß gegen diesen rechtlichen Hinweis ergeben.",
+    "INDEMNITY_TEXT_2": "Bei Fragen oder Mitteilungen kontaktieren Sie uns bitte unter [Kontakt-E-Mail].",
+
+    "DATE": "Datum: 26. Juli 2025"
   }
 }

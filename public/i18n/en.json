@@ -16,15 +16,17 @@
     "ABOUT_ME_TEXT": "Hey there, I'm Henry. What fascinates me about IT, especially programming is the creative process behind it. I love having an idea in my mind and turning it directly into something visible and functional. Very few activities give me the feeling as quickly that my thoughts can become reality.",
     "CORPORATE_TEXT": "Let’s collaborate and build something remarkable together!"
   },
+
   "SKILL_SET_SECTION": {
     "MY_STACK_TEXT": "My stack",
     "SKILL_INTRODUCTION_TEXT": "I appreciate the simplicity of Signals, as they make component logic much easier to manage. Likewise, TypeScript’s strong type system helps me write clear and reliable code.",
     "PEEL_TEXT": "Pull to peel",
     "DIVING_TEXT": "Also, I'm interested in diving into:"
   },
+
   "PROJECTS_SECTION": {
     "PROJECTS_TITLE": "Projects",
-    "PROJECT_TEXT": "Feel free to explore my projects and try them out — I appreciate any feedback."
+    "PROJECT_TEXT": "Feel free to explore my projects and try them out. I appreciate any feedback."
   },
 
   "projects": {
@@ -50,11 +52,13 @@
       "teaser": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
     }
   },
+
   "colleagues": {
     "henry": {
       "text": "Karl really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment"
     }
   },
+
   "CONTACT_SECTION": {
     "CONTACT": "Contact me",
     "TITLE": "Ready to work together?",
@@ -69,5 +73,38 @@
     "PRIVACY_POLICY": "privacy policy",
     "ERROR_MESSAGE": "Please fill out all required fields and accept privacy policy.",
     "SEND_MESSAGE": "Your message has been sent successfully. Thank you for contacting me!"
+  },
+
+  "LEGAL_NOTICE": {
+    "HEADER": "Legal Notice",
+    "IMPRINT_TITLE": "Imprint",
+    "IMPRINT_STUDENTS": "[List of student names]",
+    "IMPRINT_ADDRESS": "[Address of the JOIN operator – e.g. one of the students]",
+    "IMPRINT_CITY": "[Postcode and city]",
+
+    "EXPLORING_TITLE": "Exploring the Board",
+    "EXPLORING_EMAIL": "Email: [Email]",
+
+    "ACCEPTANCE_TITLE": "Acceptance of Terms",
+    "ACCEPTANCE_TEXT": "By accessing and using Portfolio (Product), you acknowledge and agree to the following terms and conditions, as well as any policies, guidelines, or amendments that may be presented to you from time to time. We, the listed students, may update or change these terms and conditions without prior notice.",
+
+    "SCOPE_TITLE": "Scope and Ownership of the Product",
+    "SCOPE_TEXT_1": "Portfolio was developed as part of a student group project in a web development bootcamp at the Developer Akademie GmbH. It is intended for educational purposes and is not designed for extensive personal or commercial use. Therefore, we cannot guarantee consistent availability, reliability, accuracy, or any other aspect of product quality.",
+    "SCOPE_TEXT_2": "The design of Portfolio is owned by Developer Akademie GmbH. Unauthorized use, reproduction, modification, distribution, or replication of the design is strictly prohibited.",
+
+    "RIGHTS_TITLE": "Proprietary Rights",
+    "RIGHTS_TEXT": "Aside from the design owned by Developer Akademie GmbH, we, the listed students, retain all proprietary rights to Portfolio, including any associated copyrighted materials, trademarks, and other proprietary information.",
+
+    "USE_TITLE": "Use of the Product",
+    "USE_TEXT": "Portfolio may only be used for lawful purposes and in compliance with all applicable laws and regulations. Any use of Portfolio for illegal activities or to harass, harm, threaten, or intimidate others is strictly prohibited. You are solely responsible for your interactions with other users of the Product.",
+
+    "DISCLAIMER_TITLE": "Disclaimer of Warranties and Limitation of Liability",
+    "DISCLAIMER_TEXT": "Portfolio is provided 'as is' without any warranties, whether expressed or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event shall we, the listed students, or Developer Akademie be liable for any direct, indirect, incidental, special, consequential, or exemplary damages — including but not limited to loss of profits, goodwill, data, or other intangible losses — even if we have been advised of the possibility of such damages.",
+
+    "INDEMNITY_TITLE": "Indemnity",
+    "INDEMNITY_TEXT_1": "You agree to indemnify, defend, and hold harmless us, the listed students, Developer Akademie, and our affiliates, partners, officers, directors, agents, and employees from any claim, demand, loss, damage, cost, or liability (including reasonable legal fees) arising from or related to your use of Portfolio or your breach of this Legal Notice.",
+    "INDEMNITY_TEXT_2": "For any questions or notices, please contact us at [Contact Email].",
+
+    "DATE": "Date: July 26, 2025"
   }
 }
