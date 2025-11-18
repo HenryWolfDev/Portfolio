@@ -39,18 +39,13 @@
     "NEXT_PROJECT": "Nächstes Projekt",
     "join": {
       "title": "Join",
-      "details": "Kurzer Text, der deine Rolle oder den Workflow für dieses spezielle Projekt beschreibt. Lass Recruiter:innen mehr über dein Wissen sowie deine Fähigkeit erfahren, strukturiert und entweder eigenständig oder gemeinsam im Team zu arbeiten.",
+      "details": "In diesem Projekt habe ich vor allem die technische Struktur implementiert. Ich entwickelte mehrere Services, um serverseitige Daten effizient bereitzustellen, und kümmerte mich um das Routing sowie die gesamte Logik zur Bearbeitung von Tasks. Dazu gehörten unter anderem das Aktualisieren von Status, Zuweisungen und Kategorien. Der Fokus lag auf sauberer Architektur, klarer Datenflusslogik und einer wartbaren Codebasis.",
       "teaser": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Nutzer und Kategorien zu."
     },
     "elPolloLoco": {
       "title": "El Pollo Loco",
-      "details": "Kurzer Text, der deine Rolle oder den Workflow für dieses spezielle Projekt beschreibt. Lass Recruiter:innen mehr über dein Wissen sowie deine Fähigkeit erfahren, strukturiert und entweder eigenständig oder gemeinsam im Team zu arbeiten.",
+      "details": "Dieses Projekt wurde vollständig eigenständig von mir umgesetzt. Die Spiellogik basiert auf einer Canvas-Implementierung, kombiniert mit objektorientierter Programmierung. Ich entwickelte sämtliche Mechaniken selbst – von Animationen und Kollisionsabfragen über Gegner-KI bis hin zu Physik, Steuerung und Levelstruktur. Dadurch konnte ich meine Fähigkeiten in JavaScript, OOP und interaktiven Canvas-Anwendungen vertiefen.",
       "teaser": "Jump-and-Run-Spiel mit objektorientiertem Ansatz. Hilf Pepe Münzen und Tabasco-Salsa zu sammeln, um gegen das verrückte Huhn zu kämpfen."
-    },
-    "dabubble": {
-      "title": "DABubble",
-      "details": "Kurzer Text, der deine Rolle oder den Workflow für dieses spezielle Projekt beschreibt. Lass Recruiter:innen mehr über dein Wissen sowie deine Fähigkeit erfahren, strukturiert und entweder eigenständig oder gemeinsam im Team zu arbeiten.",
-      "teaser": "Diese App ist ein Slack-Klon. Sie revolutioniert Team-Kommunikation und Zusammenarbeit mit intuitivem Interface, Echtzeit-Messaging und starker Kanalorganisation."
     }
   },
 

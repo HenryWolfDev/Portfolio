@@ -13,7 +13,7 @@ export const PROJECTS = [
     slug: 'el-pollo-loco',
     title: 'El Pollo Loco',
     gitHub_Link: 'https://github.com/HenryWolfDev/El-Pollo-Loco',
-    details: 'projects.join.details',
+    details: 'projects.elPolloLoco.details',
     teaser_text: 'projects.elPolloLoco.teaser',
     image: 'assets/Design material/05_Projects_Images/El_Pollo_Loco.png',
     techStack: ['html', 'css', 'javascript'],

@@ -95,10 +95,13 @@
             @include display-flex(row, flex-start, center);
             gap: 1rem;
             padding: 2rem 0;
-
-            .icon {
-              width: 2.4rem;
-              height: 2.4rem;
+            .tech {
+              @include display-flex(row, flex-start, center);
+              gap: 1rem;
+              .icon {
+                width: 2.4rem;
+                height: 2.4rem;
+              }
             }
           }
           .info {
@@ -150,6 +153,24 @@
     }
   }
 }
+
+@media (max-width: 1400px) {
+  .detail-section {
+    .wrapper {
+      .main-content {
+        @include display-flex(column, flex-start, start);
+        gap: 1rem;
+        padding: 10rem 0;
+        .project-content {
+          @include display-flex(column, flex-start, stretch);
+        }
+        .go-next {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}
 @include mobile {
   .detail-section {
     h1 {
@@ -160,13 +181,15 @@
     }
     p,
     span {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
     .wrapper {
       .main-content {
-        @include display-flex(column, flex-start, start);
-        gap: 1rem;
+        gap: 3rem;
+        padding: 10rem 0;
         .project-content {
+          width: auto;
+          padding: 0 1.6rem;
           .info-content {
             gap: 1rem;
             h1 {
@@ -196,19 +219,6 @@
               @include display-flex(column, flex-start, start);
             }
           }
-        }
-      }
-    }
-  }
-}
-@media (max-width: 1400px) {
-  .detail-section {
-    .wrapper {
-      .main-content {
-        @include display-flex(column, flex-start, stretch);
-        padding: 10rem 0;
-        .project-content {
-          @include display-flex(column, flex-start, stretch);
         }
       }
     }
