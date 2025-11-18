@@ -28,6 +28,7 @@
               }}</span>
               <input
                 [(ngModel)]="contactData.name"
+                (ngModelChange)="handleFormChange()"
                 class="answer-text text"
                 type="text"
                 id="name"
@@ -43,6 +44,7 @@
               <input
                 #email="ngModel"
                 [(ngModel)]="contactData.email"
+                (ngModelChange)="handleFormChange()"
                 class="answer-text text"
                 type="email"
                 id="email"
@@ -60,6 +62,7 @@
               <textarea
                 #message="ngModel"
                 [(ngModel)]="contactData.message"
+                (ngModelChange)="handleFormChange()"
                 class="message-text text"
                 name="message"
                 id="message"
@@ -76,6 +79,7 @@
               id="privacyPolicy"
               name="privacyPolicy"
               [(ngModel)]="contactData.acceptedPolicy"
+              (ngModelChange)="handleFormChange()"
               required
             />
 
