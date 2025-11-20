@@ -7,6 +7,7 @@ export interface ColleagueCard {
   text: string;
   name: string;
   title: string;
+  href: string;
 }
 
 @Component({

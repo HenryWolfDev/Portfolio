@@ -2,21 +2,17 @@ import { ColleagueCard } from './colleague-card/colleague-card.component';
 
 export const COLLEAGUE_MATES: ColleagueCard[] = [
   {
-    slug: 'Kati',
-    text: 'colleagues.henry.text',
-    name: 'Kati',
+    slug: 'Felicia',
+    text: 'colleagues.felicia.text',
+    name: 'Felicia',
     title: 'Frontend Developer',
+    href: 'https://www.linkedin.com/in/felicia-primadita-tretter/',
   },
   {
-    slug: 'marian',
-    text: 'colleagues.henry.text',
-    name: 'Marian',
+    slug: 'Nils',
+    text: 'colleagues.nils.text',
+    name: 'Nils',
     title: 'Frontend Developer',
-  },
-  {
-    slug: 'simon',
-    text: 'colleagues.henry.text',
-    name: 'Simon',
-    title: 'Frontend Developer',
+    href: 'https://www.linkedin.com/in/nils-alberding-schulz/',
   },
 ];

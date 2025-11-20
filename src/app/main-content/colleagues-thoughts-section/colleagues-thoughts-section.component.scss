@@ -56,18 +56,13 @@ section {
     .cards-box > app-colleague-card:nth-child(1) {
       z-index: 10;
       bottom: 20%;
-      left: 15%;
+      left: 25%;
       transform: rotate(-5deg);
     }
     .cards-box > app-colleague-card:nth-child(2) {
       z-index: 5;
       bottom: 15%;
-    }
-    .cards-box > app-colleague-card:nth-child(3) {
-      z-index: 1;
-      bottom: 22%;
       right: 20%;
-      transform: rotate(5deg);
     }
 
     .cards-box > app-colleague-card:hover,
@@ -98,12 +93,6 @@ section {
         bottom: 30%;
         transform: rotate(0deg);
       }
-      .cards-box > app-colleague-card:nth-child(3) {
-        z-index: 1;
-        bottom: 65%;
-        left: 5%;
-        transform: rotate(-5deg);
-      }
     }
   }
 
@@ -133,12 +122,6 @@ section {
       .cards-box > app-colleague-card:nth-child(2) {
         z-index: 5;
         bottom: 35%;
-        transform: rotate(0deg);
-      }
-      .cards-box > app-colleague-card:nth-child(3) {
-        z-index: 5;
-        bottom: 65%;
-        left: 0;
         transform: rotate(0deg);
       }
 
