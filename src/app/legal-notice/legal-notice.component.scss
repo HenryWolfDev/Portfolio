@@ -67,7 +67,7 @@
 
 @include mobile {
   .notice-section {
-    padding: 0 1.6rem;
+    padding: 1.6rem 1.6rem;
     .go-back-box-mobile {
       @include display-flex(row, start, center);
       gap: 1rem;
