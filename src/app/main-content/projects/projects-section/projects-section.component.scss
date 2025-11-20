@@ -48,6 +48,7 @@
 }
 @include mobile {
   .PROJECTS_SECTION {
+    padding-top: 10rem;
     .grid {
       .projects-info-box {
         width: auto;
