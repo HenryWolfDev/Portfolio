@@ -137,6 +137,7 @@ section {
         }
         // style for send btn
         .select-btn-box {
+          height: 2rem;
           @include display-flex(row, flex-end, center);
           gap: 1rem;
 
@@ -144,15 +145,16 @@ section {
           .valid-text {
             font-size: 1.6rem;
           }
-          .send-btn {
-            font-size: 1.8rem;
-            @include press-button(
-              $bg-color: var(--color-dark),
-              $bs-color: var(--color-white),
-              $color: var(--color-white),
-              $b-color: var(--color-white)
-            );
-          }
+        }
+        .send-btn {
+          font-size: 1.8rem;
+          @include press-button(
+            $bg-color: var(--color-dark),
+            $bs-color: var(--color-white),
+            $color: var(--color-white),
+            $b-color: var(--color-white)
+          );
+          margin-left: auto;
         }
       }
     }

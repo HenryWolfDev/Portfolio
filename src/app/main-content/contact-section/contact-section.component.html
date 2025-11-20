@@ -181,6 +181,7 @@
               >{{ "CONTACT_SECTION.POLICY_TEXT_2" | translate }}</span
             >
           </div>
+          <button class="send-btn" type="submit" value="Submit">Send</button>
           <div class="select-btn-box">
             <span class="error-text" *ngIf="errorMessage" style="color: red">
               {{ "CONTACT_SECTION.ERROR_MESSAGE" | translate }}
@@ -188,8 +189,6 @@
             <span class="valid-text" *ngIf="messageSend">{{
               "CONTACT_SECTION.SEND_MESSAGE" | translate
             }}</span>
-
-            <button class="send-btn" type="submit" value="Submit">Send</button>
           </div>
         </form>
 
