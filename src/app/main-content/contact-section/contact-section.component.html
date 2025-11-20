@@ -20,24 +20,61 @@
       <div class="contact-formular-box">
         <!-- #region Formular -->
 
-        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <form
+          (ngSubmit)="onSubmit(contactForm)"
+          #contactForm="ngForm"
+          novalidate
+        >
           <div>
-            <div class="name-box data-box">
+            <div
+              class="name-box data-box"
+              [class.invalid]="
+                name.invalid &&
+                (name.dirty || name.touched || contactForm.submitted)
+              "
+            >
               <span class="question-text">{{
                 "CONTACT_SECTION.NAME" | translate
               }}</span>
               <input
+                #name="ngModel"
                 [(ngModel)]="contactData.name"
                 (ngModelChange)="handleFormChange()"
                 class="answer-text text"
                 type="text"
                 id="name"
                 name="name"
+                minlength="2"
                 [placeholder]="'CONTACT_SECTION.NAME_PLACEHOLDER' | translate"
+                aria-required="true"
+                [attr.aria-invalid]="
+                  name.invalid &&
+                  (name.dirty || name.touched || contactForm.submitted)
+                "
                 required
               />
+              <div
+                class="validation-message"
+                *ngIf="
+                  name.invalid &&
+                  (name.dirty || name.touched || contactForm.submitted)
+                "
+              >
+                <span *ngIf="name.errors?.['required']">{{
+                  "CONTACT_SECTION.VALIDATION_NAME_REQUIRED" | translate
+                }}</span>
+                <span *ngIf="name.errors?.['minlength']">{{
+                  "CONTACT_SECTION.VALIDATION_NAME_MINLENGTH" | translate
+                }}</span>
+              </div>
             </div>
-            <div class="email-box data-box">
+            <div
+              class="email-box data-box"
+              [class.invalid]="
+                email.invalid &&
+                (email.dirty || email.touched || contactForm.submitted)
+              "
+            >
               <span class="question-text">{{
                 "CONTACT_SECTION.EMAIL" | translate
               }}</span>
@@ -50,11 +87,36 @@
                 id="email"
                 name="email"
                 placeholder="youremail&#64;email.com"
+                aria-required="true"
+                [attr.aria-invalid]="
+                  email.invalid &&
+                  (email.dirty || email.touched || contactForm.submitted)
+                "
                 required
                 pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
               />
+              <div
+                class="validation-message"
+                *ngIf="
+                  email.invalid &&
+                  (email.dirty || email.touched || contactForm.submitted)
+                "
+              >
+                <span *ngIf="email.errors?.['required']">{{
+                  "CONTACT_SECTION.VALIDATION_EMAIL_REQUIRED" | translate
+                }}</span>
+                <span *ngIf="email.errors?.['pattern']">{{
+                  "CONTACT_SECTION.VALIDATION_EMAIL_FORMAT" | translate
+                }}</span>
+              </div>
             </div>
-            <div class="message-box data-box">
+            <div
+              class="message-box data-box"
+              [class.invalid]="
+                message.invalid &&
+                (message.dirty || message.touched || contactForm.submitted)
+              "
+            >
               <span class="question-text">{{
                 "CONTACT_SECTION.HELP" | translate
               }}</span>
@@ -66,27 +128,51 @@
                 class="message-text text"
                 name="message"
                 id="message"
+                minlength="10"
                 [placeholder]="'CONTACT_SECTION.HELP_PLACEHOLDER' | translate"
+                aria-required="true"
+                [attr.aria-invalid]="
+                  message.invalid &&
+                  (message.dirty || message.touched || contactForm.submitted)
+                "
                 required
               ></textarea>
+            </div>
+            <div
+              class="validation-message"
+              *ngIf="
+                message.invalid &&
+                (message.dirty || message.touched || contactForm.submitted)
+              "
+            >
+              <span *ngIf="message.errors?.['required']">{{
+                "CONTACT_SECTION.VALIDATION_MESSAGE_REQUIRED" | translate
+              }}</span>
+              <span *ngIf="message.errors?.['minlength']">{{
+                "CONTACT_SECTION.VALIDATION_MESSAGE_MINLENGTH" | translate
+              }}</span>
             </div>
           </div>
 
           <div class="read-policy-box">
             <input
+              #privacyPolicy="ngModel"
               class="check-box"
               type="checkbox"
               id="privacyPolicy"
               name="privacyPolicy"
               [(ngModel)]="contactData.acceptedPolicy"
               (ngModelChange)="handleFormChange()"
+              aria-required="true"
+              [attr.aria-invalid]="
+                privacyPolicy.invalid &&
+                (privacyPolicy.dirty ||
+                  privacyPolicy.touched ||
+                  contactForm.submitted)
+              "
               required
             />
 
-            <!-- <span class="policy-text"
-              >I've read the <span class="policy">privacy policy</span> and
-              agree to the processing of my data as outlined.</span
-            > -->
             <span class="policy-text"
               >{{ "CONTACT_SECTION.POLICY_TEXT_1" | translate }}
               <a class="policy" [routerLink]="['privacy-policy']">{{

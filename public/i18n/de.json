@@ -71,7 +71,14 @@
     "POLICY_TEXT_2": " gelesen und stimme der Verarbeitung meiner Daten zu.",
     "PRIVACY_POLICY": "Datenschutzerklärung",
     "ERROR_MESSAGE": "Bitte füllen Sie alle erforderlichen Felder aus und akzeptieren Sie die Datenschutzerklärung.",
-    "SEND_MESSAGE": "Ihre Nachricht wurde erfolgreich versendet. Vielen Dank, dass Sie mich kontaktiert haben!"
+    "SEND_MESSAGE": "Ihre Nachricht wurde erfolgreich versendet. Vielen Dank, dass Sie mich kontaktiert haben!",
+    "VALIDATION_NAME_REQUIRED": "Bitte geben Sie Ihren Namen ein.",
+    "VALIDATION_NAME_MINLENGTH": "Ihr Name sollte mindestens 2 Zeichen lang sein.",
+    "VALIDATION_EMAIL_REQUIRED": "Bitte geben Sie eine E-Mail-Adresse an.",
+    "VALIDATION_EMAIL_FORMAT": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    "VALIDATION_MESSAGE_REQUIRED": "Bitte geben Sie eine Nachricht ein.",
+    "VALIDATION_MESSAGE_MINLENGTH": "Ihre Nachricht sollte mindestens 10 Zeichen enthalten.",
+    "VALIDATION_POLICY_REQUIRED": "Bitte bestätigen Sie die Datenschutzerklärung."
   },
 
   "LEGAL_NOTICE": {

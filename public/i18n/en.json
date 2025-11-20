@@ -70,7 +70,14 @@
     "POLICY_TEXT_2": " and agree to the processing of my data as outlined.",
     "PRIVACY_POLICY": "privacy policy",
     "ERROR_MESSAGE": "Please fill out all required fields and accept privacy policy.",
-    "SEND_MESSAGE": "Your message has been sent successfully. Thank you for contacting me!"
+    "SEND_MESSAGE": "Your message has been sent successfully. Thank you for contacting me!",
+    "VALIDATION_NAME_REQUIRED": "Please enter your name.",
+    "VALIDATION_NAME_MINLENGTH": "Your name should be at least 2 characters long.",
+    "VALIDATION_EMAIL_REQUIRED": "Please provide an email address.",
+    "VALIDATION_EMAIL_FORMAT": "Please enter a valid email address.",
+    "VALIDATION_MESSAGE_REQUIRED": "Please enter a message.",
+    "VALIDATION_MESSAGE_MINLENGTH": "Your message should be at least 10 characters long.",
+    "VALIDATION_POLICY_REQUIRED": "Please confirm that you accept the privacy policy."
   },
 
   "LEGAL_NOTICE": {
