@@ -70,7 +70,9 @@
                   class="live-test-btn"
                   type="button"
                   [disabled]="!(project.live_Link || project.gitHub_Link)"
-                  (click)="openBtnLink(project.live_Link || project.gitHub_Link)"
+                  (click)="
+                    openBtnLink(project.live_Link || project.gitHub_Link)
+                  "
                 >
                   Live Test
                 </button>
