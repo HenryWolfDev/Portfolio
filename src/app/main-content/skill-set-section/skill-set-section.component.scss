@@ -162,8 +162,8 @@ section {
 
       span {
         position: absolute;
-        left: 10px;
-        top: 40px;
+        left: 60px;
+        top: 50px;
         font-size: 1.8rem;
         font-weight: bold;
         text-align: center;
@@ -225,14 +225,14 @@ section {
           top: auto;
           right: auto;
           left: 5%;
-          bottom: 700px;
+          bottom: 630px;
         }
 
         .peel-off-box-overlay {
           top: auto;
           right: auto;
           left: 5%;
-          bottom: 700px;
+          bottom: 630px;
         }
       }
     }
@@ -280,9 +280,10 @@ section {
 
 @include mobile {
   .SKILL_SET_SECTION {
-    height: 200vh;
+    height: auto;
     .content {
       .introduction-box {
+        padding-top: 10rem;
         .text-left-box {
           h2 {
             font-size: 4.8rem;
@@ -304,12 +305,33 @@ section {
           grid-template-columns: repeat((3, 60px));
         }
         .peel-off-box {
-          left: 25.5%;
-          bottom: -100px;
+          left: 35%;
+          bottom: 10px;
+          .peel-off {
+            width: 15rem;
+            height: 15rem;
+          }
+          .arrow-icon {
+            display: none;
+          }
         }
         .peel-off-box-overlay {
-          left: 25.5%;
-          bottom: -100px;
+          left: 35%;
+          bottom: 10px;
+          .peel-off {
+            width: 15rem;
+            height: 15rem;
+          }
+
+          span {
+            left: 30px;
+            top: 20px;
+            font-size: 1.6rem;
+          }
+          .diving-icons-box {
+            left: 20px;
+            bottom: 30px;
+          }
         }
       }
     }
