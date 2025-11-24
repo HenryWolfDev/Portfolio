@@ -27,6 +27,9 @@ export class HeaderComponent implements OnDestroy {
   useLanguage(language: string): void {
     this.translate.use(language);
     this.currentLang = language;
+    if (this.isMenuOpen) {
+      this.closeMenu();
+    }
   }
 
   toggleMenu(): void {
