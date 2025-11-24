@@ -17,6 +17,7 @@ section {
       display: flex;
       flex-direction: column;
       gap: 10px;
+      padding-left: 1.6rem;
       .info-head {
         span {
           font-size: 2rem;
@@ -50,6 +51,7 @@ section {
 
     .contact-formular-box {
       padding: 4rem 0;
+      padding-right: 1.6rem;
       width: 100%;
       max-width: 48rem;
       form {
