@@ -5,7 +5,7 @@
       class="project-details"
       [routerLink]="['/projects', project().slug]"
     >
-      Project details
+      {{ "PROJECT_CARD.PROJECT_DETAILS" | translate }}
     </button>
   </div>
   <h3 class="card_title">{{ project().title | translate }}</h3>
@@ -15,6 +15,6 @@
     class="project-details-mobile"
     [routerLink]="['/projects', project().slug]"
   >
-    Project details
+    {{ "PROJECT_CARD.PROJECT_DETAILS" | translate }}
   </button>
 </div>

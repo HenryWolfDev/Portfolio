@@ -8,6 +8,11 @@
 
   "HELLO_WORLD_BTN": "Ich bin Henry Wolf",
 
+  "HERO_SECTION": {
+    "HELLO_WORLD": "Hallo Welt",
+    "GET_IN_TOUCH": "Kontakt"
+  },
+
   "ABOUT_ME_SECTION": {
     "BASED_TEXT": "Wohnort Binz / Rügen",
     "RELOCATE_TEXT": "Bereit Umzuziehen",
@@ -15,7 +20,8 @@
     "WHOS_TEXT": "Wer ist Henry?",
     "ABOUT_TEXT": "Über mich",
     "ABOUT_ME_TEXT": "Hey, ich bin Henry. Was mich an der IT, insbesondere am Programmieren begeistert, ist der kreative Prozess dahinter. Ich liebe es, eine Idee im Kopf zu haben und sie direkt in etwas Sichtbares und Funktionierendes zu verwandeln. Kaum eine andere Tätigkeit gibt mir so schnell das Gefühl, dass meine Gedanken Realität werden können.",
-    "CORPORATE_TEXT": "Lass uns zusammenarbeiten und etwas Bemerkenswertes schaffen!"
+    "CORPORATE_TEXT": "Lass uns zusammenarbeiten und etwas Bemerkenswertes schaffen!",
+    "LETS_TALK": "Kontakt"
   },
 
   "SKILL_SET_SECTION": {
@@ -26,10 +32,16 @@
   },
 
   "PROJECTS_SECTION": {
+    "MY_CRAFT": "Meine Arbeit",
     "PROJECTS_TITLE": "Projekte",
     "PROJECT_TEXT": "Schau dir gern meine Projekte an und probiere sie aus. Ich freue mich über jedes Feedback."
   },
 
+  "COLLEAGUES_SECTION": {
+    "IN_THEIR_WORDS": "Ihre Worte:",
+    "COLLEAGUES_THOUGHTS": "Über mich",
+    "FRONTEND_DEVELOPER": "Frontend Entwickler:in"
+  },
   "projects": {
     "TITLE_DESCRIPTON": "Beschreibung",
     "TITLE_DETAILS": "Technische Umsetzung",
@@ -82,7 +94,8 @@
   },
 
   "LEGAL_NOTICE": {
-    "HEADER": "Rechtlicher Hinweis",
+    "HEADER": "Impressum",
+    "LINK": "Impressum",
     "IMPRINT_TITLE": "Impressum",
     "IMPRINT_STUDENTS": "[Henry Wolf]",
     "IMPRINT_ADDRESS": "[Henry Wolf]",
@@ -147,5 +160,9 @@
     "WITHDRAWAL_TEXT_2": "Bei Datenschutzbeschwerden kannst du dich an eine Aufsichtsbehörde wenden.",
 
     "DATE": "Letzte Aktualisierung: 18. November 2025"
+  },
+
+  "PROJECT_CARD": {
+    "PROJECT_DETAILS": "Projektdetails"
   }
 }

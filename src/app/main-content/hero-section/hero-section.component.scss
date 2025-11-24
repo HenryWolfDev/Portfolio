@@ -102,7 +102,7 @@ section {
 
       .hello-world-btn {
         position: relative;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         @include button-layout(
           $bg-color: var(--color-dark),
           $color: var(--color-white),
@@ -115,7 +115,7 @@ section {
       }
 
       .get-in-touch-btn {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         @include press-button(
           $bg-color: var(--color-dark),
           $bs-color: var(--color-white),

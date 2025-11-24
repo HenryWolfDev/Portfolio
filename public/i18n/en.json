@@ -7,6 +7,11 @@
   },
   "HELLO_WORLD_BTN": "I'm Henry Wolf",
 
+  "HERO_SECTION": {
+    "HELLO_WORLD": "Hello world",
+    "GET_IN_TOUCH": "Get in touch"
+  },
+
   "ABOUT_ME_SECTION": {
     "BASED_TEXT": "Based in Binz / Rügen",
     "RELOCATE_TEXT": "Open to relocate",
@@ -14,7 +19,8 @@
     "WHOS_TEXT": "Who’s is Henry?",
     "ABOUT_TEXT": "About Me",
     "ABOUT_ME_TEXT": "Hey there, I'm Henry. What fascinates me about IT, especially programming is the creative process behind it. I love having an idea in my mind and turning it directly into something visible and functional. Very few activities give me the feeling as quickly that my thoughts can become reality.",
-    "CORPORATE_TEXT": "Let’s collaborate and build something remarkable together!"
+    "CORPORATE_TEXT": "Let’s collaborate and build something remarkable together!",
+    "LETS_TALK": "Let's talk"
   },
 
   "SKILL_SET_SECTION": {
@@ -25,8 +31,15 @@
   },
 
   "PROJECTS_SECTION": {
+    "MY_CRAFT": "My craft",
     "PROJECTS_TITLE": "Projects",
     "PROJECT_TEXT": "Feel free to explore my projects and try them out. I appreciate any feedback."
+  },
+
+  "COLLEAGUES_SECTION": {
+    "IN_THEIR_WORDS": "In their words:",
+    "COLLEAGUES_THOUGHTS": "Colleagues' thoughts",
+    "FRONTEND_DEVELOPER": "Frontend Developer"
   },
 
   "projects": {
@@ -82,6 +95,7 @@
 
   "LEGAL_NOTICE": {
     "HEADER": "Legal Notice",
+    "LINK": "Legal Notice",
     "IMPRINT_TITLE": "Imprint",
     "IMPRINT_STUDENTS": "[Henry Wolf]",
     "IMPRINT_ADDRESS": "[Henry Wolf]",
@@ -146,5 +160,8 @@
     "WITHDRAWAL_TEXT_2": "If you believe the processing violates applicable data protection law, you have the right to lodge a complaint with a supervisory authority.",
 
     "DATE": "Last updated: November 18, 2025"
+  },
+  "PROJECT_CARD": {
+    "PROJECT_DETAILS": "Project details"
   }
 }

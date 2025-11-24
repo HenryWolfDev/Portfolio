@@ -5,14 +5,14 @@ export const COLLEAGUE_MATES: ColleagueCard[] = [
     slug: 'Felicia',
     text: 'colleagues.felicia.text',
     name: 'Felicia',
-    title: 'Frontend Developer',
+    title: 'COLLEAGUES_SECTION.FRONTEND_DEVELOPER',
     href: 'https://www.linkedin.com/in/felicia-primadita-tretter/',
   },
   {
     slug: 'Nils',
     text: 'colleagues.nils.text',
     name: 'Nils',
-    title: 'Frontend Developer',
+    title: 'COLLEAGUES_SECTION.FRONTEND_DEVELOPER',
     href: 'https://www.linkedin.com/in/nils-alberding-schulz/',
   },
 ];

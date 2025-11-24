@@ -12,16 +12,18 @@
         <div>
           <button
             class="hello-world-btn"
-            (mouseenter)="helloWorldHovered = true"
-            (mouseleave)="helloWorldHovered = false"
-            [ngClass]="{ hovered: helloWorldHovered }"
-          >
-            <span class="text-default">Hello world</span>
-            <span class="text-hover">{{ "HELLO_WORLD_BTN" | translate }}</span>
-            <img
-              class="hand-img"
-              src="assets/Design material/04_Icons/waving_hand.png"
-              alt="Waving hand icon"
+          (mouseenter)="helloWorldHovered = true"
+          (mouseleave)="helloWorldHovered = false"
+          [ngClass]="{ hovered: helloWorldHovered }"
+        >
+          <span class="text-default">{{
+            "HERO_SECTION.HELLO_WORLD" | translate
+          }}</span>
+          <span class="text-hover">{{ "HELLO_WORLD_BTN" | translate }}</span>
+          <img
+            class="hand-img"
+            src="assets/Design material/04_Icons/waving_hand.png"
+            alt="Waving hand icon"
             />
           </button>
         </div>
@@ -42,7 +44,7 @@
             class="get-in-touch-btn"
             (click)="scrollTo('contact-section')"
           >
-            Get in Touch
+            {{ "HERO_SECTION.GET_IN_TOUCH" | translate }}
           </button>
         </div>
       </div>

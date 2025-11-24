@@ -31,8 +31,8 @@ section {
       .draw-line-thoughts {
         position: absolute;
         width: 10rem;
-        height: 3.6rem;
-        right: 370px;
+        height: 2.5rem;
+        right: 35rem;
         top: 0;
         @include draw-animation(draw-thoughts-line, left, $seconds: 8s);
       }
@@ -111,7 +111,7 @@ section {
           left: 25%;
           top: 0;
           width: 6rem;
-          height: 3.6rem;
+          height: 2.5rem;
         }
       }
       .cards-box > app-colleague-card:nth-child(1) {
