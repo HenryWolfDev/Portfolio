@@ -90,6 +90,7 @@
     .go-back-box-mobile {
       @include display-flex(row, start, center);
       gap: 1rem;
+      padding-left: 1.6rem;
       padding-bottom: 1.6rem;
       cursor: pointer;
       opacity: 1;
