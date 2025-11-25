@@ -13,7 +13,13 @@ import { TranslatePipe } from '@ngx-translate/core';
 })
 export class ContactSectionComponent implements OnInit {
   private readonly storageKey = 'contactFormData';
-  private readonly mailEndpoint = '/sendMail.php';
+
+  // WICHTIG:
+  // - Für Produktion: funktioniert, wenn Angular-Build UND sendMail.php auf derselben Domain liegen.
+  // - Für Dev (localhost:4200) brauchst du meist eine absolute URL, z.B.:
+  //   private readonly mailEndpoint = 'http://localhost/sendMail.php';
+  private readonly mailEndpoint = 'https://henrywolf.de/sendMail.php';
+
   contactData = this.getEmptyContactData();
 
   http = inject(HttpClient);
@@ -42,11 +48,19 @@ export class ContactSectionComponent implements OnInit {
     this.errorMessage = false;
 
     this.http
-      .post(this.mailEndpoint, {
-        name: this.contactData.name,
-        email: this.contactData.email,
-        message: this.contactData.message,
-      })
+      .post(
+        this.mailEndpoint,
+        {
+          name: this.contactData.name,
+          email: this.contactData.email,
+          message: this.contactData.message,
+        },
+        {
+          // 👇 Anpassung: deine sendMail.php liefert keinen JSON-Body,
+          // also sagen wir Angular: erwarte nur Text (auch leerer String ist ok).
+          responseType: 'text' as const,
+        }
+      )
       .subscribe({
         next: () => {
           this.messageSend = true;
