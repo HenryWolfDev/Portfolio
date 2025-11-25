@@ -263,15 +263,15 @@ section {
         .peel-off-box {
           top: auto;
           right: auto;
-          left: 45%;
-          bottom: -100px;
+          left: 65%;
+          bottom: -150px;
         }
 
         .peel-off-box-overlay {
           top: auto;
           right: auto;
-          left: 45%;
-          bottom: -100px;
+          left: 65%;
+          bottom: -150px;
         }
       }
     }
@@ -281,6 +281,7 @@ section {
 @include mobile {
   .SKILL_SET_SECTION {
     height: auto;
+    padding-bottom: 20rem;
     .content {
       .introduction-box {
         padding-top: 10rem;
@@ -302,11 +303,18 @@ section {
       }
       .skill-icons-box {
         .skill-icons {
-          grid-template-columns: repeat((3, 60px));
+          grid-template-columns: repeat((2, 1fr));
+          .skill-icon-box {
+            color: var(--color-white);
+            width: 10rem;
+            border-radius: 1rem;
+            font-weight: bold;
+            background-color: rgba(45, 67, 102, 0.5);
+          }
         }
         .peel-off-box {
           left: 35%;
-          bottom: 10px;
+          bottom: -180px;
           .peel-off {
             width: 15rem;
             height: 15rem;
@@ -317,7 +325,7 @@ section {
         }
         .peel-off-box-overlay {
           left: 35%;
-          bottom: 10px;
+          bottom: -180px;
           .peel-off {
             width: 15rem;
             height: 15rem;
