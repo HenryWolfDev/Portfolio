@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, inject, OnInit } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
@@ -12,10 +13,14 @@ import { TranslatePipe } from '@ngx-translate/core';
 })
 export class ContactSectionComponent implements OnInit {
   private readonly storageKey = 'contactFormData';
+  private readonly mailEndpoint = '/sendMail.php';
   contactData = this.getEmptyContactData();
+
+  http = inject(HttpClient);
 
   messageSend = false;
   errorMessage = false;
+  isSubmitting = false;
 
   ngOnInit(): void {
     this.restoreFormState();
@@ -28,22 +33,32 @@ export class ContactSectionComponent implements OnInit {
   }
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.valid && ngForm.submitted) {
-      this.messageSend = true;
-      this.errorMessage = false;
-      this.resetForm(ngForm);
-
-      setTimeout(() => {
-        this.messageSend = false;
-      }, 4000);
-    } else {
-      this.messageSend = false;
-      this.errorMessage = true;
-
-      setTimeout(() => {
-        this.errorMessage = false;
-      }, 4000);
+    if (ngForm.invalid) {
+      this.showErrorMessage();
+      return;
     }
+
+    this.isSubmitting = true;
+    this.errorMessage = false;
+
+    this.http
+      .post(this.mailEndpoint, {
+        name: this.contactData.name,
+        email: this.contactData.email,
+        message: this.contactData.message,
+      })
+      .subscribe({
+        next: () => {
+          this.messageSend = true;
+          this.isSubmitting = false;
+          this.resetForm(ngForm);
+          this.hideStatusAfterDelay();
+        },
+        error: () => {
+          this.isSubmitting = false;
+          this.showErrorMessage();
+        },
+      });
   }
 
   private resetForm(ngForm: NgForm): void {
@@ -82,5 +97,18 @@ export class ContactSectionComponent implements OnInit {
       message: '',
       acceptedPolicy: false,
     };
+  }
+
+  private hideStatusAfterDelay(): void {
+    setTimeout(() => {
+      this.messageSend = false;
+      this.errorMessage = false;
+    }, 4000);
+  }
+
+  private showErrorMessage(): void {
+    this.messageSend = false;
+    this.errorMessage = true;
+    this.hideStatusAfterDelay();
   }
 }
