@@ -137,20 +137,20 @@
                 "
                 required
               ></textarea>
-            </div>
-            <div
-              class="validation-message"
-              *ngIf="
-                message.invalid &&
-                (message.dirty || message.touched || contactForm.submitted)
-              "
-            >
-              <span *ngIf="message.errors?.['required']">{{
-                "CONTACT_SECTION.VALIDATION_MESSAGE_REQUIRED" | translate
-              }}</span>
-              <span *ngIf="message.errors?.['minlength']">{{
-                "CONTACT_SECTION.VALIDATION_MESSAGE_MINLENGTH" | translate
-              }}</span>
+              <div
+                class="validation-message"
+                *ngIf="
+                  message.invalid &&
+                  (message.dirty || message.touched || contactForm.submitted)
+                "
+              >
+                <span *ngIf="message.errors?.['required']">{{
+                  "CONTACT_SECTION.VALIDATION_MESSAGE_REQUIRED" | translate
+                }}</span>
+                <span *ngIf="message.errors?.['minlength']">{{
+                  "CONTACT_SECTION.VALIDATION_MESSAGE_MINLENGTH" | translate
+                }}</span>
+              </div>
             </div>
           </div>
 
