@@ -13,6 +13,7 @@
   height: 51.4rem;
   @include display-flex(column, center, flex-start);
   gap: 1rem;
+  grid-column: 1 / -1;
 
   .projects-draw-line {
     width: 26rem;

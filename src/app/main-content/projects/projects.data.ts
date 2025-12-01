@@ -14,7 +14,7 @@ export const PROJECTS = [
     slug: 'el-pollo-loco',
     title: 'El Pollo Loco',
     gitHub_Link: 'https://github.com/HenryWolfDev/El-Pollo-Loco',
-    live_Link: 'http://henrywolf.de/',
+    live_Link: 'https://el-pollo-loco.henrywolf.de/',
     details: 'projects.elPolloLoco.details',
     teaser_text: 'projects.elPolloLoco.teaser',
     image: 'assets/Design material/05_Projects_Images/El_Pollo_Loco.png',
